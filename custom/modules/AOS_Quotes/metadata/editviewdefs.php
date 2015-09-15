@@ -29,22 +29,22 @@ array (
           'field' => '30',
         ),
       ),
-      'useTabs' => true,
+      'useTabs' => false,
       'tabDefs' => 
       array (
         'LBL_ACCOUNT_INFORMATION' => 
         array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
         'LBL_ADDRESS_INFORMATION' => 
         array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
         'LBL_LINE_ITEMS' => 
         array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
@@ -75,9 +75,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'number',
-            'label' => 'LBL_QUOTE_NUMBER',
-            'customCode' => '{$fields.number.value}',
+            'name' => 'order_id_c',
+            'label' => 'LBL_ORDER_ID',
           ),
           1 => 
           array (
@@ -120,11 +119,37 @@ array (
           ),
           1 => 
           array (
-            'name' => 'approval_issue',
-            'label' => 'LBL_APPROVAL_ISSUE',
+            'name' => 'supplier_id_c',
+            'label' => 'LBL_SUPPLIER_ID',
           ),
         ),
         5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'approval_issue',
+            'label' => 'LBL_APPROVAL_ISSUE',
+          ),
+          1 => 
+          array (
+            'name' => 'user_profile_id_c',
+            'label' => 'LBL_USER_PROFILE_ID',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'through_chemspace_c',
+            'label' => 'LBL_THROUGH_CHEMSPACE',
+          ),
+          1 => 
+          array (
+            'name' => 'ours_third_c',
+            'label' => 'LBL_OURS_THIRD',
+          ),
+        ),
+        7 => 
         array (
           0 => 
           array (
@@ -134,8 +159,21 @@ array (
           ),
           1 => 
           array (
+            'name' => 'ref_number_c',
+            'label' => 'LBL_REF_NUMBER',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
             'name' => 'curier_account_c',
             'label' => 'LBL_CURIER_ACCOUNT',
+          ),
+          1 => 
+          array (
+            'name' => 'po_number_c',
+            'label' => 'LBL_PO_NUMBER',
           ),
         ),
       ),
@@ -226,29 +264,39 @@ array (
         array (
           0 => 
           array (
-            'name' => 'handling_c',
-            'label' => 'LBL_HANDLING',
-          ),
-          1 => 
-          array (
             'name' => 'line_items',
             'label' => 'LBL_LINE_ITEMS',
           ),
         ),
         2 => 
         array (
-          0 => 
-          array (
-            'name' => 'transportation_c',
-            'label' => 'LBL_TRANSPORTATION',
-          ),
-          1 => '',
+          0 => '',
         ),
         3 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'total_amt',
+            'label' => 'LBL_TOTAL_AMT',
+          ),
         ),
         4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'discount_amount',
+            'label' => 'LBL_DISCOUNT_AMOUNT',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'subtotal_amount',
+            'label' => 'LBL_SUBTOTAL_AMOUNT',
+          ),
+        ),
+        6 => 
         array (
           0 => 
           array (
@@ -263,7 +311,7 @@ array (
             ),
           ),
         ),
-        5 => 
+        7 => 
         array (
           0 => 
           array (
@@ -271,28 +319,12 @@ array (
             'label' => 'LBL_SHIPPING_TAX_AMT',
           ),
         ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'discount_amount',
-            'label' => 'LBL_DISCOUNT_AMOUNT',
-          ),
-        ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
             'name' => 'tax_amount',
             'label' => 'LBL_TAX_AMOUNT',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'total_amt',
-            'label' => 'LBL_TOTAL_AMT',
           ),
         ),
         9 => 

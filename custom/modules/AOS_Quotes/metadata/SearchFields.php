@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 16:17:38
+// created: 2015-09-15 18:34:11
 $searchFields['AOS_Quotes'] = array (
   'name' => 
   array (
@@ -192,6 +192,21 @@ $searchFields['AOS_Quotes'] = array (
     'enable_range_search' => true,
   ),
   'end_range_handling' => 
+  array (
+    'query_type' => 'default',
+    'enable_range_search' => true,
+  ),
+  'range_ours_third' => 
+  array (
+    'query_type' => 'default',
+    'enable_range_search' => true,
+  ),
+  'start_range_ours_third' => 
+  array (
+    'query_type' => 'default',
+    'enable_range_search' => true,
+  ),
+  'end_range_ours_third' => 
   array (
     'query_type' => 'default',
     'enable_range_search' => true,

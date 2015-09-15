@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 16:26:30
+// created: 2015-09-15 18:35:51
 $mod_strings = array (
   'LNK_NEW_RECORD' => 'Create Quote',
   'LNK_LIST' => 'View Orders',
@@ -14,7 +14,6 @@ $mod_strings = array (
   'LBL_ACCOUNT_INFORMATION' => 'Overview',
   'LBL_ADDRESS_INFORMATION' => 'Customer',
   'LBL_CURIER' => 'Curier service:',
-  'LBL_TRANSPORTATION' => 'Transportation',
   'LBL_HANDLING' => 'Handling',
   'LBL_CURIER_ACCOUNT' => 'Curier Account',
   'LBL_QUOTE_NUMBER' => 'Order Number',
@@ -22,4 +21,9 @@ $mod_strings = array (
   'LBL_ORDER_ID' => 'Order id',
   'LBL_USER_PROFILE_ID' => 'User id',
   'LBL_TEMPLATE_DDOWN_C' => 'Order Template',
+  'LBL_THROUGH_CHEMSPACE' => 'Through chemspace',
+  'LBL_SUPPLIER_ID' => 'Supplier id',
+  'LBL_PO_NUMBER' => 'po number',
+  'LBL_REF_NUMBER' => 'ref number',
+  'LBL_OURS_THIRD' => 'ours third',
 );

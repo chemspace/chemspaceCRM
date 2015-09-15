@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 17:14:09
+// created: 2015-09-15 19:03:27
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -184,9 +184,13 @@ $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
   'LBL_DETAILVIEW_PANEL1' => 'Supplier',
   'LBL_CURIER' => 'Curier service:',
-  'LBL_TRANSPORTATION' => 'Transportation',
   'LBL_HANDLING' => 'Handling',
   'LBL_CURIER_ACCOUNT' => 'Curier Account',
   'LBL_ORDER_ID' => 'Order id',
   'LBL_USER_PROFILE_ID' => 'User id',
+  'LBL_THROUGH_CHEMSPACE' => 'Through chemspace',
+  'LBL_SUPPLIER_ID' => 'Supplier id',
+  'LBL_PO_NUMBER' => 'po number',
+  'LBL_REF_NUMBER' => 'ref number',
+  'LBL_OURS_THIRD' => 'ours third',
 );

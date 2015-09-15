@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.11, created on 2015-09-15 16:30:29
+<?php /* Smarty version 2.6.11, created on 2015-09-15 19:03:27
          compiled from cache/modules/AOS_Quotes/DetailView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/modules/AOS_Quotes/DetailView.tpl', 33, false),array('function', 'sugar_translate', 'cache/modules/AOS_Quotes/DetailView.tpl', 40, false),array('function', 'counter', 'cache/modules/AOS_Quotes/DetailView.tpl', 49, false),array('function', 'sugar_getimage', 'cache/modules/AOS_Quotes/DetailView.tpl', 73, false),array('function', 'sugar_ajax_url', 'cache/modules/AOS_Quotes/DetailView.tpl', 88, false),array('function', 'sugar_number_format', 'cache/modules/AOS_Quotes/DetailView.tpl', 543, false),array('function', 'sugar_getjspath', 'cache/modules/AOS_Quotes/DetailView.tpl', 785, false),array('modifier', 'strip_semicolon', 'cache/modules/AOS_Quotes/DetailView.tpl', 59, false),array('modifier', 'escape', 'cache/modules/AOS_Quotes/DetailView.tpl', 283, false),array('modifier', 'url2html', 'cache/modules/AOS_Quotes/DetailView.tpl', 283, false),array('modifier', 'nl2br', 'cache/modules/AOS_Quotes/DetailView.tpl', 283, false),array('modifier', 'strip_tags', 'cache/modules/AOS_Quotes/DetailView.tpl', 446, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/modules/AOS_Quotes/DetailView.tpl', 33, false),array('function', 'counter', 'cache/modules/AOS_Quotes/DetailView.tpl', 38, false),array('function', 'sugar_getimagepath', 'cache/modules/AOS_Quotes/DetailView.tpl', 41, false),array('function', 'sugar_translate', 'cache/modules/AOS_Quotes/DetailView.tpl', 44, false),array('function', 'sugar_getimage', 'cache/modules/AOS_Quotes/DetailView.tpl', 72, false),array('function', 'sugar_ajax_url', 'cache/modules/AOS_Quotes/DetailView.tpl', 87, false),array('function', 'sugar_number_format', 'cache/modules/AOS_Quotes/DetailView.tpl', 114, false),array('modifier', 'strip_semicolon', 'cache/modules/AOS_Quotes/DetailView.tpl', 58, false),array('modifier', 'escape', 'cache/modules/AOS_Quotes/DetailView.tpl', 307, false),array('modifier', 'url2html', 'cache/modules/AOS_Quotes/DetailView.tpl', 307, false),array('modifier', 'nl2br', 'cache/modules/AOS_Quotes/DetailView.tpl', 307, false),array('modifier', 'strip_tags', 'cache/modules/AOS_Quotes/DetailView.tpl', 589, false),)), $this); ?>
 
 
 <script language="javascript">
@@ -70,25 +70,24 @@ SUGAR.util.doWhen(function(){
 </table><?php echo smarty_function_sugar_include(array('include' => $this->_tpl_vars['includes']), $this);?>
 
 <div id="AOS_Quotes_detailview_tabs"
-class="yui-navset detailview_tabs"
 >
-
-<ul class="yui-nav">
-
-<li><a id="tab0" href="javascript:void(0)"><em><?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCOUNT_INFORMATION','module' => 'AOS_Quotes'), $this);?>
-</em></a></li>
-
-<li><a id="tab1" href="javascript:void(0)"><em><?php echo smarty_function_sugar_translate(array('label' => 'LBL_ADDRESS_INFORMATION','module' => 'AOS_Quotes'), $this);?>
-</em></a></li>
-
-<li><a id="tab2" href="javascript:void(0)"><em><?php echo smarty_function_sugar_translate(array('label' => 'LBL_LINE_ITEMS','module' => 'AOS_Quotes'), $this);?>
-</em></a></li>
-</ul>
-<div class="yui-content">
-<div id='tabcontent0'>
+<div >
 <div id='detailpanel_1' class='detail view  detail508 expanded'>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','start' => 0,'print' => false,'assign' => 'panelFieldCount'), $this);?>
 
+<h4>
+<a href="javascript:void(0)" class="collapseLink" onclick="collapsePanel(1);">
+<img border="0" id="detailpanel_1_img_hide" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "basic_search.gif"), $this);?>
+"></a>
+<a href="javascript:void(0)" class="expandLink" onclick="expandPanel(1);">
+<img border="0" id="detailpanel_1_img_show" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "advanced_search.gif"), $this);?>
+"></a>
+<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCOUNT_INFORMATION','module' => 'AOS_Quotes'), $this);?>
+
+<script>
+document.getElementById('detailpanel_1').className += ' expanded';
+</script>
+</h4>
 <table id='LBL_ACCOUNT_INFORMATION' class="panelContainer" cellspacing='<?php echo $this->_tpl_vars['gridline']; ?>
 '>
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
@@ -149,17 +148,17 @@ class="yui-navset detailview_tabs"
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="col">
-<?php if (! $this->_tpl_vars['fields']['number']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_QUOTE_NUMBER','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+<?php if (! $this->_tpl_vars['fields']['order_id_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_ORDER_ID','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 <?php endif; ?>
 </td>
-<td class="inlineEdit" type="int" field="number" width='37.5%'  >
-<?php if (! $this->_tpl_vars['fields']['number']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+<td class="inlineEdit" type="int" field="order_id_c" width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['order_id_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
 
 
-<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['number']['name']; ?>
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['order_id_c']['name']; ?>
 ">
-<?php $this->assign('value', $this->_tpl_vars['fields']['number']['value']);  echo $this->_tpl_vars['value']; ?>
+<?php echo smarty_function_sugar_number_format(array('precision' => 0,'var' => $this->_tpl_vars['fields']['order_id_c']['value']), $this);?>
 
 </span>
 <?php endif; ?>
@@ -346,6 +345,35 @@ class="yui-navset detailview_tabs"
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="col">
+<?php if (! $this->_tpl_vars['fields']['supplier_id_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_SUPPLIER_ID','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td class="inlineEdit" type="int" field="supplier_id_c" width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['supplier_id_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['supplier_id_c']['name']; ?>
+">
+<?php echo smarty_function_sugar_number_format(array('precision' => 0,'var' => $this->_tpl_vars['fields']['supplier_id_c']['value']), $this);?>
+
+</span>
+<?php endif; ?>
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
+</tr>
+<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
+
+<?php endif;  echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
+
+<?php echo smarty_function_counter(array('name' => 'fieldsHidden','start' => 0,'print' => false,'assign' => 'fieldsHidden'), $this);?>
+
+<?php ob_start(); ?>
+<tr>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
 <?php if (! $this->_tpl_vars['fields']['approval_issue']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_APPROVAL_ISSUE','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 <?php endif; ?>
@@ -356,6 +384,75 @@ class="yui-navset detailview_tabs"
 
 <span class="sugar_field" id="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['fields']['approval_issue']['name'])) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')))) ? $this->_run_mod_handler('url2html', true, $_tmp) : url2html($_tmp)))) ? $this->_run_mod_handler('nl2br', true, $_tmp) : smarty_modifier_nl2br($_tmp)); ?>
 "><?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['fields']['approval_issue']['value'])) ? $this->_run_mod_handler('escape', true, $_tmp, 'htmlentitydecode') : smarty_modifier_escape($_tmp, 'htmlentitydecode')))) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')))) ? $this->_run_mod_handler('url2html', true, $_tmp) : url2html($_tmp)))) ? $this->_run_mod_handler('nl2br', true, $_tmp) : smarty_modifier_nl2br($_tmp)); ?>
+</span>
+<?php endif; ?>
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
+<?php if (! $this->_tpl_vars['fields']['user_profile_id_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_USER_PROFILE_ID','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td class="inlineEdit" type="int" field="user_profile_id_c" width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['user_profile_id_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['user_profile_id_c']['name']; ?>
+">
+<?php echo smarty_function_sugar_number_format(array('precision' => 0,'var' => $this->_tpl_vars['fields']['user_profile_id_c']['value']), $this);?>
+
+</span>
+<?php endif; ?>
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
+</tr>
+<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
+
+<?php endif;  echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
+
+<?php echo smarty_function_counter(array('name' => 'fieldsHidden','start' => 0,'print' => false,'assign' => 'fieldsHidden'), $this);?>
+
+<?php ob_start(); ?>
+<tr>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
+<?php if (! $this->_tpl_vars['fields']['through_chemspace_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_THROUGH_CHEMSPACE','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td class="inlineEdit" type="int" field="through_chemspace_c" width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['through_chemspace_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['through_chemspace_c']['name']; ?>
+">
+<?php echo smarty_function_sugar_number_format(array('precision' => 0,'var' => $this->_tpl_vars['fields']['through_chemspace_c']['value']), $this);?>
+
+</span>
+<?php endif; ?>
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
+<?php if (! $this->_tpl_vars['fields']['ours_third_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_OURS_THIRD','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td class="inlineEdit" type="int" field="ours_third_c" width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['ours_third_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['ours_third_c']['name']; ?>
+">
+<?php echo smarty_function_sugar_number_format(array('precision' => 0,'var' => $this->_tpl_vars['fields']['ours_third_c']['value']), $this);?>
+
 </span>
 <?php endif; ?>
 <div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
@@ -401,6 +498,34 @@ class="yui-navset detailview_tabs"
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="col">
+<?php if (! $this->_tpl_vars['fields']['ref_number_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_REF_NUMBER','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td class="inlineEdit" type="varchar" field="ref_number_c" width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['ref_number_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<?php if (strlen ( $this->_tpl_vars['fields']['ref_number_c']['value'] ) <= 0):  $this->assign('value', $this->_tpl_vars['fields']['ref_number_c']['default_value']);  else:  $this->assign('value', $this->_tpl_vars['fields']['ref_number_c']['value']);  endif; ?> 
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['ref_number_c']['name']; ?>
+"><?php echo $this->_tpl_vars['fields']['ref_number_c']['value']; ?>
+</span>
+<?php endif; ?>
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
+</tr>
+<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
+
+<?php endif;  echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
+
+<?php echo smarty_function_counter(array('name' => 'fieldsHidden','start' => 0,'print' => false,'assign' => 'fieldsHidden'), $this);?>
+
+<?php ob_start(); ?>
+<tr>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
 <?php if (! $this->_tpl_vars['fields']['curier_account_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_CURIER_ACCOUNT','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 <?php endif; ?>
@@ -417,19 +542,51 @@ class="yui-navset detailview_tabs"
 <div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
 </div>
 </td>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
+<?php if (! $this->_tpl_vars['fields']['po_number_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_PO_NUMBER','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td class="inlineEdit" type="varchar" field="po_number_c" width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['po_number_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<?php if (strlen ( $this->_tpl_vars['fields']['po_number_c']['value'] ) <= 0):  $this->assign('value', $this->_tpl_vars['fields']['po_number_c']['default_value']);  else:  $this->assign('value', $this->_tpl_vars['fields']['po_number_c']['value']);  endif; ?> 
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['po_number_c']['name']; ?>
+"><?php echo $this->_tpl_vars['fields']['po_number_c']['value']; ?>
+</span>
+<?php endif; ?>
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
 </tr>
 <?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
 
 <?php endif; ?>
 </table>
+<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() { initPanel(1, 'expanded'); }); </script>
 </div>
 <?php if ($this->_tpl_vars['panelFieldCount'] == 0): ?>
 <script>document.getElementById("LBL_ACCOUNT_INFORMATION").style.display='none';</script>
 <?php endif; ?>
-</div>    <div id='tabcontent1'>
 <div id='detailpanel_2' class='detail view  detail508 expanded'>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','start' => 0,'print' => false,'assign' => 'panelFieldCount'), $this);?>
 
+<h4>
+<a href="javascript:void(0)" class="collapseLink" onclick="collapsePanel(2);">
+<img border="0" id="detailpanel_2_img_hide" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "basic_search.gif"), $this);?>
+"></a>
+<a href="javascript:void(0)" class="expandLink" onclick="expandPanel(2);">
+<img border="0" id="detailpanel_2_img_show" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "advanced_search.gif"), $this);?>
+"></a>
+<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ADDRESS_INFORMATION','module' => 'AOS_Quotes'), $this);?>
+
+<script>
+document.getElementById('detailpanel_2').className += ' expanded';
+</script>
+</h4>
 <table id='LBL_ADDRESS_INFORMATION' class="panelContainer" cellspacing='<?php echo $this->_tpl_vars['gridline']; ?>
 '>
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
@@ -607,14 +764,27 @@ class="yui-navset detailview_tabs"
 
 <?php endif; ?>
 </table>
+<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() { initPanel(2, 'expanded'); }); </script>
 </div>
 <?php if ($this->_tpl_vars['panelFieldCount'] == 0): ?>
 <script>document.getElementById("LBL_ADDRESS_INFORMATION").style.display='none';</script>
 <?php endif; ?>
-</div>    <div id='tabcontent2'>
 <div id='detailpanel_3' class='detail view  detail508 expanded'>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','start' => 0,'print' => false,'assign' => 'panelFieldCount'), $this);?>
 
+<h4>
+<a href="javascript:void(0)" class="collapseLink" onclick="collapsePanel(3);">
+<img border="0" id="detailpanel_3_img_hide" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "basic_search.gif"), $this);?>
+"></a>
+<a href="javascript:void(0)" class="expandLink" onclick="expandPanel(3);">
+<img border="0" id="detailpanel_3_img_show" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "advanced_search.gif"), $this);?>
+"></a>
+<?php echo smarty_function_sugar_translate(array('label' => 'LBL_LINE_ITEMS','module' => 'AOS_Quotes'), $this);?>
+
+<script>
+document.getElementById('detailpanel_3').className += ' expanded';
+</script>
+</h4>
 <table id='LBL_LINE_ITEMS' class="panelContainer" cellspacing='<?php echo $this->_tpl_vars['gridline']; ?>
 '>
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
@@ -653,31 +823,11 @@ class="yui-navset detailview_tabs"
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="col">
-<?php if (! $this->_tpl_vars['fields']['handling_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_HANDLING','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-<?php endif; ?>
-</td>
-<td class="inlineEdit" type="currency" field="handling_c" width='37.5%'  >
-<?php if (! $this->_tpl_vars['fields']['handling_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
-
-
-<span id='<?php echo $this->_tpl_vars['fields']['handling_c']['name']; ?>
-'>
-<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['handling_c']['value']), $this);?>
-
-</span>
-<?php endif; ?>
-<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
-</div>
-</td>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
-
-<td width='12.5%' scope="col">
 <?php if (! $this->_tpl_vars['fields']['line_items']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_LINE_ITEMS','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 <?php endif; ?>
 </td>
-<td class="inlineEdit" type="function" field="line_items" width='37.5%'  >
+<td class="inlineEdit" type="function" field="line_items" width='37.5%' colspan='3' >
 <?php if (! $this->_tpl_vars['fields']['line_items']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
 
 <span id='line_items_span'>
@@ -700,29 +850,9 @@ class="yui-navset detailview_tabs"
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="col">
-<?php if (! $this->_tpl_vars['fields']['transportation_c']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_TRANSPORTATION','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-<?php endif; ?>
-</td>
-<td class="inlineEdit" type="currency" field="transportation_c" width='37.5%'  >
-<?php if (! $this->_tpl_vars['fields']['transportation_c']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
-
-
-<span id='<?php echo $this->_tpl_vars['fields']['transportation_c']['name']; ?>
-'>
-<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['transportation_c']['value']), $this);?>
-
-</span>
-<?php endif; ?>
-<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
-</div>
-</td>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
-
-<td width='12.5%' scope="col">
 &nbsp;
 </td>
-<td class="inlineEdit" type="" field="" width='37.5%'  >
+<td class="inlineEdit" type="" field="" width='37.5%' colspan='3' >
 <div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
 </div>
 </td>
@@ -738,9 +868,78 @@ class="yui-navset detailview_tabs"
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="col">
-&nbsp;
+<?php if (! $this->_tpl_vars['fields']['total_amt']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_TOTAL_AMT','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
 </td>
-<td class="inlineEdit" type="" field="" width='37.5%' colspan='3' >
+<td class="inlineEdit" type="currency" field="total_amt" width='37.5%' colspan='3' >
+<?php if (! $this->_tpl_vars['fields']['total_amt']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<span id='<?php echo $this->_tpl_vars['fields']['total_amt']['name']; ?>
+'>
+<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['total_amt']['value']), $this);?>
+
+</span>
+<?php endif; ?>
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
+</tr>
+<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
+
+<?php endif;  echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
+
+<?php echo smarty_function_counter(array('name' => 'fieldsHidden','start' => 0,'print' => false,'assign' => 'fieldsHidden'), $this);?>
+
+<?php ob_start(); ?>
+<tr>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
+<?php if (! $this->_tpl_vars['fields']['discount_amount']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_DISCOUNT_AMOUNT','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td class="inlineEdit" type="currency" field="discount_amount" width='37.5%' colspan='3' >
+<?php if (! $this->_tpl_vars['fields']['discount_amount']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<span id='<?php echo $this->_tpl_vars['fields']['discount_amount']['name']; ?>
+'>
+<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['discount_amount']['value']), $this);?>
+
+</span>
+<?php endif; ?>
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
+</tr>
+<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
+
+<?php endif;  echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
+
+<?php echo smarty_function_counter(array('name' => 'fieldsHidden','start' => 0,'print' => false,'assign' => 'fieldsHidden'), $this);?>
+
+<?php ob_start(); ?>
+<tr>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
+<?php if (! $this->_tpl_vars['fields']['subtotal_amount']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_SUBTOTAL_AMOUNT','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td class="inlineEdit" type="currency" field="subtotal_amount" width='37.5%' colspan='3' >
+<?php if (! $this->_tpl_vars['fields']['subtotal_amount']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<span id='<?php echo $this->_tpl_vars['fields']['subtotal_amount']['name']; ?>
+'>
+<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['subtotal_amount']['value']), $this);?>
+
+</span>
+<?php endif; ?>
 <div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
 </div>
 </td>
@@ -812,35 +1011,6 @@ class="yui-navset detailview_tabs"
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="col">
-<?php if (! $this->_tpl_vars['fields']['discount_amount']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_DISCOUNT_AMOUNT','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-<?php endif; ?>
-</td>
-<td class="inlineEdit" type="currency" field="discount_amount" width='37.5%' colspan='3' >
-<?php if (! $this->_tpl_vars['fields']['discount_amount']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
-
-
-<span id='<?php echo $this->_tpl_vars['fields']['discount_amount']['name']; ?>
-'>
-<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['discount_amount']['value']), $this);?>
-
-</span>
-<?php endif; ?>
-<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
-</div>
-</td>
-</tr>
-<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
-
-<?php endif;  echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
-
-<?php echo smarty_function_counter(array('name' => 'fieldsHidden','start' => 0,'print' => false,'assign' => 'fieldsHidden'), $this);?>
-
-<?php ob_start(); ?>
-<tr>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
-
-<td width='12.5%' scope="col">
 <?php if (! $this->_tpl_vars['fields']['tax_amount']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_TAX_AMOUNT','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 <?php endif; ?>
@@ -852,35 +1022,6 @@ class="yui-navset detailview_tabs"
 <span id='<?php echo $this->_tpl_vars['fields']['tax_amount']['name']; ?>
 '>
 <?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['tax_amount']['value']), $this);?>
-
-</span>
-<?php endif; ?>
-<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
-</div>
-</td>
-</tr>
-<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
-
-<?php endif;  echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
-
-<?php echo smarty_function_counter(array('name' => 'fieldsHidden','start' => 0,'print' => false,'assign' => 'fieldsHidden'), $this);?>
-
-<?php ob_start(); ?>
-<tr>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
-
-<td width='12.5%' scope="col">
-<?php if (! $this->_tpl_vars['fields']['total_amt']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_TOTAL_AMT','module' => 'AOS_Quotes'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-<?php endif; ?>
-</td>
-<td class="inlineEdit" type="currency" field="total_amt" width='37.5%' colspan='3' >
-<?php if (! $this->_tpl_vars['fields']['total_amt']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
-
-
-<span id='<?php echo $this->_tpl_vars['fields']['total_amt']['name']; ?>
-'>
-<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['total_amt']['value']), $this);?>
 
 </span>
 <?php endif; ?>
@@ -916,28 +1057,29 @@ class="yui-navset detailview_tabs"
 <div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
 </div>
 </td>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="col">
+&nbsp;
+</td>
+<td class="inlineEdit" type="" field="" width='37.5%'  >
+<div class="inlineEditIcon"> <?php echo smarty_function_sugar_getimage(array('name' => "inline_edit_icon.svg",'attr' => 'border="0" ','alt' => ($this->_tpl_vars['alt_edit'])), $this);?>
+</div>
+</td>
 </tr>
 <?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
 
 <?php endif; ?>
 </table>
+<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() { initPanel(3, 'expanded'); }); </script>
 </div>
 <?php if ($this->_tpl_vars['panelFieldCount'] == 0): ?>
 <script>document.getElementById("LBL_LINE_ITEMS").style.display='none';</script>
 <?php endif; ?>
 </div>
 </div>
-</div>
 
 </form>
 <script>SUGAR.util.doWhen("document.getElementById('form') != null",
 function(){SUGAR.util.buildAccessKeyLabels();});
-</script><script type='text/javascript' src='<?php echo smarty_function_sugar_getjspath(array('file' => 'include/javascript/popup_helper.js'), $this);?>
-'></script>
-<script type="text/javascript" src="<?php echo smarty_function_sugar_getjspath(array('file' => 'cache/include/javascript/sugar_grp_yui_widgets.js'), $this);?>
-"></script>
-<script type="text/javascript">
-var AOS_Quotes_detailview_tabs = new YAHOO.widget.TabView("AOS_Quotes_detailview_tabs");
-AOS_Quotes_detailview_tabs.selectTab(0);
-</script>
-<script type="text/javascript" src="include/InlineEditing/inlineEditing.js"></script>
+</script><script type="text/javascript" src="include/InlineEditing/inlineEditing.js"></script>
