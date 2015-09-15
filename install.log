@@ -1,0 +1,469 @@
+
+2015-09-01 14:47:32...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 14:47:44...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:01:00...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:01:09...Begin System Check Process *************
+2015-09-01 15:01:09...XML Parsing Support Found
+2015-09-01 15:01:09...MBString Support Found
+2015-09-01 15:01:09...ZIP Support Found
+2015-09-01 15:01:09...ERROR:: The config override file exists but is not writeable.  Please take the necessary steps to make the file writeable.  Depending on your Operating system, this might require you to change the permissions by running chmod 766, or to right click on the filename to access the properties and uncheck the read only option.
+2015-09-01 15:01:09...ERROR:: The Custom Directory exists but is not writeable.  You may have to change permissions on it (chmod 766) or right click on it and uncheck the read only option, depending on your Operating System.  Please take the needed steps to make the file writeable.
+2015-09-01 15:01:09...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:01:09...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:01:09...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:01:09...ERROR: Upload directory is not writable.
+2015-09-01 15:01:09.../zip check passed
+2015-09-01 15:01:09...PCRE version check passed
+2015-09-01 15:01:09...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:01:09...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:01:09...Outputting HTML for System check
+2015-09-01 15:01:09...Errors were found *************
+2015-09-01 15:03:13...Begin System Check Process *************
+2015-09-01 15:03:13...XML Parsing Support Found
+2015-09-01 15:03:13...MBString Support Found
+2015-09-01 15:03:13...ZIP Support Found
+2015-09-01 15:03:13...ERROR:: The config override file exists but is not writeable.  Please take the necessary steps to make the file writeable.  Depending on your Operating system, this might require you to change the permissions by running chmod 766, or to right click on the filename to access the properties and uncheck the read only option.
+2015-09-01 15:03:13...ERROR:: The Custom Directory exists but is not writeable.  You may have to change permissions on it (chmod 766) or right click on it and uncheck the read only option, depending on your Operating System.  Please take the needed steps to make the file writeable.
+2015-09-01 15:03:13...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:03:13...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:03:13...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:03:13...ERROR: Upload directory is not writable.
+2015-09-01 15:03:13.../zip check passed
+2015-09-01 15:03:13...PCRE version check passed
+2015-09-01 15:03:13...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:03:13...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:03:13...Outputting HTML for System check
+2015-09-01 15:03:13...Errors were found *************
+2015-09-01 15:04:15...Begin System Check Process *************
+2015-09-01 15:04:15...XML Parsing Support Found
+2015-09-01 15:04:15...MBString Support Found
+2015-09-01 15:04:15...ZIP Support Found
+2015-09-01 15:04:15...ERROR:: The config override file exists but is not writeable.  Please take the necessary steps to make the file writeable.  Depending on your Operating system, this might require you to change the permissions by running chmod 766, or to right click on the filename to access the properties and uncheck the read only option.
+2015-09-01 15:04:15...ERROR:: The Custom Directory exists but is not writeable.  You may have to change permissions on it (chmod 766) or right click on it and uncheck the read only option, depending on your Operating System.  Please take the needed steps to make the file writeable.
+2015-09-01 15:04:15...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:04:15...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:04:15...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:04:15...ERROR: Upload directory is not writable.
+2015-09-01 15:04:15.../zip check passed
+2015-09-01 15:04:15...PCRE version check passed
+2015-09-01 15:04:15...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:04:15...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:04:15...Outputting HTML for System check
+2015-09-01 15:04:15...Errors were found *************
+2015-09-01 15:08:53...Begin System Check Process *************
+2015-09-01 15:08:53...XML Parsing Support Found
+2015-09-01 15:08:53...MBString Support Found
+2015-09-01 15:08:53...ZIP Support Found
+2015-09-01 15:08:53...ERROR:: The config override file exists but is not writeable.  Please take the necessary steps to make the file writeable.  Depending on your Operating system, this might require you to change the permissions by running chmod 766, or to right click on the filename to access the properties and uncheck the read only option.
+2015-09-01 15:08:53...ERROR:: The Custom Directory exists but is not writeable.  You may have to change permissions on it (chmod 766) or right click on it and uncheck the read only option, depending on your Operating System.  Please take the needed steps to make the file writeable.
+2015-09-01 15:08:53...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:08:53...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:08:53...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:08:53...ERROR: Upload directory is not writable.
+2015-09-01 15:08:53.../zip check passed
+2015-09-01 15:08:53...PCRE version check passed
+2015-09-01 15:08:53...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:08:53...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:08:53...Outputting HTML for System check
+2015-09-01 15:08:53...Errors were found *************
+2015-09-01 15:09:21...Begin System Check Process *************
+2015-09-01 15:09:21...XML Parsing Support Found
+2015-09-01 15:09:21...MBString Support Found
+2015-09-01 15:09:21...ZIP Support Found
+2015-09-01 15:09:21...ERROR:: The Custom Directory exists but is not writeable.  You may have to change permissions on it (chmod 766) or right click on it and uncheck the read only option, depending on your Operating System.  Please take the needed steps to make the file writeable.
+2015-09-01 15:09:21...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:09:21...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:09:21...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:09:21...ERROR: Upload directory is not writable.
+2015-09-01 15:09:21.../zip check passed
+2015-09-01 15:09:21...PCRE version check passed
+2015-09-01 15:09:21...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:09:21...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:09:21...Outputting HTML for System check
+2015-09-01 15:09:21...Errors were found *************
+2015-09-01 15:14:13...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:14:16...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:14:18...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:14:21...Begin System Check Process *************
+2015-09-01 15:14:21...XML Parsing Support Found
+2015-09-01 15:14:21...MBString Support Found
+2015-09-01 15:14:21...ZIP Support Found
+2015-09-01 15:14:21...ERROR:: The Custom Directory exists but is not writeable.  You may have to change permissions on it (chmod 766) or right click on it and uncheck the read only option, depending on your Operating System.  Please take the needed steps to make the file writeable.
+2015-09-01 15:14:21...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:14:21...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:14:21...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:14:21...ERROR: Upload directory is not writable.
+2015-09-01 15:14:21.../zip check passed
+2015-09-01 15:14:21...PCRE version check passed
+2015-09-01 15:14:21...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:14:21...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:14:21...Outputting HTML for System check
+2015-09-01 15:14:21...Errors were found *************
+2015-09-01 15:14:53...Begin System Check Process *************
+2015-09-01 15:14:53...XML Parsing Support Found
+2015-09-01 15:14:53...MBString Support Found
+2015-09-01 15:14:53...ZIP Support Found
+2015-09-01 15:14:53.../custom directory and subdirectory check passed
+2015-09-01 15:14:53...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:14:53...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:14:53...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:14:53...ERROR: Upload directory is not writable.
+2015-09-01 15:14:53.../zip check passed
+2015-09-01 15:14:53...PCRE version check passed
+2015-09-01 15:14:53...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:14:53...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:14:53...Outputting HTML for System check
+2015-09-01 15:14:53...Errors were found *************
+2015-09-01 15:15:50...Begin System Check Process *************
+2015-09-01 15:15:50...XML Parsing Support Found
+2015-09-01 15:15:50...MBString Support Found
+2015-09-01 15:15:50...ZIP Support Found
+2015-09-01 15:15:50.../custom directory and subdirectory check passed
+2015-09-01 15:15:50...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:15:50...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:15:50...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:15:50...ERROR: Upload directory is not writable.
+2015-09-01 15:15:50.../zip check passed
+2015-09-01 15:15:50...PCRE version check passed
+2015-09-01 15:15:50...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:15:50...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:15:50...Outputting HTML for System check
+2015-09-01 15:15:50...Errors were found *************
+2015-09-01 15:19:45...Begin System Check Process *************
+2015-09-01 15:19:45...XML Parsing Support Found
+2015-09-01 15:19:45...MBString Support Found
+2015-09-01 15:19:45...ZIP Support Found
+2015-09-01 15:19:45.../custom directory and subdirectory check passed
+2015-09-01 15:19:45...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:19:45...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:19:45...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:19:45...ERROR: Upload directory is not writable.
+2015-09-01 15:19:45.../zip check passed
+2015-09-01 15:19:45...PCRE version check passed
+2015-09-01 15:19:45...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:19:45...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:19:45...Outputting HTML for System check
+2015-09-01 15:19:45...Errors were found *************
+2015-09-01 15:23:30...Begin System Check Process *************
+2015-09-01 15:23:30...XML Parsing Support Found
+2015-09-01 15:23:30...MBString Support Found
+2015-09-01 15:23:30...ZIP Support Found
+2015-09-01 15:23:30.../custom directory and subdirectory check passed
+2015-09-01 15:23:30...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:23:30...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:23:30...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:23:30...ERROR: Upload directory is not writable.
+2015-09-01 15:23:30.../zip check passed
+2015-09-01 15:23:30...PCRE version check passed
+2015-09-01 15:23:30...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:23:30...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:23:30...Outputting HTML for System check
+2015-09-01 15:23:30...Errors were found *************
+2015-09-01 15:23:57...Begin System Check Process *************
+2015-09-01 15:23:57...XML Parsing Support Found
+2015-09-01 15:23:57...MBString Support Found
+2015-09-01 15:23:57...ZIP Support Found
+2015-09-01 15:23:57.../custom directory and subdirectory check passed
+2015-09-01 15:23:57...ERROR:: Some subdirectories in cache subfolder were not read/writeable:
+2015-09-01 15:23:57...<br>/var/www/SuiteCRM/cache/<br>/var/www/SuiteCRM/cache/images<br>/var/www/SuiteCRM/cache/layout<br>/var/www/SuiteCRM/cache/pdf<br>/var/www/SuiteCRM/cache/xml<br>/var/www/SuiteCRM/cache/include/javascript
+2015-09-01 15:23:57...ERROR:: Module directories and the files under them are not writeable.
+2015-09-01 15:23:57...ERROR: Upload directory is not writable.
+2015-09-01 15:23:57.../zip check passed
+2015-09-01 15:23:57...PCRE version check passed
+2015-09-01 15:23:57...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:23:57...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:23:57...Outputting HTML for System check
+2015-09-01 15:23:57...Errors were found *************
+2015-09-01 15:30:03...Begin System Check Process *************
+2015-09-01 15:30:03...XML Parsing Support Found
+2015-09-01 15:30:03...MBString Support Found
+2015-09-01 15:30:03...ZIP Support Found
+2015-09-01 15:30:03.../custom directory and subdirectory check passed
+2015-09-01 15:30:03...cache directory and subdirectory check passed
+2015-09-01 15:30:03.../module  directory and subdirectory check passed
+2015-09-01 15:30:03.../upload directory check passed
+2015-09-01 15:30:03.../zip check passed
+2015-09-01 15:30:03...PCRE version check passed
+2015-09-01 15:30:03...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:30:03...php.ini location found. /etc/php5/apache2/php.ini
+2015-09-01 15:30:03...Outputting HTML for System check
+2015-09-01 15:30:03...No Errors were found *************
+2015-09-01 15:30:09...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:30:36...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:30:44...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:32:58...Begin DB Check Process *************
+2015-09-01 15:32:58...testing with mysql:mysqli
+2015-09-01 15:32:58...Basic form info is valid, continuing Process.
+2015-09-01 15:32:58...Testing user account...
+2015-09-01 15:32:58...Connection made using  host: localhost, usr: root
+2015-09-01 15:32:58...Testing priviliged account...
+2015-09-01 15:32:58...Connection made using  host: localhost, usr: root
+2015-09-01 15:32:58...DB not selected, will create suitecrm
+2015-09-01 15:32:58...Passed DB install check
+2015-09-01 15:32:58...SUCCESS:: no errors detected!
+2015-09-01 15:32:58...End DB Check Process *************
+2015-09-01 15:32:58...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:34:04...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:36:44...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:36:44...calling handleSugarConfig()
+2015-09-01 15:36:44...calling handleHtaccess()
+2015-09-01 15:36:44...calling handleDbCreateDatabase()
+2015-09-01 15:36:45...looping through all the Beans and create their tables
+2015-09-01 15:36:45...processing table acl_actions
+2015-09-01 15:36:45...creating table acl_actions
+2015-09-01 15:36:45...creating Relationship Meta for ACLAction
+2015-09-01 15:36:45...processing table acl_roles
+2015-09-01 15:36:45...creating table acl_roles
+2015-09-01 15:36:45...creating Relationship Meta for ACLRole
+2015-09-01 15:36:45...processing table relationships
+2015-09-01 15:36:45...creating table relationships
+2015-09-01 15:36:45...creating Relationship Meta for Relationship
+2015-09-01 15:36:45...processing table leads
+2015-09-01 15:36:46...creating table leads
+2015-09-01 15:36:46...creating Relationship Meta for Lead
+2015-09-01 15:36:47...processing table cases
+2015-09-01 15:36:47...creating table cases
+2015-09-01 15:36:47...creating Relationship Meta for Case
+2015-09-01 15:36:48...processing table bugs
+2015-09-01 15:36:48...creating table bugs
+2015-09-01 15:36:48...creating Relationship Meta for Bug
+2015-09-01 15:36:49...processing table users
+2015-09-01 15:36:49...creating table users
+2015-09-01 15:36:49...creating Relationship Meta for User
+2015-09-01 15:36:49...processing table campaign_log
+2015-09-01 15:36:49...creating table campaign_log
+2015-09-01 15:36:49...creating Relationship Meta for CampaignLog
+2015-09-01 15:36:50...processing table project
+2015-09-01 15:36:50...creating table project
+2015-09-01 15:36:50...creating Relationship Meta for Project
+2015-09-01 15:36:51...processing table project_task
+2015-09-01 15:36:51...creating table project_task
+2015-09-01 15:36:51...creating Relationship Meta for ProjectTask
+2015-09-01 15:36:52...processing table campaigns
+2015-09-01 15:36:52...creating table campaigns
+2015-09-01 15:36:52...creating Relationship Meta for Campaign
+2015-09-01 15:36:53...processing table prospect_lists
+2015-09-01 15:36:53...creating table prospect_lists
+2015-09-01 15:36:53...creating Relationship Meta for ProspectList
+2015-09-01 15:36:53...processing table prospects
+2015-09-01 15:36:54...creating table prospects
+2015-09-01 15:36:54...creating Relationship Meta for Prospect
+2015-09-01 15:36:54...processing table email_marketing
+2015-09-01 15:36:55...creating table email_marketing
+2015-09-01 15:36:55...creating Relationship Meta for EmailMarketing
+2015-09-01 15:36:55...processing table campaign_trkrs
+2015-09-01 15:36:55...creating table campaign_trkrs
+2015-09-01 15:36:55...creating Relationship Meta for CampaignTracker
+2015-09-01 15:36:55...processing table releases
+2015-09-01 15:36:56...creating table releases
+2015-09-01 15:36:56...creating Relationship Meta for Release
+2015-09-01 15:36:56...processing table emailman
+2015-09-01 15:36:56...creating table emailman
+2015-09-01 15:36:56...creating Relationship Meta for EmailMan
+2015-09-01 15:36:56...processing table schedulers
+2015-09-01 15:36:56...creating table schedulers
+2015-09-01 15:36:56...creating Relationship Meta for Scheduler
+2015-09-01 15:36:56...processing table job_queue
+2015-09-01 15:36:56...creating table job_queue
+2015-09-01 15:36:56...creating Relationship Meta for SchedulersJob
+2015-09-01 15:36:56...processing table contacts
+2015-09-01 15:36:57...creating table contacts
+2015-09-01 15:36:57...creating Relationship Meta for Contact
+2015-09-01 15:36:57...processing table accounts
+2015-09-01 15:36:58...creating table accounts
+2015-09-01 15:36:58...creating Relationship Meta for Account
+2015-09-01 15:36:59...processing table opportunities
+2015-09-01 15:36:59...creating table opportunities
+2015-09-01 15:36:59...creating Relationship Meta for Opportunity
+2015-09-01 15:37:00...processing table email_templates
+2015-09-01 15:37:00...creating table email_templates
+2015-09-01 15:37:00...creating Relationship Meta for EmailTemplate
+2015-09-01 15:37:00...processing table notes
+2015-09-01 15:37:01...creating table notes
+2015-09-01 15:37:01...creating Relationship Meta for Note
+2015-09-01 15:37:01...processing table calls
+2015-09-01 15:37:02...creating table calls
+2015-09-01 15:37:02...creating Relationship Meta for Call
+2015-09-01 15:37:02...processing table emails
+2015-09-01 15:37:02...creating table emails
+2015-09-01 15:37:02...creating Relationship Meta for Email
+2015-09-01 15:37:03...processing table meetings
+2015-09-01 15:37:03...creating table meetings
+2015-09-01 15:37:03...creating Relationship Meta for Meeting
+2015-09-01 15:37:04...processing table tasks
+2015-09-01 15:37:04...creating table tasks
+2015-09-01 15:37:04...creating Relationship Meta for Task
+2015-09-01 15:37:05...processing table users
+2015-09-01 15:37:05...processing table users
+2015-09-01 15:37:05...processing table currencies
+2015-09-01 15:37:05...creating table currencies
+2015-09-01 15:37:05...creating Relationship Meta for Currency
+2015-09-01 15:37:05...processing table tracker
+2015-09-01 15:37:05...creating table tracker
+2015-09-01 15:37:05...creating Relationship Meta for Tracker
+2015-09-01 15:37:05...processing table import_maps
+2015-09-01 15:37:05...creating table import_maps
+2015-09-01 15:37:05...creating Relationship Meta for ImportMap
+2015-09-01 15:37:05...processing table users_last_import
+2015-09-01 15:37:05...creating table users_last_import
+2015-09-01 15:37:05...creating Relationship Meta for UsersLastImport
+2015-09-01 15:37:05...processing table config
+2015-09-01 15:37:05...creating table config
+2015-09-01 15:37:05...creating Relationship Meta for Administration
+2015-09-01 15:37:05...processing table upgrade_history
+2015-09-01 15:37:06...creating table upgrade_history
+2015-09-01 15:37:06...creating Relationship Meta for UpgradeHistory
+2015-09-01 15:37:06...processing table vcals
+2015-09-01 15:37:06...creating table vcals
+2015-09-01 15:37:06...creating Relationship Meta for vCal
+2015-09-01 15:37:06...processing table alerts
+2015-09-01 15:37:07...creating table alerts
+2015-09-01 15:37:07...creating Relationship Meta for Alert
+2015-09-01 15:37:07...processing table versions
+2015-09-01 15:37:07...creating table versions
+2015-09-01 15:37:07...creating Relationship Meta for Version
+2015-09-01 15:37:07...processing table roles
+2015-09-01 15:37:07...creating table roles
+2015-09-01 15:37:07...creating Relationship Meta for Role
+2015-09-01 15:37:07...processing table documents
+2015-09-01 15:37:07...creating table documents
+2015-09-01 15:37:07...creating Relationship Meta for Document
+2015-09-01 15:37:08...processing table document_revisions
+2015-09-01 15:37:08...creating table document_revisions
+2015-09-01 15:37:08...creating Relationship Meta for DocumentRevision
+2015-09-01 15:37:08...processing table fields_meta_data
+2015-09-01 15:37:08...creating table fields_meta_data
+2015-09-01 15:37:08...creating Relationship Meta for FieldsMetaData
+2015-09-01 15:37:08...processing table inbound_email
+2015-09-01 15:37:08...creating table inbound_email
+2015-09-01 15:37:08...creating Relationship Meta for InboundEmail
+2015-09-01 15:37:08...processing table saved_search
+2015-09-01 15:37:08...creating table saved_search
+2015-09-01 15:37:08...creating Relationship Meta for SavedSearch
+2015-09-01 15:37:08...processing table user_preferences
+2015-09-01 15:37:08...creating table user_preferences
+2015-09-01 15:37:08...creating Relationship Meta for UserPreference
+2015-09-01 15:37:08...processing table 
+2015-09-01 15:37:08...processing table email_addresses
+2015-09-01 15:37:09...creating table email_addresses
+2015-09-01 15:37:09...creating Relationship Meta for EmailAddress
+2015-09-01 15:37:09...processing table emails_text
+2015-09-01 15:37:09...creating table emails_text
+2015-09-01 15:37:09...creating Relationship Meta for EmailText
+2015-09-01 15:37:09...processing table sugarfeed
+2015-09-01 15:37:09...creating table sugarfeed
+2015-09-01 15:37:09...creating Relationship Meta for SugarFeed
+2015-09-01 15:37:09...processing table eapm
+2015-09-01 15:37:09...creating table eapm
+2015-09-01 15:37:09...creating Relationship Meta for EAPM
+2015-09-01 15:37:09...processing table oauth_consumer
+2015-09-01 15:37:10...creating table oauth_consumer
+2015-09-01 15:37:10...creating Relationship Meta for OAuthKey
+2015-09-01 15:37:10...processing table oauth_tokens
+2015-09-01 15:37:10...creating table oauth_tokens
+2015-09-01 15:37:10...creating Relationship Meta for OAuthToken
+2015-09-01 15:37:10...processing table aow_actions
+2015-09-01 15:37:10...creating table aow_actions
+2015-09-01 15:37:10...creating Relationship Meta for AOW_Action
+2015-09-01 15:37:10...processing table aow_workflow
+2015-09-01 15:37:11...creating table aow_workflow
+2015-09-01 15:37:11...creating Relationship Meta for AOW_WorkFlow
+2015-09-01 15:37:11...processing table aow_processed
+2015-09-01 15:37:12...creating table aow_processed
+2015-09-01 15:37:12...creating Relationship Meta for AOW_Processed
+2015-09-01 15:37:12...processing table aow_conditions
+2015-09-01 15:37:12...creating table aow_conditions
+2015-09-01 15:37:12...creating Relationship Meta for AOW_Condition
+2015-09-01 15:37:12...processing table calls_reschedule
+2015-09-01 15:37:13...creating table calls_reschedule
+2015-09-01 15:37:13...creating Relationship Meta for Calls_Reschedule
+2015-09-01 15:37:13...processing table aos_contracts
+2015-09-01 15:37:13...creating table aos_contracts
+2015-09-01 15:37:13...creating Relationship Meta for AOS_Contracts
+2015-09-01 15:37:14...processing table aos_invoices
+2015-09-01 15:37:14...creating table aos_invoices
+2015-09-01 15:37:14...creating Relationship Meta for AOS_Invoices
+2015-09-01 15:37:14...processing table aos_pdf_templates
+2015-09-01 15:37:15...creating table aos_pdf_templates
+2015-09-01 15:37:15...creating Relationship Meta for AOS_PDF_Templates
+2015-09-01 15:37:15...processing table aos_product_categories
+2015-09-01 15:37:16...creating table aos_product_categories
+2015-09-01 15:37:16...creating Relationship Meta for AOS_Product_Categories
+2015-09-01 15:37:16...processing table aos_products
+2015-09-01 15:37:17...creating table aos_products
+2015-09-01 15:37:17...creating Relationship Meta for AOS_Products
+2015-09-01 15:37:17...processing table aos_products_quotes
+2015-09-01 15:37:17...creating table aos_products_quotes
+2015-09-01 15:37:17...creating Relationship Meta for AOS_Products_Quotes
+2015-09-01 15:37:18...processing table aos_line_item_groups
+2015-09-01 15:37:18...creating table aos_line_item_groups
+2015-09-01 15:37:18...creating Relationship Meta for AOS_Line_Item_Groups
+2015-09-01 15:37:18...processing table aos_quotes
+2015-09-01 15:37:19...creating table aos_quotes
+2015-09-01 15:37:19...creating Relationship Meta for AOS_Quotes
+2015-09-01 15:37:19...processing table aor_reports
+2015-09-01 15:37:20...creating table aor_reports
+2015-09-01 15:37:20...creating Relationship Meta for AOR_Report
+2015-09-01 15:37:20...processing table aor_fields
+2015-09-01 15:37:20...creating table aor_fields
+2015-09-01 15:37:20...creating Relationship Meta for AOR_Field
+2015-09-01 15:37:20...processing table aor_charts
+2015-09-01 15:37:20...creating table aor_charts
+2015-09-01 15:37:20...creating Relationship Meta for AOR_Chart
+2015-09-01 15:37:20...processing table aor_conditions
+2015-09-01 15:37:21...creating table aor_conditions
+2015-09-01 15:37:21...creating Relationship Meta for AOR_Condition
+2015-09-01 15:37:21...processing table aor_scheduled_reports
+2015-09-01 15:37:21...creating table aor_scheduled_reports
+2015-09-01 15:37:21...creating Relationship Meta for AOR_Scheduled_Reports
+2015-09-01 15:37:21...processing table securitygroups
+2015-09-01 15:37:22...creating table securitygroups
+2015-09-01 15:37:22...creating Relationship Meta for SecurityGroup
+2015-09-01 15:37:22...processing table am_projecttemplates
+2015-09-01 15:37:23...creating table am_projecttemplates
+2015-09-01 15:37:23...creating Relationship Meta for AM_ProjectTemplates
+2015-09-01 15:37:23...processing table am_tasktemplates
+2015-09-01 15:37:23...creating table am_tasktemplates
+2015-09-01 15:37:23...creating Relationship Meta for AM_TaskTemplates
+2015-09-01 15:37:23...processing table am_projectholidays
+2015-09-01 15:37:24...creating table am_projectholidays
+2015-09-01 15:37:24...creating Relationship Meta for AM_ProjectHolidays
+2015-09-01 15:37:24...processing table aod_indexevent
+2015-09-01 15:37:25...creating table aod_indexevent
+2015-09-01 15:37:25...creating Relationship Meta for AOD_IndexEvent
+2015-09-01 15:37:25...processing table aod_index
+2015-09-01 15:37:26...creating table aod_index
+2015-09-01 15:37:26...creating Relationship Meta for AOD_Index
+2015-09-01 15:37:26...processing table fp_events
+2015-09-01 15:37:26...creating table fp_events
+2015-09-01 15:37:26...creating Relationship Meta for FP_events
+2015-09-01 15:37:27...processing table fp_event_locations
+2015-09-01 15:37:27...creating table fp_event_locations
+2015-09-01 15:37:27...creating Relationship Meta for FP_Event_Locations
+2015-09-01 15:37:28...processing table aop_case_events
+2015-09-01 15:37:28...creating table aop_case_events
+2015-09-01 15:37:28...creating Relationship Meta for AOP_Case_Events
+2015-09-01 15:37:29...processing table aop_case_updates
+2015-09-01 15:37:29...creating table aop_case_updates
+2015-09-01 15:37:29...creating Relationship Meta for AOP_Case_Updates
+2015-09-01 15:37:29...processing table jjwg_maps
+2015-09-01 15:37:30...creating table jjwg_maps
+2015-09-01 15:37:30...creating Relationship Meta for jjwg_Maps
+2015-09-01 15:37:30...processing table jjwg_markers
+2015-09-01 15:37:31...creating table jjwg_markers
+2015-09-01 15:37:31...creating Relationship Meta for jjwg_Markers
+2015-09-01 15:37:31...processing table jjwg_areas
+2015-09-01 15:37:32...creating table jjwg_areas
+2015-09-01 15:37:32...creating Relationship Meta for jjwg_Areas
+2015-09-01 15:37:32...processing table jjwg_address_cache
+2015-09-01 15:37:32...creating table jjwg_address_cache
+2015-09-01 15:37:32...creating Relationship Meta for jjwg_Address_Cache
+2015-09-01 15:37:44...Begin creating Defaults
+2015-09-01 15:37:44...insert defaults into config table
+2015-09-01 15:37:45...Creating default users
+2015-09-01 15:37:45...Creating default scheduler jobs
+2015-09-01 15:37:46...Enable SugarFeeds
+2015-09-01 15:37:46...Installation has completed *********
+2015-09-01 15:38:20...populating the db with seed data
+2015-09-01 15:40:09...installerHook: Could not find custom/install/install_hooks.php
+2015-09-01 15:41:04...installerHook: Could not find custom/install/install_hooks.php

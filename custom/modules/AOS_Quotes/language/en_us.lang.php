@@ -1,0 +1,25 @@
+<?php
+// created: 2015-09-15 16:26:30
+$mod_strings = array (
+  'LNK_NEW_RECORD' => 'Create Quote',
+  'LNK_LIST' => 'View Orders',
+  'MSG_SHOW_DUPLICATES' => 'Creating this account may potentially create a duplicate account. You may either click on Save to continue creating this new account with the previously entered data or you may click Cancel.',
+  'LBL_LIST_FORM_TITLE' => 'Orders List',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Orders',
+  'LBL_HOMEPAGE_TITLE' => 'My Orders',
+  'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
+  'LBL_QUOTE_TO' => 'Customer',
+  'LBL_DETAILVIEW_PANEL1' => 'Supplier',
+  'LBL_LINE_ITEMS' => 'Products',
+  'LBL_ACCOUNT_INFORMATION' => 'Overview',
+  'LBL_ADDRESS_INFORMATION' => 'Customer',
+  'LBL_CURIER' => 'Curier service:',
+  'LBL_TRANSPORTATION' => 'Transportation',
+  'LBL_HANDLING' => 'Handling',
+  'LBL_CURIER_ACCOUNT' => 'Curier Account',
+  'LBL_QUOTE_NUMBER' => 'Order Number',
+  'LBL_STAGE' => 'Order Stage',
+  'LBL_ORDER_ID' => 'Order id',
+  'LBL_USER_PROFILE_ID' => 'User id',
+  'LBL_TEMPLATE_DDOWN_C' => 'Order Template',
+);
