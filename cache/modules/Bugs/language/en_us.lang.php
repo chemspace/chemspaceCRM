@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:01:47
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -75,7 +75,7 @@ $mod_strings = array (
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Bug Tracker',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'History',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
   'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
   'LBL_CASES_SUBPANEL_TITLE' => 'Cases',
   'LBL_PROJECTS_SUBPANEL_TITLE' => 'Projects',
@@ -89,5 +89,6 @@ $mod_strings = array (
   'LBL_EXPORT_FIXED_IN_RELEASE_NAMR' => 'Fixed in Release Name',
   'LBL_EXPORT_MODIFIED_USER_ID' => 'Modified By ID',
   'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+  'LBL_CONTACTS' => 'User Profiles',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );

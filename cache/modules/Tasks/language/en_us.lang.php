@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:01:47
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -50,12 +50,12 @@ $mod_strings = array (
   'LBL_LIST_START_TIME' => 'Start Time',
   'DATE_FORMAT' => '(yyyy-mm-dd)',
   'LBL_NONE' => 'None',
-  'LBL_CONTACT' => 'Contact:',
+  'LBL_CONTACT' => 'User Profile:',
   'LBL_EMAIL_ADDRESS' => 'Email Address:',
   'LBL_PHONE' => 'Phone:',
   'LBL_EMAIL' => 'Email Address:',
   'LBL_DESCRIPTION_INFORMATION' => 'Description Information',
-  'LBL_CONTACT_NAME' => 'Contact Name ',
+  'LBL_CONTACT_NAME' => 'User Profile Name ',
   'LBL_LIST_COMPLETE' => 'Complete:',
   'LBL_LIST_STATUS' => 'Status',
   'LBL_DATE_DUE_FLAG' => 'No Due Date',
@@ -71,9 +71,9 @@ $mod_strings = array (
   'LBL_CONTACT_LAST_NAME' => 'Contact Last Name',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Assigned User',
   'LBL_LIST_DATE_MODIFIED' => 'Date Modified',
-  'LBL_CONTACT_ID' => 'Contact ID:',
+  'LBL_CONTACT_ID' => 'User Profile ID:',
   'LBL_PARENT_ID' => 'Parent ID:',
-  'LBL_CONTACT_PHONE' => 'Contact Phone:',
+  'LBL_CONTACT_PHONE' => 'User Profile Phone:',
   'LBL_PARENT_NAME' => 'Parent Type:',
   'LBL_ACTIVITIES_REPORTS' => 'Activities Report',
   'LBL_TASK_INFORMATION' => 'Overview',

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:03:27
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -115,7 +115,7 @@ $mod_strings = array (
   'LBL_APPROVAL_ISSUE' => 'Approval Issues',
   'LBL_APPROVAL_STATUS' => 'Approval Status',
   'LBL_BILLING_ACCOUNT' => 'Account',
-  'LBL_BILLING_CONTACT' => 'Contact',
+  'LBL_BILLING_CONTACT' => 'User Profile',
   'LBL_EXPIRATION' => 'Valid Until',
   'LBL_QUOTE_NUMBER' => 'Order Number',
   'LBL_OPPORTUNITY' => 'Opportunity',
@@ -193,4 +193,10 @@ $mod_strings = array (
   'LBL_PO_NUMBER' => 'po number',
   'LBL_REF_NUMBER' => 'ref number',
   'LBL_OURS_THIRD' => 'ours third',
+  'LBL_DELIVERY_PHONE' => 'Delivery phone',
+  'LBL_DELIVERY_EMAIL' => 'Delivery email',
+  'LBL_PAYMENT_PHONE' => 'Payment phone',
+  'LBL_INVOICE_EMAIL' => 'Invoice email',
+  'LBL_INVOICE_FAX' => 'Invoice fax',
+  'LBL_INVOICE_POST' => 'Invoice post',
 );

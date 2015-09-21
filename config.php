@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-03 15:11:52
+// created: 2015-09-21 11:02:26
 $sugar_config = array (
   'addAjaxBannedModules' => 
   array (
@@ -92,7 +92,7 @@ $sugar_config = array (
   array (
     'db_host_name' => 'localhost',
     'db_host_instance' => 'SQLEXPRESS',
-    'db_user_name' => 'root',
+    'db_user_name' => 'zap',
     'db_password' => 'Qwerty123@',
     'db_name' => 'suitecrm',
     'db_type' => 'mysql',
@@ -261,7 +261,7 @@ $sugar_config = array (
     'timeout' => 86400,
   ),
   'js_custom_version' => 1,
-  'js_lang_version' => 3,
+  'js_lang_version' => 4,
   'languages' => 
   array (
     'en_us' => 'English (US)',
@@ -400,4 +400,65 @@ $sugar_config = array (
   'vcal_time' => '2',
   'verify_client_ip' => true,
   'email_xss' => 'YToxMzp7czo2OiJhcHBsZXQiO3M6NjoiYXBwbGV0IjtzOjQ6ImJhc2UiO3M6NDoiYmFzZSI7czo1OiJlbWJlZCI7czo1OiJlbWJlZCI7czo0OiJmb3JtIjtzOjQ6ImZvcm0iO3M6NToiZnJhbWUiO3M6NToiZnJhbWUiO3M6ODoiZnJhbWVzZXQiO3M6ODoiZnJhbWVzZXQiO3M6NjoiaWZyYW1lIjtzOjY6ImlmcmFtZSI7czo2OiJpbXBvcnQiO3M6ODoiXD9pbXBvcnQiO3M6NToibGF5ZXIiO3M6NToibGF5ZXIiO3M6NDoibGluayI7czo0OiJsaW5rIjtzOjY6Im9iamVjdCI7czo2OiJvYmplY3QiO3M6MzoieG1wIjtzOjM6InhtcCI7czo2OiJzY3JpcHQiO3M6Njoic2NyaXB0Ijt9',
+  'default_module_favicon' => false,
+  'dashlet_auto_refresh_min' => '30',
+  'enable_action_menu' => true,
+  'stack_trace_errors' => false,
+  'developerMode' => true,
+  'db' => 
+  array (
+    'csfrontend' => 
+    array (
+      'db_host_name' => 'localhost',
+      'db_user_name' => 'root',
+      'db_password' => 'Qwerty123@',
+      'db_name' => 'csfrontend',
+      'db_type' => 'mysql',
+      'db_manager' => 'MysqliManager',
+    ),
+  ),
+  'theme_settings' => 
+  array (
+    'SuiteR' => 
+    array (
+      'display_sidebar' => true,
+      'navbar' => '6EBC6B',
+      'navbar_hover' => 'B5EBFF',
+      'navbar_font' => '54735C',
+      'navbar_link_hover' => 'FFFFFF',
+      'dropdown_menu' => '3C8DBC',
+      'dropdown_menu_link' => 'FFFFFF',
+      'dropdown_menu_link_hover' => 'FFFFFF',
+      'action_menu_background' => '54735C',
+      'action_menu_background_hover' => 'B5EBFF',
+      'button' => '54735C',
+      'button_hover' => 'B5EBFF',
+      'button_link' => 'FFFFFF',
+      'button_link_hover' => 'FFFFFF',
+      'page_header' => '333333',
+      'page_link' => '54735C',
+      'dashlet' => '6EBC6B',
+      'icon' => 'FFFFFF',
+    ),
+    'Suite7' => 
+    array (
+      'menu' => '0B1209',
+      'menuto' => '121212',
+      'menufrom' => '333333',
+      'menubrd' => 'F10202',
+      'modlink' => 'CCCCCC',
+      'modlinkhover' => 'CCCCCC',
+      'modlisthover' => '565656',
+      'cssmenu' => '333333',
+      'cssmenulink' => 'CCCCCC',
+      'button' => 'FFFFFF',
+      'button_hover' => 'FFFFFF',
+      'button_link' => '121212',
+      'button_link_hover' => 'FFFFFF',
+      'pageheader' => 'F10202',
+      'page_link' => 'F10202',
+      'dashlet' => '777777',
+    ),
+  ),
+  'disabled_themes' => 'Suite7',
 );

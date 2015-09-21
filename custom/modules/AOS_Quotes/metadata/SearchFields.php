@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 18:34:11
+// created: 2015-09-16 11:27:21
 $searchFields['AOS_Quotes'] = array (
   'name' => 
   array (

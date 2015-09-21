@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:03:27
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Project',
   'LBL_MODULE_TITLE' => 'Projects: Home',
@@ -55,7 +55,7 @@ $mod_strings = array (
   'LBL_HISTORY_SUBPANEL_TITLE' => 'History',
   'LBL_QUICK_NEW_PROJECT' => 'New Project',
   'LBL_PROJECT_TASKS_SUBPANEL_TITLE' => 'Project Tasks',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
   'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
   'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Opportunities',
   'LBL_CASES_SUBPANEL_TITLE' => 'Cases',
@@ -132,5 +132,6 @@ $mod_strings = array (
   'LBL_LIST_ASSIGNED_USER' => 'Project Manager',
   'LBL_UNASSIGNED' => 'Unassigned',
   'LBL_PROJECT_USERS_1_FROM_USERS_TITLE' => 'Resources',
+  'LBL_CONTACTS' => 'User Profiles',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );

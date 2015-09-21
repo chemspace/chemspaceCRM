@@ -75,8 +75,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'order_id_c',
-            'label' => 'LBL_ORDER_ID',
+            'name' => 'number',
+            'label' => 'LBL_QUOTE_NUMBER',
+            'customCode' => '{$fields.number.value}',
           ),
           1 => 
           array (
@@ -270,33 +271,13 @@ array (
         ),
         2 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'handling_c',
+            'label' => 'LBL_HANDLING',
+          ),
         ),
         3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'total_amt',
-            'label' => 'LBL_TOTAL_AMT',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'discount_amount',
-            'label' => 'LBL_DISCOUNT_AMOUNT',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'subtotal_amount',
-            'label' => 'LBL_SUBTOTAL_AMOUNT',
-          ),
-        ),
-        6 => 
         array (
           0 => 
           array (
@@ -311,7 +292,15 @@ array (
             ),
           ),
         ),
-        7 => 
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'discount_amount',
+            'label' => 'LBL_DISCOUNT_AMOUNT',
+          ),
+        ),
+        5 => 
         array (
           0 => 
           array (
@@ -319,12 +308,28 @@ array (
             'label' => 'LBL_SHIPPING_TAX_AMT',
           ),
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'tax_amount',
             'label' => 'LBL_TAX_AMOUNT',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'subtotal_amount',
+            'label' => 'LBL_SUBTOTAL_AMOUNT',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'total_amt',
+            'label' => 'LBL_TOTAL_AMT',
           ),
         ),
         9 => 

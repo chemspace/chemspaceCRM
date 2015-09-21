@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:03:17
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -82,13 +82,13 @@ $mod_strings = array (
   'LBL_ANY_PHONE' => 'Any Phone:',
   'LBL_BACKTOLEADS' => 'Back To Leads',
   'LBL_BUSINESSCARD' => 'Convert Lead',
-  'LBL_CONTACT_ID' => 'Contact ID',
+  'LBL_CONTACT_ID' => 'User Profile ID',
   'LBL_CONTACT_NAME' => 'Lead Name:',
   'LBL_CONTACT_OPP_FORM_TITLE' => 'Lead-Opportunity:',
   'LBL_CONTACT_ROLE' => 'Role:',
   'LBL_CONTACT' => 'Lead:',
   'LBL_CONVERTED_ACCOUNT' => 'Converted Account:',
-  'LBL_CONVERTED_CONTACT' => 'Converted Contact:',
+  'LBL_CONVERTED_CONTACT' => 'Converted User Profile:',
   'LBL_CONVERTED_OPP' => 'Converted Opportunity:',
   'LBL_CONVERTED' => 'Converted',
   'LBL_CONVERTLEAD_BUTTON_KEY' => 'V',
@@ -233,6 +233,8 @@ $mod_strings = array (
   'LBL_ENTERDATE' => 'Enter Date',
   'LBL_LOADING' => 'Loading',
   'LBL_EDIT_INLINE' => 'Edit',
+  'LBL_CONTACTS' => 'User Profiles',
+  'LBL_LEADS' => 'Leads',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_FP_EVENTS_LEADS_1_FROM_FP_EVENTS_TITLE' => 'Events',
 );

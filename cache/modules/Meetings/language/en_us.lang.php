@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:01:47
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -24,8 +24,8 @@ $mod_strings = array (
   'LBL_ADD_BUTTON' => 'Add',
   'LBL_ADD_INVITEE' => 'Add Invitees',
   'LBL_COLON' => ':',
-  'LBL_CONTACT_NAME' => 'Contact:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+  'LBL_CONTACT_NAME' => 'User Profile:',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
   'LBL_CREATED_BY' => 'Created by',
   'LBL_DATE_END' => 'End Date',
   'LBL_DATE_TIME' => 'Start Date & Time:',
@@ -46,7 +46,7 @@ $mod_strings = array (
   'LBL_LAST_NAME' => 'Last Name',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Assigned User',
   'LBL_LIST_CLOSE' => 'Close',
-  'LBL_LIST_CONTACT' => 'Contact',
+  'LBL_LIST_CONTACT' => 'User Profile',
   'LBL_LIST_DATE_MODIFIED' => 'Date Modified',
   'LBL_LIST_DATE' => 'Start Date',
   'LBL_LIST_DIRECTION' => 'Direction',
@@ -143,5 +143,6 @@ $mod_strings = array (
   'LBL_RECURRING_SOURCE' => 'Recurring Source',
   'LBL_SYNCED_RECURRING_MSG' => 'This meeting originated in another system and was synced to Sugar. To make changes, go to the original meeting within the other system. Changes made in the other system can be synced to this record.',
   'LBL_RELATED_TO' => 'Related to:',
+  'LBL_CONTACTS' => 'User Profiles',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );

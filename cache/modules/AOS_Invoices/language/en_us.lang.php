@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:03:27
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -115,7 +115,7 @@ $mod_strings = array (
   'LBL_APPROVAL_ISSUE' => 'Approval Issues',
   'LBL_APPROVAL_STATUS' => 'Approval Status',
   'LBL_BILLING_ACCOUNT' => 'Account',
-  'LBL_BILLING_CONTACT' => 'Contact',
+  'LBL_BILLING_CONTACT' => 'User Profile',
   'LBL_EXPIRATION' => 'Valid Until',
   'LBL_INVOICE_NUMBER' => 'Invoice Number',
   'LBL_OPPORTUNITY' => 'Opportunity Name',

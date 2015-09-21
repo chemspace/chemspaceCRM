@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:03:27
+// created: 2015-09-21 11:04:11
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -44,7 +44,7 @@ $mod_strings = array (
   'LBL_BILLING_ADDRESS' => 'Billing Address:',
   'LBL_ACCOUNT_INFORMATION' => 'Overview',
   'LBL_CITY' => 'City:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
   'LBL_COUNTRY' => 'Country:',
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Accounts',
   'LBL_DESCRIPTION_INFORMATION' => 'Description Information',
@@ -151,5 +151,6 @@ $mod_strings = array (
   'LBL_PHONE_ALTERNATE' => 'Phone Alternate',
   'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
+  'LBL_CONTACTS' => 'User Profiles',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );

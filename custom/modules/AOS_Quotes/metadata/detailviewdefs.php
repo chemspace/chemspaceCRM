@@ -136,8 +136,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'order_id_c',
-            'label' => 'LBL_ORDER_ID',
+            'name' => 'number',
+            'label' => 'LBL_QUOTE_NUMBER',
           ),
           1 => 
           array (
@@ -303,14 +303,18 @@ array (
         ),
         2 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'handling_c',
+            'label' => 'LBL_HANDLING',
+          ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'total_amt',
-            'label' => 'LBL_TOTAL_AMT',
+            'name' => 'shipping_amount',
+            'label' => 'LBL_SHIPPING_AMOUNT',
           ),
         ),
         4 => 
@@ -325,32 +329,32 @@ array (
         array (
           0 => 
           array (
-            'name' => 'subtotal_amount',
-            'label' => 'LBL_SUBTOTAL_AMOUNT',
+            'name' => 'shipping_tax_amt',
+            'label' => 'LBL_SHIPPING_TAX_AMT',
           ),
         ),
         6 => 
         array (
           0 => 
           array (
-            'name' => 'shipping_amount',
-            'label' => 'LBL_SHIPPING_AMOUNT',
+            'name' => 'tax_amount',
+            'label' => 'LBL_TAX_AMOUNT',
           ),
         ),
         7 => 
         array (
           0 => 
           array (
-            'name' => 'shipping_tax_amt',
-            'label' => 'LBL_SHIPPING_TAX_AMT',
+            'name' => 'subtotal_amount',
+            'label' => 'LBL_SUBTOTAL_AMOUNT',
           ),
         ),
         8 => 
         array (
           0 => 
           array (
-            'name' => 'tax_amount',
-            'label' => 'LBL_TAX_AMOUNT',
+            'name' => 'total_amt',
+            'label' => 'LBL_TOTAL_AMT',
           ),
         ),
         9 => 

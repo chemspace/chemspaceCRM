@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:03:27
+// created: 2015-09-21 11:04:11
 $mod_strings = array (
   'LBL_FW' => 'FW:',
   'LBL_RE' => 'RE:',
@@ -40,7 +40,7 @@ $mod_strings = array (
   'LBL_CONTACT_FIRST_NAME' => 'Contact First Name',
   'LBL_CONTACT_LAST_NAME' => 'Contact Last Name',
   'LBL_CONTACT_NAME' => 'Contact:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
   'LBL_CREATED_BY' => 'Created by',
   'LBL_DATE_AND_TIME' => 'Date & Time Sent:',
   'LBL_DATE_SENT' => 'Date Sent:',
@@ -58,7 +58,7 @@ $mod_strings = array (
   'LBL_EMAILS_ACCOUNTS_REL' => 'Emails:Accounts',
   'LBL_EMAILS_BUGS_REL' => 'Emails:Bugs',
   'LBL_EMAILS_CASES_REL' => 'Emails:Cases',
-  'LBL_EMAILS_CONTACTS_REL' => 'Emails:Contacts',
+  'LBL_EMAILS_CONTACTS_REL' => 'Emails:User Profiles',
   'LBL_EMAILS_LEADS_REL' => 'Emails:Leads',
   'LBL_EMAILS_OPPORTUNITIES_REL' => 'Emails:Opportunities',
   'LBL_EMAILS_NOTES_REL' => 'Emails:Notes',

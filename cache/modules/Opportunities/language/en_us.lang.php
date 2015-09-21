@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:01:47
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -92,7 +92,7 @@ $mod_strings = array (
   'LBL_HISTORY_SUBPANEL_TITLE' => 'History',
   'LBL_RAW_AMOUNT' => 'Raw Amount',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Leads',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_PROJECTS_SUBPANEL_TITLE' => 'Projects',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Assigned User',
@@ -113,5 +113,6 @@ $mod_strings = array (
   'LBL_EXPORT_NAME' => 'Name',
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
   'TWITTER_USER_C' => 'Twitter User',
+  'LBL_CONTACTS' => 'User Profiles',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );

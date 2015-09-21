@@ -20,3 +20,8 @@ $GLOBALS['app_list_strings']['transportation_list']=array (
   'ups' => 'UPS',
   'tnt' => 'TNT',
 );
+$app_list_strings['moduleList']['Contacts']='User Profiles';
+$app_list_strings['moduleListSingular']['Contacts']='User Profile';
+$app_list_strings['record_type_display']['Contacts']='User Profile';
+$app_list_strings['parent_type_display']['Contacts']='User Profile';
+$app_list_strings['record_type_display_notes']['Contacts']='User Profile';

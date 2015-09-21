@@ -101,17 +101,18 @@ document.getElementById('detailpanel_1').className += ' expanded';
 <tr>
 {counter name="fieldsUsed"}
 <td width='12.5%' scope="col">
-{if !$fields.order_id_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_ORDER_ID' module='AOS_Quotes'}{/capture}
+{if !$fields.number.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_QUOTE_NUMBER' module='AOS_Quotes'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="int" field="order_id_c" width='37.5%'  >
-{if !$fields.order_id_c.hidden}
+<td class="inlineEdit" type="int" field="number" width='37.5%'  >
+{if !$fields.number.hidden}
 {counter name="panelFieldCount"}
 
-<span class="sugar_field" id="{$fields.order_id_c.name}">
-{sugar_number_format precision=0 var=$fields.order_id_c.value}
+<span class="sugar_field" id="{$fields.number.name}">
+{assign var="value" value=$fields.number.value }
+{$value}
 </span>
 {/if}
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
@@ -708,85 +709,17 @@ document.getElementById('detailpanel_3').className += ' expanded';
 <tr>
 {counter name="fieldsUsed"}
 <td width='12.5%' scope="col">
-&nbsp;
-</td>
-<td class="inlineEdit" type="" field="" width='37.5%' colspan='3' >
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.total_amt.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_TOTAL_AMT' module='AOS_Quotes'}{/capture}
+{if !$fields.handling_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_HANDLING' module='AOS_Quotes'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="currency" field="total_amt" width='37.5%' colspan='3' >
-{if !$fields.total_amt.hidden}
+<td class="inlineEdit" type="currency" field="handling_c" width='37.5%' colspan='3' >
+{if !$fields.handling_c.hidden}
 {counter name="panelFieldCount"}
 
-<span id='{$fields.total_amt.name}'>
-{sugar_number_format var=$fields.total_amt.value }
-</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.discount_amount.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_DISCOUNT_AMOUNT' module='AOS_Quotes'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="currency" field="discount_amount" width='37.5%' colspan='3' >
-{if !$fields.discount_amount.hidden}
-{counter name="panelFieldCount"}
-
-<span id='{$fields.discount_amount.name}'>
-{sugar_number_format var=$fields.discount_amount.value }
-</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.subtotal_amount.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_SUBTOTAL_AMOUNT' module='AOS_Quotes'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="currency" field="subtotal_amount" width='37.5%' colspan='3' >
-{if !$fields.subtotal_amount.hidden}
-{counter name="panelFieldCount"}
-
-<span id='{$fields.subtotal_amount.name}'>
-{sugar_number_format var=$fields.subtotal_amount.value }
+<span id='{$fields.handling_c.name}'>
+{sugar_number_format var=$fields.handling_c.value }
 </span>
 {/if}
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
@@ -813,6 +746,32 @@ document.getElementById('detailpanel_3').className += ' expanded';
 
 <span id='{$fields.shipping_amount.name}'>
 {sugar_number_format var=$fields.shipping_amount.value }
+</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.discount_amount.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_DISCOUNT_AMOUNT' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="currency" field="discount_amount" width='37.5%' colspan='3' >
+{if !$fields.discount_amount.hidden}
+{counter name="panelFieldCount"}
+
+<span id='{$fields.discount_amount.name}'>
+{sugar_number_format var=$fields.discount_amount.value }
 </span>
 {/if}
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
@@ -864,6 +823,58 @@ document.getElementById('detailpanel_3').className += ' expanded';
 
 <span id='{$fields.tax_amount.name}'>
 {sugar_number_format var=$fields.tax_amount.value }
+</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.subtotal_amount.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_SUBTOTAL_AMOUNT' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="currency" field="subtotal_amount" width='37.5%' colspan='3' >
+{if !$fields.subtotal_amount.hidden}
+{counter name="panelFieldCount"}
+
+<span id='{$fields.subtotal_amount.name}'>
+{sugar_number_format var=$fields.subtotal_amount.value }
+</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.total_amt.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_TOTAL_AMT' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="currency" field="total_amt" width='37.5%' colspan='3' >
+{if !$fields.total_amt.hidden}
+{counter name="panelFieldCount"}
+
+<span id='{$fields.total_amt.name}'>
+{sugar_number_format var=$fields.total_amt.value }
 </span>
 {/if}
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>

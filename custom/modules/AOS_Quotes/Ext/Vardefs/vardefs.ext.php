@@ -8,9 +8,21 @@ $dictionary['AOS_Quotes']['fields']['supplier_id_c']['labelValue']='Supplier id'
 
  
 
+ // created: 2015-09-16 11:25:35
+$dictionary['AOS_Quotes']['fields']['invoice_fax_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['invoice_fax_c']['labelValue']='Invoice fax';
+
+ 
+
  // created: 2015-09-15 17:52:00
 $dictionary['AOS_Quotes']['fields']['curier_account_c']['inline_edit']='1';
 $dictionary['AOS_Quotes']['fields']['curier_account_c']['labelValue']='Curier Account';
+
+ 
+
+ // created: 2015-09-16 11:22:48
+$dictionary['AOS_Quotes']['fields']['payment_phone_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['payment_phone_c']['labelValue']='Payment phone';
 
  
 
@@ -23,6 +35,18 @@ $dictionary['AOS_Quotes']['fields']['curier_c']['labelValue']='Curier service:';
  // created: 2015-09-15 18:07:24
 $dictionary['AOS_Quotes']['fields']['ref_number_c']['inline_edit']='1';
 $dictionary['AOS_Quotes']['fields']['ref_number_c']['labelValue']='ref number';
+
+ 
+
+ // created: 2015-09-16 11:24:47
+$dictionary['AOS_Quotes']['fields']['invoice_email_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['invoice_email_c']['labelValue']='Invoice email';
+
+ 
+
+ // created: 2015-09-16 11:19:32
+$dictionary['AOS_Quotes']['fields']['delivery_email_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['delivery_email_c']['labelValue']='Delivery email';
 
  
 
@@ -62,9 +86,21 @@ $dictionary['AOS_Quotes']['fields']['order_id_c']['labelValue']='Order id';
 
  
 
+ // created: 2015-09-16 11:27:22
+$dictionary['AOS_Quotes']['fields']['invoice_post_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['invoice_post_c']['labelValue']='Invoice post';
+
+ 
+
  // created: 2015-09-15 18:01:49
 $dictionary['AOS_Quotes']['fields']['through_chemspace_c']['inline_edit']='1';
 $dictionary['AOS_Quotes']['fields']['through_chemspace_c']['labelValue']='Through chemspace';
+
+ 
+
+ // created: 2015-09-16 11:13:43
+$dictionary['AOS_Quotes']['fields']['delivery_phone_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['delivery_phone_c']['labelValue']='Delivery phone';
 
  
 

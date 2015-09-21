@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-15 19:01:47
+// created: 2015-09-21 11:03:05
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -45,7 +45,7 @@ $mod_strings = array (
   'LBL_CONTACT_CASE_TITLE' => 'Contact-Case:',
   'LBL_CONTACT_NAME' => 'Contact Name:',
   'LBL_CONTACT_ROLE' => 'Role:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Cases',
   'LBL_FILENANE_ATTACHMENT' => 'File Attachment',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'History',
@@ -99,6 +99,8 @@ $mod_strings = array (
   'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
   'LBL_EXPORT_TEAM_COUNT' => 'Team Count',
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
+  'LBL_CONTACT_CREATED_BY_NAME' => 'Created by contact',
+  'LBL_CONTACTS' => 'User Profiles',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_UPDATE_TEXT' => 'Update Text',
   'LBL_INTERNAL' => 'Internal Update',
@@ -116,6 +118,5 @@ $mod_strings = array (
   'LBL_CLEAR_CASE_DOCUMENT' => 'Clear document',
   'LBL_SELECT_INTERNAL_CASE_DOCUMENT' => 'Internal CRM document',
   'LBL_SELECT_EXTERNAL_CASE_DOCUMENT' => 'External file',
-  'LBL_CONTACT_CREATED_BY_NAME' => 'Created by contact',
   'LBL_CASE_UPDATE_FORM' => 'Update attachment form',
 );
