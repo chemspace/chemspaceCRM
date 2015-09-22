@@ -69,20 +69,21 @@ Once you have successfully copied the ChemspaceCRM files to your web server, you
 ### Performing a typical installation of ChemspaceCRM ###
 
 > Launch your browser and enter the following URL: http://<yourServer>/<yourChemspaceCRMDirectory>/install.php
-> This displays the Welcome page.
-> Click Next.
-> The Installer displays installation instructions and requirements to help determine successful SuiteCRM 
-> installation.
-> Review the information and click Next.
-> This displays the SuiteCRM License Agreement.
-> Review the license, check I Accept, and click Next. The installer checks the system for compatibility and then 
-> displays the Installation Options page.
->     Note: You can modify any of your settings at any time prior to clicking Install in the Confirm Setting menu. 
-> To modify any settings, click the Back button on your browser to return to the appropriate page.
->    Select Typical Install.
->    Click Next. This displays the Database Type page.
->    Select the database that is installed on your system and click Next. This displays the Database Configuration 
-> page.
+This displays the Welcome page.
+  Click Next.
+The Installer displays installation instructions and requirements to help determine successful SuiteCRM 
+installation.
+  Review the information and click Next.
+This displays the SuiteCRM License Agreement.
+  Review the license, check I Accept, and click Next. The installer checks the system for compatibility and then 
+  displays the Installation Options page.
+  Note: 
+  You can modify any of your settings at any time prior to clicking Install in the Confirm Setting menu. 
+To modify any settings, click the Back button on your browser to return to the appropriate page.
+  Select Typical Install.
+  Click Next. This displays the Database Type page.
+  Select the database that is installed on your system and click Next. This displays the Database Configuration 
+page.
 
     a. Enter the database name. The Installer uses “suitecrm” as the default name for the database. You can specify a new name.
     b. Enter the Host Name or the Host Instance for the MySQL, MariaDB or SQL Server. The host name is, by default, set to localhost if your database server is running on the same machine as your web server.
