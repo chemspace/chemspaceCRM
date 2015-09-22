@@ -107,6 +107,11 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
         'LBL_LINE_ITEMS' => 
         array (
           'newTab' => false,
@@ -280,6 +285,54 @@ array (
               'key' => 'shipping',
             ),
           ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'order_id_c',
+            'label' => 'LBL_ORDER_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'supplier_users_id_c',
+            'label' => 'LBL_SUPPLIER_USERS_ID',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_entered',
+            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
+          ),
+          1 => 
+          array (
+            'name' => 'supplier_companies_id_c',
+            'label' => 'LBL_SUPPLIER_COMPANIES_ID',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'seller_companies_id_c',
+            'label' => 'LBL_SELLER_COMPANIES_ID',
+          ),
+        ),
+        3 => 
+        array (
+          0 => '',
+          1 => '',
         ),
       ),
       'lbl_line_items' => 

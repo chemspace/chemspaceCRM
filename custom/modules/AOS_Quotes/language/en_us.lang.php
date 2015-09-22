@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-21 11:02:27
+// created: 2015-09-22 12:09:53
 $mod_strings = array (
   'LNK_NEW_RECORD' => 'Create Quote',
   'LNK_LIST' => 'View Orders',
@@ -7,7 +7,7 @@ $mod_strings = array (
   'LBL_LIST_FORM_TITLE' => 'Orders List',
   'LBL_SEARCH_FORM_TITLE' => 'Search Orders',
   'LBL_HOMEPAGE_TITLE' => 'My Orders',
-  'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
+  'LBL_EDITVIEW_PANEL1' => 'Supplier',
   'LBL_QUOTE_TO' => 'Customer',
   'LBL_DETAILVIEW_PANEL1' => 'Supplier',
   'LBL_LINE_ITEMS' => 'Products',
@@ -33,4 +33,7 @@ $mod_strings = array (
   'LBL_INVOICE_FAX' => 'Invoice fax',
   'LBL_INVOICE_POST' => 'Invoice post',
   'LBL_BILLING_CONTACT' => 'User Profile',
+  'LBL_SUPPLIER_USERS_ID' => 'Supplier users id',
+  'LBL_SUPPLIER_COMPANIES_ID' => 'Supplier companies id',
+  'LBL_SELLER_COMPANIES_ID' => 'Seller companies id',
 );

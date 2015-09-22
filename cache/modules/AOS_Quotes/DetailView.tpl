@@ -647,9 +647,184 @@ document.getElementById('detailpanel_2').className += ' expanded';
 <img border="0" id="detailpanel_3_img_hide" src="{sugar_getimagepath file="basic_search.gif"}"></a>
 <a href="javascript:void(0)" class="expandLink" onclick="expandPanel(3);">
 <img border="0" id="detailpanel_3_img_show" src="{sugar_getimagepath file="advanced_search.gif"}"></a>
-{sugar_translate label='LBL_LINE_ITEMS' module='AOS_Quotes'}
+{sugar_translate label='LBL_EDITVIEW_PANEL1' module='AOS_Quotes'}
 <script>
 document.getElementById('detailpanel_3').className += ' expanded';
+</script>
+</h4>
+<table id='LBL_EDITVIEW_PANEL1' class="panelContainer" cellspacing='{$gridline}'>
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.order_id_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_ORDER_ID' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="int" field="order_id_c" width='37.5%'  >
+{if !$fields.order_id_c.hidden}
+{counter name="panelFieldCount"}
+
+<span class="sugar_field" id="{$fields.order_id_c.name}">
+{sugar_number_format precision=0 var=$fields.order_id_c.value}
+</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.supplier_users_id_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_SUPPLIER_USERS_ID' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="varchar" field="supplier_users_id_c" width='37.5%'  >
+{if !$fields.supplier_users_id_c.hidden}
+{counter name="panelFieldCount"}
+
+{if strlen($fields.supplier_users_id_c.value) <= 0}
+{assign var="value" value=$fields.supplier_users_id_c.default_value }
+{else}
+{assign var="value" value=$fields.supplier_users_id_c.value }
+{/if} 
+<span class="sugar_field" id="{$fields.supplier_users_id_c.name}">{$fields.supplier_users_id_c.value}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.date_entered.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_DATE_ENTERED' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="datetime" field="date_entered" width='37.5%'  >
+{if !$fields.date_entered.hidden}
+{counter name="panelFieldCount"}
+<span id="date_entered" class="sugar_field">{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.supplier_companies_id_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_SUPPLIER_COMPANIES_ID' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="varchar" field="supplier_companies_id_c" width='37.5%'  >
+{if !$fields.supplier_companies_id_c.hidden}
+{counter name="panelFieldCount"}
+
+{if strlen($fields.supplier_companies_id_c.value) <= 0}
+{assign var="value" value=$fields.supplier_companies_id_c.default_value }
+{else}
+{assign var="value" value=$fields.supplier_companies_id_c.value }
+{/if} 
+<span class="sugar_field" id="{$fields.supplier_companies_id_c.name}">{$fields.supplier_companies_id_c.value}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.description.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_DESCRIPTION' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="text" field="description" width='37.5%'  >
+{if !$fields.description.hidden}
+{counter name="panelFieldCount"}
+
+<span class="sugar_field" id="{$fields.description.name|escape:'html'|url2html|nl2br}">{$fields.description.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+{if !$fields.seller_companies_id_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_SELLER_COMPANIES_ID' module='AOS_Quotes'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="varchar" field="seller_companies_id_c" width='37.5%'  >
+{if !$fields.seller_companies_id_c.hidden}
+{counter name="panelFieldCount"}
+
+{if strlen($fields.seller_companies_id_c.value) <= 0}
+{assign var="value" value=$fields.seller_companies_id_c.default_value }
+{else}
+{assign var="value" value=$fields.seller_companies_id_c.value }
+{/if} 
+<span class="sugar_field" id="{$fields.seller_companies_id_c.name}">{$fields.seller_companies_id_c.value}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+&nbsp;
+</td>
+<td class="inlineEdit" type="" field="" width='37.5%'  >
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='12.5%' scope="col">
+&nbsp;
+</td>
+<td class="inlineEdit" type="" field="" width='37.5%'  >
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+</table>
+<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() {ldelim} initPanel(3, 'expanded'); {rdelim}); </script>
+</div>
+{if $panelFieldCount == 0}
+<script>document.getElementById("LBL_EDITVIEW_PANEL1").style.display='none';</script>
+{/if}
+<div id='detailpanel_4' class='detail view  detail508 expanded'>
+{counter name="panelFieldCount" start=0 print=false assign="panelFieldCount"}
+<h4>
+<a href="javascript:void(0)" class="collapseLink" onclick="collapsePanel(4);">
+<img border="0" id="detailpanel_4_img_hide" src="{sugar_getimagepath file="basic_search.gif"}"></a>
+<a href="javascript:void(0)" class="expandLink" onclick="expandPanel(4);">
+<img border="0" id="detailpanel_4_img_show" src="{sugar_getimagepath file="advanced_search.gif"}"></a>
+{sugar_translate label='LBL_LINE_ITEMS' module='AOS_Quotes'}
+<script>
+document.getElementById('detailpanel_4').className += ' expanded';
 </script>
 </h4>
 <table id='LBL_LINE_ITEMS' class="panelContainer" cellspacing='{$gridline}'>
@@ -918,7 +1093,7 @@ document.getElementById('detailpanel_3').className += ' expanded';
 {$tableRow}
 {/if}
 </table>
-<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() {ldelim} initPanel(3, 'expanded'); {rdelim}); </script>
+<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() {ldelim} initPanel(4, 'expanded'); {rdelim}); </script>
 </div>
 {if $panelFieldCount == 0}
 <script>document.getElementById("LBL_LINE_ITEMS").style.display='none';</script>

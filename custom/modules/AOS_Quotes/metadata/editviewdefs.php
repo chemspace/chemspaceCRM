@@ -42,6 +42,11 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
         'LBL_LINE_ITEMS' => 
         array (
           'newTab' => false,
@@ -248,6 +253,55 @@ array (
             ),
             'label' => 'LBL_SHIPPING_ADDRESS_STREET',
           ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'order_id_c',
+            'label' => 'LBL_ORDER_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'supplier_users_id_c',
+            'label' => 'LBL_SUPPLIER_USERS_ID',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_entered',
+            'comment' => 'Date record created',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+          1 => 
+          array (
+            'name' => 'supplier_companies_id_c',
+            'label' => 'LBL_SUPPLIER_COMPANIES_ID',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'seller_companies_id_c',
+            'label' => 'LBL_SELLER_COMPANIES_ID',
+          ),
+        ),
+        3 => 
+        array (
+          0 => '',
+          1 => '',
         ),
       ),
       'lbl_line_items' => 

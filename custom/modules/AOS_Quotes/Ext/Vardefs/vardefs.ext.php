@@ -2,6 +2,12 @@
  //WARNING: The contents of this file are auto-generated
 
 
+ // created: 2015-09-22 11:15:36
+$dictionary['AOS_Quotes']['fields']['supplier_companies_id_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['supplier_companies_id_c']['labelValue']='Supplier companies id';
+
+ 
+
  // created: 2015-09-15 18:04:30
 $dictionary['AOS_Quotes']['fields']['supplier_id_c']['inline_edit']='1';
 $dictionary['AOS_Quotes']['fields']['supplier_id_c']['labelValue']='Supplier id';
@@ -64,6 +70,12 @@ $dictionary['AOS_Quotes']['fields']['po_number_c']['labelValue']='po number';
 
  
 
+ // created: 2015-09-22 12:09:53
+$dictionary['AOS_Quotes']['fields']['seller_companies_id_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['seller_companies_id_c']['labelValue']='Seller companies id';
+
+ 
+
  // created: 2015-09-15 18:34:11
 $dictionary['AOS_Quotes']['fields']['ours_third_c']['inline_edit']='1';
 $dictionary['AOS_Quotes']['fields']['ours_third_c']['options']='numeric_range_search_dom';
@@ -83,6 +95,12 @@ $dictionary['AOS_Quotes']['fields']['template_ddown_c']['reportable']=true;
  // created: 2015-09-15 16:11:38
 $dictionary['AOS_Quotes']['fields']['order_id_c']['inline_edit']='1';
 $dictionary['AOS_Quotes']['fields']['order_id_c']['labelValue']='Order id';
+
+ 
+
+ // created: 2015-09-22 11:13:54
+$dictionary['AOS_Quotes']['fields']['supplier_users_id_c']['inline_edit']='1';
+$dictionary['AOS_Quotes']['fields']['supplier_users_id_c']['labelValue']='Supplier users id';
 
  
 

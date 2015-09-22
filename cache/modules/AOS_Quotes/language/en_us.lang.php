@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-21 11:03:05
+// created: 2015-09-22 14:02:11
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -181,7 +181,7 @@ $mod_strings = array (
   'LBL_SHIPPING_TAX_AMT_USDOLLAR' => 'Shipping Tax (Default Currency)',
   'LBL_GRAND_TOTAL_USDOLLAR' => 'Grand Total (Default Currency)',
   'LBL_QUOTE_TO' => 'Customer',
-  'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
+  'LBL_EDITVIEW_PANEL1' => 'Supplier',
   'LBL_DETAILVIEW_PANEL1' => 'Supplier',
   'LBL_CURIER' => 'Curier service:',
   'LBL_HANDLING' => 'Handling',
@@ -199,4 +199,7 @@ $mod_strings = array (
   'LBL_INVOICE_EMAIL' => 'Invoice email',
   'LBL_INVOICE_FAX' => 'Invoice fax',
   'LBL_INVOICE_POST' => 'Invoice post',
+  'LBL_SUPPLIER_USERS_ID' => 'Supplier users id',
+  'LBL_SUPPLIER_COMPANIES_ID' => 'Supplier companies id',
+  'LBL_SELLER_COMPANIES_ID' => 'Seller companies id',
 );
