@@ -38,7 +38,7 @@ if(!defined('sugarEntry'))define('sugarEntry', true);
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  ********************************************************************************/
 
-
+error_reporting(E_ALL &  ~E_STRICT);
 include ('include/MVC/preDispatch.php');
 $startTime = microtime(true);
 require_once('include/entryPoint.php');
