@@ -1,8 +1,10 @@
 <?php
-// created: 2015-09-21 11:02:27
+// created: 2015-09-28 18:29:03
 $mod_strings = array (
-  'LBL_CONTACT_NAME' => 'User Profile:',
-  'LBL_LIST_CONTACT_NAME' => 'User Profile',
-  'LBL_CONTACT_ID' => 'User Profile ID:',
-  'LBL_LIST_CONTACT' => 'User Profile',
+  'LBL_CONTACT_NAME' => 'Contact:',
+  'LBL_LIST_CONTACT_NAME' => 'Contact',
+  'LBL_CONTACT_ID' => 'Contact ID:',
+  'LBL_LIST_CONTACT' => 'Contact',
+  'LBL_ACCOUNTS' => 'Companies',
+  'LBL_ACCOUNT_ID' => 'Company ID:',
 );

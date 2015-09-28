@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-22 18:08:08
+// created: 2015-09-28 18:32:16
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -29,12 +29,12 @@ $mod_strings = array (
   'LBL_INVITEE' => 'Contacts',
   'LBL_CURRENCIES' => 'Currencies',
   'LBL_LIST_OPPORTUNITY_NAME' => 'Name',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
+  'LBL_LIST_ACCOUNT_NAME' => 'Company Name',
   'LBL_LIST_AMOUNT' => 'Opportunity Amount',
   'LBL_LIST_AMOUNT_USDOLLAR' => 'Amount',
   'LBL_LIST_DATE_CLOSED' => 'Close',
   'LBL_LIST_SALES_STAGE' => 'Sales Stage',
-  'LBL_ACCOUNT_ID' => 'Account ID',
+  'LBL_ACCOUNT_ID' => 'Company ID',
   'LBL_CURRENCY_ID' => 'Currency ID',
   'LBL_CURRENCY_NAME' => 'Currency Name',
   'LBL_CURRENCY_SYMBOL' => 'Currency Symbol',
@@ -67,7 +67,7 @@ $mod_strings = array (
   'UPDATE_NULL_VALUE' => 'Amount is NULL setting it to 0 -',
   'UPDATE_MERGE' => 'Merge Currencies',
   'UPDATE_MERGE_TXT' => 'Merge multiple currencies into a single currency. If there are multiple currency records for the same currency, you merge them together. This will also merge the currencies for all other modules.',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
+  'LBL_ACCOUNT_NAME' => 'Company Name:',
   'LBL_AMOUNT' => 'Opportunity Amount:',
   'LBL_AMOUNT_USDOLLAR' => 'Amount:',
   'LBL_CURRENCY' => 'Currency:',
@@ -92,7 +92,7 @@ $mod_strings = array (
   'LBL_HISTORY_SUBPANEL_TITLE' => 'History',
   'LBL_RAW_AMOUNT' => 'Raw Amount',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Leads',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_PROJECTS_SUBPANEL_TITLE' => 'Projects',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Assigned User',
@@ -113,6 +113,7 @@ $mod_strings = array (
   'LBL_EXPORT_NAME' => 'Name',
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
   'TWITTER_USER_C' => 'Twitter User',
-  'LBL_CONTACTS' => 'User Profiles',
+  'LBL_CONTACTS' => 'Contacts',
+  'LBL_ACCOUNTS' => 'Companies',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );

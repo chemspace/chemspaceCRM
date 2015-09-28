@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-24 18:16:44
+// created: 2015-09-28 19:22:14
 $mod_strings = array (
   'LBL_FW' => 'FW:',
   'LBL_RE' => 'RE:',
@@ -20,7 +20,7 @@ $mod_strings = array (
   'ERR_NOT_ADDRESSED' => 'Error: Email must have a To, CC, or BCC address',
   'ERR_TIME_START' => 'Time Start',
   'ERR_TIME_SENT' => 'Time Sent',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Companies',
   'LBL_ADD_ANOTHER_FILE' => 'Add Another File',
   'LBL_ADD_DASHLETS' => 'Add SuiteCRM Dashlets',
   'LBL_ADD_DOCUMENT' => 'Add Documents',
@@ -40,7 +40,7 @@ $mod_strings = array (
   'LBL_CONTACT_FIRST_NAME' => 'Contact First Name',
   'LBL_CONTACT_LAST_NAME' => 'Contact Last Name',
   'LBL_CONTACT_NAME' => 'Contact:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_CREATED_BY' => 'Created by',
   'LBL_DATE_AND_TIME' => 'Date & Time Sent:',
   'LBL_DATE_SENT' => 'Date Sent:',
@@ -55,10 +55,10 @@ $mod_strings = array (
   'LBL_EMAIL_SELECTOR_SELECT' => 'Select',
   'LBL_EMAIL_SELECTOR_CLEAR' => 'Clear',
   'LBL_EMAIL' => 'Email Address:',
-  'LBL_EMAILS_ACCOUNTS_REL' => 'Emails:Accounts',
+  'LBL_EMAILS_ACCOUNTS_REL' => 'Emails:Companies',
   'LBL_EMAILS_BUGS_REL' => 'Emails:Bugs',
   'LBL_EMAILS_CASES_REL' => 'Emails:Cases',
-  'LBL_EMAILS_CONTACTS_REL' => 'Emails:User Profiles',
+  'LBL_EMAILS_CONTACTS_REL' => 'Emails:Contacts',
   'LBL_EMAILS_LEADS_REL' => 'Emails:Leads',
   'LBL_EMAILS_OPPORTUNITIES_REL' => 'Emails:Opportunities',
   'LBL_EMAILS_NOTES_REL' => 'Emails:Notes',

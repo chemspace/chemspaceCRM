@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-21 11:03:06
+// created: 2015-09-28 18:29:11
 $mod_strings = array (
   'LBL_LIST_ID' => 'Prospect List ID',
   'LBL_ID' => 'ID',
@@ -41,7 +41,7 @@ $mod_strings = array (
   'LBL_CAMPAIGN_OBJECTIVE' => 'Objective: ',
   'LBL_CAMPAIGN_CONTENT' => 'Description: ',
   'LBL_CREATED_LEAD' => 'Created Lead',
-  'LBL_CREATED_CONTACT' => 'Created User Profile',
+  'LBL_CREATED_CONTACT' => 'Created Contact',
   'LBL_CREATED_OPPORTUNITY' => 'Created Opportunity',
   'LBL_TARGETED_USER' => 'Targeted User',
   'LBL_SENT_EMAIL' => 'Sent Email',

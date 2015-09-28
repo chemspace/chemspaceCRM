@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-22 18:08:08
+// created: 2015-09-28 18:32:16
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -33,8 +33,8 @@ $mod_strings = array (
   'LBL_TYPE' => 'Type',
   'LBL_SUBJECT' => 'Subject:',
   'ERR_DELETE_RECORD' => 'You must specify a record number to delete the account.',
-  'LBL_ACCOUNT_ID' => 'Account ID',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
+  'LBL_ACCOUNT_ID' => 'Company ID',
+  'LBL_ACCOUNT_NAME' => 'Company Name:',
   'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_ATTACH_NOTE' => 'Attach Note',
@@ -45,7 +45,7 @@ $mod_strings = array (
   'LBL_CONTACT_CASE_TITLE' => 'Contact-Case:',
   'LBL_CONTACT_NAME' => 'Contact Name:',
   'LBL_CONTACT_ROLE' => 'Role:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Cases',
   'LBL_FILENANE_ATTACHMENT' => 'File Attachment',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'History',
@@ -58,7 +58,7 @@ $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_SEARCH_FORM_TITLE' => 'Case Search',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Assigned User',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
+  'LBL_LIST_ACCOUNT_NAME' => 'Company Name',
   'LBL_LIST_ASSIGNED' => 'Assigned To',
   'LBL_LIST_CLOSE' => 'Close',
   'LBL_LIST_FORM_TITLE' => 'Case List',
@@ -100,7 +100,8 @@ $mod_strings = array (
   'LBL_EXPORT_TEAM_COUNT' => 'Team Count',
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
   'LBL_CONTACT_CREATED_BY_NAME' => 'Created by contact',
-  'LBL_CONTACTS' => 'User Profiles',
+  'LBL_CONTACTS' => 'Contacts',
+  'LBL_ACCOUNT' => 'Company',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_UPDATE_TEXT' => 'Update Text',
   'LBL_INTERNAL' => 'Internal Update',

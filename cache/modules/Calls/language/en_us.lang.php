@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-22 18:08:08
+// created: 2015-09-28 18:29:30
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -27,7 +27,7 @@ $mod_strings = array (
   'LBL_NEW_FORM_TITLE' => 'Create Appointment',
   'LBL_LIST_CLOSE' => 'Close',
   'LBL_LIST_SUBJECT' => 'Subject',
-  'LBL_LIST_CONTACT' => 'User Profile',
+  'LBL_LIST_CONTACT' => 'Contact',
   'LBL_LIST_RELATED_TO' => 'Related to',
   'LBL_LIST_RELATED_TO_ID' => 'Related to ID',
   'LBL_LIST_DATE' => 'Start Date',
@@ -36,7 +36,7 @@ $mod_strings = array (
   'LBL_LIST_DIRECTION' => 'Direction',
   'LBL_SUBJECT' => 'Subject:',
   'LBL_REMINDER' => 'Reminders:',
-  'LBL_CONTACT_NAME' => 'User Profile:',
+  'LBL_CONTACT_NAME' => 'Contact:',
   'LBL_DESCRIPTION_INFORMATION' => 'Description Information',
   'LBL_STATUS' => 'Status:',
   'LBL_DIRECTION' => 'Direction:',
@@ -88,7 +88,7 @@ $mod_strings = array (
   'LNK_NEW_OPPORTUNITY' => 'New Opportunity',
   'LBL_DEL' => 'Del',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Leads',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_USERS_SUBPANEL_TITLE' => 'Users',
   'LBL_OUTLOOK_ID' => 'Outlook ID',
   'LBL_MEMBER_OF' => 'Member Of',
@@ -122,7 +122,8 @@ $mod_strings = array (
   'LBL_REPEAT_PARENT_ID' => 'Repeat Parent ID',
   'LBL_RECURRING_SOURCE' => 'Recurring Source',
   'LBL_SYNCED_RECURRING_MSG' => 'This call originated in another system and was synced to Sugar. To make changes, go to the original call within the other system. Changes made in the other system can be synced to this record.',
-  'LBL_CONTACTS' => 'User Profiles',
+  'LBL_CONTACTS' => 'Contacts',
+  'LBL_ACCOUNT' => 'Company',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_RESCHEDULE' => 'Reschedule',
   'LBL_RESCHEDULE_COUNT' => 'Call Attempts',

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-22 12:10:15
+// created: 2015-09-28 18:29:11
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -34,8 +34,8 @@ $mod_strings = array (
   'LNK_IMPORT_AOP_CASE_UPDATES' => 'Import Case Updates',
   'LBL_AOP_CASE_UPDATES_SUBPANEL_TITLE' => 'Case Updates',
   'LBL_CASE_NAME' => 'Case',
-  'LBL_CONTACT_NAME' => 'User Profile',
+  'LBL_CONTACT_NAME' => 'Contact',
   'LBL_INTERNAL' => 'Internal Update',
   'LBL_AOP_CASE_ATTACHMENTS' => 'Attachments: ',
-  'LBL_CONTACT' => 'User Profile',
+  'LBL_CONTACT' => 'Contact',
 );

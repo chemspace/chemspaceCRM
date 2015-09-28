@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-22 18:26:03
+// created: 2015-09-28 18:32:16
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -43,7 +43,7 @@ $mod_strings = array (
   'LBL_COMPANY_SIGNED_DATE' => 'Company Signed Date',
   'LBL_RENEWAL_REMINDER_DATE' => 'Renewal Reminder Date',
   'LBL_CONTRACT_TYPE' => 'Contract Type',
-  'LBL_CONTACT' => 'User Profile',
+  'LBL_CONTACT' => 'Contact',
   'LBL_ADD_GROUP' => 'Add Group',
   'LBL_DELETE_GROUP' => 'Delete Group',
   'LBL_GROUP_NAME' => 'Group Name',

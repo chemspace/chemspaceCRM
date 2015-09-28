@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-22 12:10:14
+// created: 2015-09-28 18:29:30
 $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
@@ -35,10 +35,10 @@ $mod_strings = array (
   'LNK_NEW_PROSPECT' => 'Create Target',
   'LNK_PROSPECT_LIST' => 'Targets',
   'LBL_PROSPECT_LISTS_SUBPANEL_TITLE' => 'Target Lists',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Leads',
   'LBL_PROSPECTS_SUBPANEL_TITLE' => 'Targets',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Companies',
   'LBL_COPY_PREFIX' => 'Copy of',
   'LBL_USERS_SUBPANEL_TITLE' => 'Users',
   'LBL_TYPE' => 'Type',

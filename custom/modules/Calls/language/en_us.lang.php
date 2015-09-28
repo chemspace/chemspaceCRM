@@ -1,8 +1,9 @@
 <?php
-// created: 2015-09-21 11:02:27
+// created: 2015-09-28 18:29:03
 $mod_strings = array (
-  'LBL_CONTACT_NAME' => 'User Profile:',
-  'LBL_CONTACTS' => 'User Profiles',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'User Profiles',
-  'LBL_LIST_CONTACT' => 'User Profile',
+  'LBL_CONTACT_NAME' => 'Contact:',
+  'LBL_CONTACTS' => 'Contacts',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
+  'LBL_LIST_CONTACT' => 'Contact',
+  'LBL_ACCOUNT' => 'Company',
 );

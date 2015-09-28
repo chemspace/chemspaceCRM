@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-22 12:10:14
+// created: 2015-09-28 19:21:47
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -38,7 +38,7 @@ $mod_strings = array (
   'LBL_COST' => 'Cost',
   'LBL_PRICE' => 'Price',
   'LBL_URL' => 'URL',
-  'LBL_CONTACT' => 'User Profile',
+  'LBL_CONTACT' => 'Contact',
   'LBL_PRODUCT_IMAGE' => 'Product Image',
   'LBL_IMAGE_UPLOAD_FAIL' => 'ERROR: uploaded file exceeded the max filesize: max filesize: ',
   'LBL_AOS_PRODUCT_CATEGORYS_NAME' => 'Product Category',
