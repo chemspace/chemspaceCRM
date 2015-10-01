@@ -178,12 +178,6 @@ array (
         ),
         2 => 
         array (
-          0 => 
-          array (
-            'name' => 'active_customer_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ACTIVE_CUSTOMER',
-          ),
           1 => 'campaign_name',
         ),
         3 => 
