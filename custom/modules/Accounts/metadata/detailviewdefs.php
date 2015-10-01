@@ -178,22 +178,19 @@ array (
         ),
         2 => 
         array (
-        ),
-        3 => 
-        array (
           0 => 
           array (
             'name' => 'parent_name',
             'label' => 'LBL_MEMBER_OF',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
-            'name' => 'sic_code',
-            'comment' => 'SIC code of the account',
-            'label' => 'LBL_SIC_CODE',
+            'name' => 'active_customer_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ACTIVE_CUSTOMER',
           ),
         ),
       ),

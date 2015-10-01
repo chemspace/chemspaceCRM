@@ -155,15 +155,18 @@ array (
         ),
         2 => 
         array (
-          0 => 'parent_name',
         ),
         3 => 
         array (
+          0 => 'parent_name',
+        ),
+        4 => 
+        array (
           0 => 
           array (
-            'name' => 'active_customer_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ACTIVE_CUSTOMER',
+            'name' => 'sic_code',
+            'comment' => 'SIC code of the account',
+            'label' => 'LBL_SIC_CODE',
           ),
         ),
       ),
