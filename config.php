@@ -92,9 +92,9 @@ $sugar_config = array (
   array (
     'db_host_name' => 'localhost',
     'db_host_instance' => 'SQLEXPRESS',
-    'db_user_name' => 'zap',
+    'db_user_name' => 'cspace_zap',
     'db_password' => 'Qwerty123@',
-    'db_name' => 'suitecrm',
+    'db_name' => 'cspace_suitecrm',
     'db_type' => 'mysql',
     'db_port' => '',
     'db_manager' => 'MysqliManager',
@@ -220,8 +220,8 @@ $sugar_config = array (
   'default_password' => '',
   'default_permissions' => 
   array (
-    'dir_mode' => 1528,
-    'file_mode' => 432,
+    'dir_mode' => 1517,
+    'file_mode' => 420,
     'user' => '',
     'group' => '',
   ),

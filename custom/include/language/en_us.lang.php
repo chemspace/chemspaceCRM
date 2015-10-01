@@ -30,3 +30,7 @@ $app_list_strings['moduleListSingular']['Accounts']='Company';
 $app_list_strings['record_type_display']['Accounts']='Company';
 $app_list_strings['parent_type_display']['Accounts']='Company';
 $app_list_strings['record_type_display_notes']['Accounts']='Company';
+$GLOBALS['app_list_strings']['active_customer_list']=array (
+  'ac_yes' => 'Yes',
+  'ac_no' => 'No',
+);

@@ -18,3 +18,7 @@ $GLOBALS['app_list_strings']['transportation_list']=array (
   'tnt' => 'TNT',
   '' => '',
 );
+$GLOBALS['app_list_strings']['active_customer_list']=array (
+  'ac_yes' => 'Yes',
+  'ac_no' => 'No',
+);

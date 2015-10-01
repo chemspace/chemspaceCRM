@@ -61,6 +61,12 @@ $dictionary["Account"]["relationships"]["account_aos_contracts"] = array (
 
 
 
+ // created: 2015-09-30 14:13:22
+$dictionary['Account']['fields']['active_customer_c']['inline_edit']='1';
+$dictionary['Account']['fields']['active_customer_c']['labelValue']='Active customer';
+
+ 
+
  // created: 2015-09-01 18:37:48
 $dictionary['Account']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
 
