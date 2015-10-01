@@ -169,12 +169,12 @@ array (
         ),
         4 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'sic_code',
+            'comment' => 'SIC code of the account',
+            'label' => 'LBL_SIC_CODE',
+          ),
         ),
       ),
     ),
