@@ -14,6 +14,14 @@ array (
     'label' => 'LBL_TYPE',
     'default' => true,
   ),
+  'ACTIVE_CUSTOMER_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ACTIVE_CUSTOMER',
+    'width' => '10%',
+  ),
   'PHONE_OFFICE' => 
   array (
     'width' => '10%',
