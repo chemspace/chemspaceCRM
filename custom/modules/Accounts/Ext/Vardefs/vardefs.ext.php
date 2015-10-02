@@ -72,12 +72,6 @@ $dictionary['Account']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
 
  
 
- // created: 2015-10-02 13:15:29
-$dictionary['Account']['fields']['company_id_c']['inline_edit']='1';
-$dictionary['Account']['fields']['company_id_c']['labelValue']='Company id';
-
- 
-
 
 $dictionary['Account']['fields']['SecurityGroups'] = array (
   	'name' => 'SecurityGroups',

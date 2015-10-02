@@ -1,7 +1,7 @@
 <?php
 $viewdefs ['Accounts'] = 
 array (
-  'EditView' => 
+  'DetailView' => 
   array (
     'templateMeta' => 
     array (
@@ -9,8 +9,14 @@ array (
       array (
         'buttons' => 
         array (
-          0 => 'SAVE',
-          1 => 'CANCEL',
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 'FIND_DUPLICATES',
+          'AOS_GENLET' => 
+          array (
+            'customCode' => '<input type="button" class="button" onClick="showPopup();" value="{$APP.LBL_GENERATE_LETTER}">',
+          ),
         ),
       ),
       'maxColumns' => '2',
@@ -59,15 +65,13 @@ array (
           0 => 
           array (
             'name' => 'name',
+            'comment' => 'Name of the Company',
             'label' => 'LBL_NAME',
-            'displayParams' => 
-            array (
-              'required' => true,
-            ),
           ),
           1 => 
           array (
             'name' => 'phone_office',
+            'comment' => 'The office phone number',
             'label' => 'LBL_PHONE_OFFICE',
           ),
         ),
@@ -78,10 +82,15 @@ array (
             'name' => 'website',
             'type' => 'link',
             'label' => 'LBL_WEBSITE',
+            'displayParams' => 
+            array (
+              'link_target' => '_blank',
+            ),
           ),
           1 => 
           array (
             'name' => 'phone_fax',
+            'comment' => 'The fax phone number of this company',
             'label' => 'LBL_FAX',
           ),
         ),
@@ -93,34 +102,32 @@ array (
             'studio' => 'false',
             'label' => 'LBL_EMAIL',
           ),
+          1 => 
+          array (
+            'name' => 'company_id_c',
+            'label' => 'LBL_COMPANY_ID',
+          ),
         ),
         3 => 
         array (
           0 => 
           array (
             'name' => 'billing_address_street',
-            'hideLabel' => true,
+            'label' => 'LBL_BILLING_ADDRESS',
             'type' => 'address',
             'displayParams' => 
             array (
               'key' => 'billing',
-              'rows' => 2,
-              'cols' => 30,
-              'maxlength' => 150,
             ),
           ),
           1 => 
           array (
             'name' => 'shipping_address_street',
-            'hideLabel' => true,
+            'label' => 'LBL_SHIPPING_ADDRESS',
             'type' => 'address',
             'displayParams' => 
             array (
               'key' => 'shipping',
-              'copy' => 'billing',
-              'rows' => 2,
-              'cols' => 30,
-              'maxlength' => 150,
             ),
           ),
         ),
@@ -129,6 +136,7 @@ array (
           0 => 
           array (
             'name' => 'description',
+            'comment' => 'Full text of the note',
             'label' => 'LBL_DESCRIPTION',
           ),
         ),
@@ -145,17 +153,41 @@ array (
       array (
         0 => 
         array (
-          0 => 'account_type',
-          1 => 'industry',
+          0 => 
+          array (
+            'name' => 'account_type',
+            'comment' => 'The Company is of this type',
+            'label' => 'LBL_TYPE',
+          ),
+          1 => 
+          array (
+            'name' => 'industry',
+            'comment' => 'The company belongs in this industry',
+            'label' => 'LBL_INDUSTRY',
+          ),
         ),
         1 => 
         array (
-          0 => 'annual_revenue',
-          1 => 'employees',
+          0 => 
+          array (
+            'name' => 'annual_revenue',
+            'comment' => 'Annual revenue for this company',
+            'label' => 'LBL_ANNUAL_REVENUE',
+          ),
+          1 => 
+          array (
+            'name' => 'employees',
+            'comment' => 'Number of employees, varchar to accomodate for both number (100) or range (50-100)',
+            'label' => 'LBL_EMPLOYEES',
+          ),
         ),
         2 => 
         array (
-          0 => 'parent_name',
+          0 => 
+          array (
+            'name' => 'parent_name',
+            'label' => 'LBL_MEMBER_OF',
+          ),
         ),
         3 => 
         array (

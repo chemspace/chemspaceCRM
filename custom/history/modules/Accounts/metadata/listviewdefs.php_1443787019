@@ -8,6 +8,13 @@ array (
     'link' => true,
     'default' => true,
   ),
+  'COMPANY_ID_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_COMPANY_ID',
+    'width' => '10%',
+  ),
   'ACCOUNT_TYPE' => 
   array (
     'width' => '10%',
