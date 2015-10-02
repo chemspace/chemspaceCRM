@@ -22,6 +22,12 @@ array (
     'label' => 'LBL_ACTIVE_CUSTOMER',
     'width' => '10%',
   ),
+  'RATING' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_RATING',
+    'default' => true,
+  ),
   'PHONE_OFFICE' => 
   array (
     'width' => '10%',
@@ -57,11 +63,26 @@ array (
     'label' => 'LBL_INDUSTRY',
     'default' => false,
   ),
+  'DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
   'ANNUAL_REVENUE' => 
   array (
     'width' => '10%',
     'label' => 'LBL_ANNUAL_REVENUE',
     'default' => false,
+  ),
+  'VAT_NUMBER_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_VAT_NUMBER',
+    'width' => '10%',
   ),
   'BILLING_ADDRESS_CITY' => 
   array (
@@ -79,6 +100,20 @@ array (
   array (
     'width' => '15%',
     'label' => 'LBL_BILLING_ADDRESS_STREET',
+    'default' => false,
+  ),
+  'BILLING_ADDRESS_STREET_2' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_BILLING_ADDRESS_STREET_2',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'BILLING_ADDRESS_STREET_3' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_BILLING_ADDRESS_STREET_3',
+    'width' => '10%',
     'default' => false,
   ),
   'BILLING_ADDRESS_COUNTRY' => 
@@ -105,6 +140,20 @@ array (
     'label' => 'LBL_SHIPPING_ADDRESS_STREET',
     'default' => false,
   ),
+  'SHIPPING_ADDRESS_STREET_2' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_SHIPPING_ADDRESS_STREET_2',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'SHIPPING_ADDRESS_STREET_3' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_SHIPPING_ADDRESS_STREET_3',
+    'width' => '10%',
+    'default' => false,
+  ),
   'SHIPPING_ADDRESS_CITY' => 
   array (
     'width' => '10%',
@@ -127,12 +176,6 @@ array (
   array (
     'width' => '10%',
     'label' => 'LBL_SHIPPING_ADDRESS_COUNTRY',
-    'default' => false,
-  ),
-  'RATING' => 
-  array (
-    'width' => '10%',
-    'label' => 'LBL_RATING',
     'default' => false,
   ),
   'PHONE_ALTERNATE' => 

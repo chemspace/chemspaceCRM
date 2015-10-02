@@ -102,6 +102,11 @@ array (
             'studio' => 'false',
             'label' => 'LBL_EMAIL',
           ),
+          1 => 
+          array (
+            'name' => 'vat_number_c',
+            'label' => 'LBL_VAT_NUMBER',
+          ),
         ),
         3 => 
         array (
@@ -133,6 +138,12 @@ array (
             'name' => 'description',
             'comment' => 'Full text of the note',
             'label' => 'LBL_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'rating',
+            'comment' => 'An arbitrary rating for this company for use in comparisons with others',
+            'label' => 'LBL_RATING',
           ),
         ),
         5 => 
@@ -183,10 +194,7 @@ array (
             'name' => 'parent_name',
             'label' => 'LBL_MEMBER_OF',
           ),
-        ),
-        3 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'active_customer_c',
             'studio' => 'visible',

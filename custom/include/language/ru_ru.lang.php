@@ -24,3 +24,17 @@ $GLOBALS['app_list_strings']['active_customer_list']=array (
   'yes' => 'Yes',
   'no' => 'No',
 );
+$GLOBALS['app_list_strings']['account_type_dom']=array (
+  '' => '',
+  'Analyst' => 'Аналитик',
+  'Competitor' => 'Конкурент',
+  'Customer' => 'Клиент',
+  'Integrator' => 'Интегратор',
+  'Investor' => 'Инвестор',
+  'Partner' => 'Партнёр',
+  'Press' => 'Пресса',
+  'Prospect' => 'Потенциальный клиент',
+  'Reseller' => 'Реселлер',
+  'Other' => 'Другое',
+  'Supplier' => 'Supplier',
+);

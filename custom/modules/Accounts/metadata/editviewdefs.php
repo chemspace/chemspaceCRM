@@ -93,6 +93,11 @@ array (
             'studio' => 'false',
             'label' => 'LBL_EMAIL',
           ),
+          1 => 
+          array (
+            'name' => 'vat_number_c',
+            'label' => 'LBL_VAT_NUMBER',
+          ),
         ),
         3 => 
         array (
@@ -131,6 +136,12 @@ array (
             'name' => 'description',
             'label' => 'LBL_DESCRIPTION',
           ),
+          1 => 
+          array (
+            'name' => 'rating',
+            'comment' => 'An arbitrary rating for this company for use in comparisons with others',
+            'label' => 'LBL_RATING',
+          ),
         ),
         5 => 
         array (
@@ -156,10 +167,7 @@ array (
         2 => 
         array (
           0 => 'parent_name',
-        ),
-        3 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'active_customer_c',
             'studio' => 'visible',

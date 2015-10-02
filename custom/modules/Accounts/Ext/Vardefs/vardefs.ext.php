@@ -61,6 +61,12 @@ $dictionary["Account"]["relationships"]["account_aos_contracts"] = array (
 
 
 
+ // created: 2015-10-02 16:03:45
+$dictionary['Account']['fields']['vat_number_c']['inline_edit']='1';
+$dictionary['Account']['fields']['vat_number_c']['labelValue']='VAT number';
+
+ 
+
  // created: 2015-10-01 19:20:19
 $dictionary['Account']['fields']['active_customer_c']['inline_edit']='1';
 $dictionary['Account']['fields']['active_customer_c']['labelValue']='Active customer';

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-02 14:57:18
+// created: 2015-10-02 16:03:45
 $mod_strings = array (
   'LBL_CONTACTS' => 'Contacts',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
@@ -17,4 +17,5 @@ $mod_strings = array (
   'LBL_PARENT_ACCOUNT_ID' => 'Parent Company ID',
   'LBL_MODULE_NAME' => 'Companies',
   'LBL_ACTIVE_CUSTOMER' => 'Active customer',
+  'LBL_VAT_NUMBER' => 'VAT number',
 );
