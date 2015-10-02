@@ -334,7 +334,7 @@ function getDisplayValue($bean, $field, $method = "save")
     return $value;
 }
 
-function formatDisplayValue($bean, $value, $vardef, $method = "save", $view)
+function formatDisplayValue($bean, $value, $vardef, $method = "save", $view = "ListView")
 {
 
     global $current_user, $app_list_strings, $timedate;

@@ -93,6 +93,11 @@ array (
             'studio' => 'false',
             'label' => 'LBL_EMAIL',
           ),
+          1 => 
+          array (
+            'name' => 'company_id_c',
+            'label' => 'LBL_COMPANY_ID',
+          ),
         ),
         3 => 
         array (
