@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-02 18:45:54
+// created: 2015-10-05 14:38:09
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -37,8 +37,8 @@ $mod_strings = array (
   'LBL_BILLING_ADDRESS_COUNTRY' => 'Billing Country:',
   'LBL_BILLING_ADDRESS_POSTALCODE' => 'Billing Postal Code:',
   'LBL_BILLING_ADDRESS_STATE' => 'Billing State:',
-  'LBL_BILLING_ADDRESS_STREET_2' => 'Billing Street 2',
-  'LBL_BILLING_ADDRESS_STREET_3' => 'Billing Street 3',
+  'LBL_BILLING_ADDRESS_STREET_2' => 'Billing street 2',
+  'LBL_BILLING_ADDRESS_STREET_3' => 'Billing street 3',
   'LBL_BILLING_ADDRESS_STREET_4' => 'Billing Street 4',
   'LBL_BILLING_ADDRESS_STREET' => 'Billing Street:',
   'LBL_BILLING_ADDRESS' => 'Billing Address:',
@@ -80,8 +80,8 @@ $mod_strings = array (
   'LBL_SHIPPING_ADDRESS_COUNTRY' => 'Shipping Country:',
   'LBL_SHIPPING_ADDRESS_POSTALCODE' => 'Shipping Postal Code:',
   'LBL_SHIPPING_ADDRESS_STATE' => 'Shipping State:',
-  'LBL_SHIPPING_ADDRESS_STREET_2' => 'Shipping Street 2',
-  'LBL_SHIPPING_ADDRESS_STREET_3' => 'Shipping Street 3',
+  'LBL_SHIPPING_ADDRESS_STREET_2' => 'Shipping street 2',
+  'LBL_SHIPPING_ADDRESS_STREET_3' => 'Shipping street 3',
   'LBL_SHIPPING_ADDRESS_STREET_4' => 'Shipping Street 4',
   'LBL_SHIPPING_ADDRESS_STREET' => 'Shipping Street:',
   'LBL_SHIPPING_ADDRESS' => 'Shipping Address:',

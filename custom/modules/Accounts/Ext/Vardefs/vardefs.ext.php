@@ -61,6 +61,24 @@ $dictionary["Account"]["relationships"]["account_aos_contracts"] = array (
 
 
 
+ // created: 2015-10-05 14:29:15
+$dictionary['Account']['fields']['shipping_address_street_3_c']['inline_edit']='1';
+$dictionary['Account']['fields']['shipping_address_street_3_c']['labelValue']='Shipping street 3';
+
+ 
+
+ // created: 2015-10-05 14:28:20
+$dictionary['Account']['fields']['shipping_address_street_2_c']['inline_edit']='1';
+$dictionary['Account']['fields']['shipping_address_street_2_c']['labelValue']='Shipping street 2';
+
+ 
+
+ // created: 2015-10-05 14:26:46
+$dictionary['Account']['fields']['billing_address_street_3_c']['inline_edit']='1';
+$dictionary['Account']['fields']['billing_address_street_3_c']['labelValue']='Billing street 3';
+
+ 
+
  // created: 2015-10-02 16:03:45
 $dictionary['Account']['fields']['vat_number_c']['inline_edit']='1';
 $dictionary['Account']['fields']['vat_number_c']['labelValue']='VAT number';
@@ -101,6 +119,12 @@ $dictionary['Account']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
  // created: 2015-09-01 18:37:49
 $dictionary['Account']['fields']['jjwg_maps_address_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-10-05 14:25:13
+$dictionary['Account']['fields']['billing_address_street_2_c']['inline_edit']='1';
+$dictionary['Account']['fields']['billing_address_street_2_c']['labelValue']='Billing street 2';
 
  
 
