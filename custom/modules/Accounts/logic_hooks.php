@@ -6,8 +6,8 @@ $hook_array = Array();
 // position, file, function 
 $hook_array['after_ui_frame'] = Array(); 
 $hook_array['before_save'] = Array(); 
-$hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'custom/modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateGeocodeInfo'); 
-$hook_array['after_save'] = Array(); 
+$hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'custom/modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateGeocodeInfo');
+$hook_array['after_save'] = Array();
 $hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'custom/modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
 $hook_array['after_save'][] = Array(78, 'updateRelatedProjectGeocodeInfo', 'custom/modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateRelatedProjectGeocodeInfo'); 
 $hook_array['after_save'][] = Array(79, 'updateRelatedOpportunitiesGeocodeInfo', 'custom/modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateRelatedOpportunitiesGeocodeInfo'); 

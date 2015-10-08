@@ -50,3 +50,10 @@ $GLOBALS['app_list_strings']['account_type_dom']=array (
   'Supplier' => 'Supplier',
   'Other' => 'Other',
 );
+$GLOBALS['app_list_strings']['currency_list']=array (
+  'usd' => 'USD',
+  'eur' => 'EUR',
+  'gbp' => 'GBP',
+  'chf' => 'CHF',
+  '' => '',
+);

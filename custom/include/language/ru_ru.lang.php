@@ -38,3 +38,10 @@ $GLOBALS['app_list_strings']['account_type_dom']=array (
   'Other' => 'Другое',
   'Supplier' => 'Supplier',
 );
+$GLOBALS['app_list_strings']['currency_list']=array (
+  'usd' => 'USD',
+  'eur' => 'EUR',
+  'gbp' => 'GBP',
+  'chf' => 'CHF',
+  '' => '',
+);

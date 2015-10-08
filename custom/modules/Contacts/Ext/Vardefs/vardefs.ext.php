@@ -2,6 +2,12 @@
  //WARNING: The contents of this file are auto-generated
 
 
+ // created: 2015-10-07 14:43:55
+$dictionary['Contact']['fields']['status_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['status_c']['labelValue']='Status';
+
+ 
+
 
 $dictionary['Contact']['fields']['SecurityGroups'] = array (
   	'name' => 'SecurityGroups',
@@ -17,6 +23,18 @@ $dictionary['Contact']['fields']['SecurityGroups'] = array (
 
 
 
+
+ // created: 2015-10-08 18:30:58
+$dictionary['Contact']['fields']['company_type_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['company_type_c']['labelValue']='Company type';
+
+ 
+
+ // created: 2015-10-07 14:04:41
+$dictionary['Contact']['fields']['position_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['position_c']['labelValue']='Position';
+
+ 
 
 // created: 2014-06-24 15:48:56
 $dictionary["Contact"]["fields"]["project_contacts_1"] = array (
@@ -161,6 +179,19 @@ $dictionary["Contact"]["fields"]["portal_user_type"] = array (
 );
  
 
+ // created: 2015-10-07 14:41:53
+$dictionary['Contact']['fields']['role_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['role_c']['labelValue']='Role';
+
+ 
+
+ // created: 2015-10-07 14:45:02
+$dictionary['Contact']['fields']['date_entered']['inline_edit']=true;
+$dictionary['Contact']['fields']['date_entered']['comments']='Date record created';
+$dictionary['Contact']['fields']['date_entered']['merge_filter']='disabled';
+
+ 
+
 // created: 2013-04-15 12:13:27
 $dictionary["Contact"]["fields"]["fp_events_contacts"] = array (
   'name' => 'fp_events_contacts',
@@ -181,8 +212,20 @@ $dictionary['Contact']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
  
 
+ // created: 2015-10-07 14:52:59
+$dictionary['Contact']['fields']['country_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['country_c']['labelValue']='Country';
+
+ 
+
  // created: 2015-09-01 18:37:52
 $dictionary['Contact']['fields']['jjwg_maps_address_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-10-07 14:46:16
+$dictionary['Contact']['fields']['ban_reason_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['ban_reason_c']['labelValue']='Ban reason';
 
  
 
@@ -266,4 +309,22 @@ $dictionary['Contact']['fields']['event_status_id'] =
         'studio' => array('listview' => false),
     );
 
+
+ // created: 2015-10-07 14:47:16
+$dictionary['Contact']['fields']['ban_date_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['ban_date_c']['labelValue']='Ban date';
+
+ 
+
+ // created: 2015-10-07 14:54:26
+$dictionary['Contact']['fields']['reg_ip_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['reg_ip_c']['labelValue']='Reg ip';
+
+ 
+
+ // created: 2015-10-07 14:51:02
+$dictionary['Contact']['fields']['currency_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['currency_c']['labelValue']='Currency';
+
+ 
 ?>

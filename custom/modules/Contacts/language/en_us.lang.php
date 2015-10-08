@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-28 18:29:03
+// created: 2015-10-08 18:30:58
 $mod_strings = array (
   'LNK_NEW_CONTACT' => 'Create Contact',
   'LNK_CONTACT_LIST' => 'View Contacts',
@@ -18,4 +18,14 @@ $mod_strings = array (
   'LBL_ACCOUNT_ID' => 'Company ID:',
   'LBL_ACCOUNT' => 'Company',
   'LBL_LIST_ACCOUNT_NAME' => 'Company Name',
+  'LBL_POSITION' => 'Position',
+  'LBL_ROLE' => 'Role',
+  'LBL_STATUS' => 'Status',
+  'LBL_DATE_ENTERED' => 'Registration date',
+  'LBL_BAN_REASON' => 'Ban reason',
+  'LBL_BAN_DATE' => 'Ban date',
+  'LBL_CURRENCY' => 'Currency',
+  'LBL_COUNTRY' => 'Country',
+  'LBL_REG_IP' => 'Reg ip',
+  'LBL_COMPANY_TYPE' => 'Company type',
 );

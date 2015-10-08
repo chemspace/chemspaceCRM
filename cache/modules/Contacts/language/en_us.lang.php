@@ -1,8 +1,8 @@
 <?php
-// created: 2015-10-05 14:37:32
+// created: 2015-10-08 18:34:23
 $mod_strings = array (
   'LBL_ID' => 'ID:',
-  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_ENTERED' => 'Registration date',
   'LBL_DATE_MODIFIED' => 'Date Modified:',
   'LBL_MODIFIED' => 'Modified By:',
   'LBL_MODIFIED_ID' => 'Modified By Id',
@@ -54,7 +54,7 @@ $mod_strings = array (
   'LBL_STATE' => 'State:',
   'LBL_POSTALCODE' => 'Postal Code',
   'LBL_POSTAL_CODE' => 'Postal Code:',
-  'LBL_COUNTRY' => 'Country:',
+  'LBL_COUNTRY' => 'Country',
   'LBL_CONTACT_INFORMATION' => 'Overview',
   'LBL_ADDRESS_INFORMATION' => 'Address Information',
   'LBL_OTHER_EMAIL_ADDRESS' => 'Other Email:',
@@ -202,6 +202,14 @@ $mod_strings = array (
   'LBL_USER_SYNC' => 'User Sync',
   'LBL_DIRECT_REPORTS' => 'Direct Reports',
   'LBL_ACCOUNT' => 'Company',
+  'LBL_POSITION' => 'Position',
+  'LBL_ROLE' => 'Role',
+  'LBL_STATUS' => 'Status',
+  'LBL_BAN_REASON' => 'Ban reason',
+  'LBL_BAN_DATE' => 'Ban date',
+  'LBL_CURRENCY' => 'Currency',
+  'LBL_REG_IP' => 'Reg ip',
+  'LBL_COMPANY_TYPE' => 'Company type',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_FP_EVENTS_CONTACTS_FROM_FP_EVENTS_TITLE' => 'Events',
   'LBL_FP_EVENT_DELEGATES_CONTACTS_1_FROM_FP_EVENT_DELEGATES_TITLE' => 'Delegates',
