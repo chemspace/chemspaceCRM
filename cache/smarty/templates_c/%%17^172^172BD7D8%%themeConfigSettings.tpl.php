@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-09-03 16:29:06
+<?php /* Smarty version 2.6.11, created on 2015-10-13 19:01:39
          compiled from modules/Administration/templates/themeConfigSettings.tpl */ ?>
 
 <form name="themeConfigSettings" method="POST">

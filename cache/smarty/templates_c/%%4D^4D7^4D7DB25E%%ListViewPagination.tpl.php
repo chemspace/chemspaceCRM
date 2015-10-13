@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-09-02 15:35:33
+<?php /* Smarty version 2.6.11, created on 2015-10-13 18:59:33
          compiled from include/ListView/ListViewPagination.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_action_menu', 'include/ListView/ListViewPagination.tpl', 58, false),array('function', 'sugar_getimage', 'include/ListView/ListViewPagination.tpl', 70, false),)), $this); ?>

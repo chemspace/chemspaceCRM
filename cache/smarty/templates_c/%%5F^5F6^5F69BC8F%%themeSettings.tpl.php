@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-09-02 16:07:15
+<?php /* Smarty version 2.6.11, created on 2015-10-13 19:01:32
          compiled from modules/Administration/templates/themeSettings.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'modules/Administration/templates/themeSettings.tpl', 67, false),)), $this); ?>
