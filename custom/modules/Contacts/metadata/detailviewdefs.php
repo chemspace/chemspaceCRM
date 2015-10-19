@@ -169,8 +169,9 @@ array (
           ),
           1 => 
           array (
-            'name' => 'department',
-            'label' => 'LBL_DEPARTMENT',
+            'name' => 'email1',
+            'studio' => 'false',
+            'label' => 'LBL_EMAIL_ADDRESS',
           ),
         ),
         3 => 
@@ -190,9 +191,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'email1',
-            'studio' => 'false',
-            'label' => 'LBL_EMAIL_ADDRESS',
+            'name' => 'company_name_c',
+            'label' => 'LBL_COMPANY_NAME',
           ),
           1 => 
           array (
@@ -205,6 +205,24 @@ array (
         array (
           0 => 
           array (
+            'name' => 'company_type_c',
+            'label' => 'LBL_COMPANY_TYPE',
+          ),
+          1 => 
+          array (
+            'name' => 'role_c',
+            'label' => 'LBL_ROLE',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'department',
+            'label' => 'LBL_DEPARTMENT',
+          ),
+          1 => 
+          array (
             'name' => 'primary_address_street',
             'label' => 'LBL_PRIMARY_ADDRESS',
             'type' => 'address',
@@ -212,6 +230,14 @@ array (
             array (
               'key' => 'primary',
             ),
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'position_c',
+            'label' => 'LBL_POSITION',
           ),
           1 => 
           array (
@@ -222,33 +248,6 @@ array (
             array (
               'key' => 'alt',
             ),
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO_NAME',
-          ),
-          1 => 
-          array (
-            'name' => 'position_c',
-            'label' => 'LBL_POSITION',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-          1 => 
-          array (
-            'name' => 'role_c',
-            'label' => 'LBL_ROLE',
           ),
         ),
       ),
@@ -272,9 +271,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'currency_c',
-            'studio' => 'visible',
-            'label' => 'LBL_CURRENCY',
+            'name' => 'ban_reason_c',
+            'label' => 'LBL_BAN_REASON',
           ),
           1 => 
           array (
@@ -292,8 +290,9 @@ array (
           ),
           1 => 
           array (
-            'name' => 'ban_reason_c',
-            'label' => 'LBL_BAN_REASON',
+            'name' => 'currency_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CURRENCY',
           ),
         ),
         3 => 
@@ -314,13 +313,14 @@ array (
         array (
           0 => 
           array (
-            'name' => 'company_type_c',
-            'label' => 'LBL_COMPANY_TYPE',
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO_NAME',
           ),
           1 => 
           array (
-            'name' => 'photo',
-            'label' => 'LBL_PHOTO',
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
         ),
       ),

@@ -91,6 +91,14 @@ array (
     'id' => 'ASSIGNED_USER_ID',
     'default' => true,
   ),
+  'STATUS_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STATUS',
+    'width' => '10%',
+  ),
   'DATE_ENTERED' => 
   array (
     'width' => '10%',

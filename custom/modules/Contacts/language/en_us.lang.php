@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-08 18:30:58
+// created: 2015-10-19 19:51:36
 $mod_strings = array (
   'LNK_NEW_CONTACT' => 'Create Contact',
   'LNK_CONTACT_LIST' => 'View Contacts',
@@ -14,7 +14,7 @@ $mod_strings = array (
   'LBL_DIRECT_REPORTS_SUBPANEL_TITLE' => 'Direct Reports',
   'LBL_HOMEPAGE_TITLE' => 'My Contacts',
   'LBL_MODULE_NAME' => 'Contacts',
-  'LBL_ACCOUNT_NAME' => 'Company Name:',
+  'LBL_ACCOUNT_NAME' => 'Relate Company:',
   'LBL_ACCOUNT_ID' => 'Company ID:',
   'LBL_ACCOUNT' => 'Company',
   'LBL_LIST_ACCOUNT_NAME' => 'Company Name',
@@ -28,4 +28,5 @@ $mod_strings = array (
   'LBL_COUNTRY' => 'Country',
   'LBL_REG_IP' => 'Reg ip',
   'LBL_COMPANY_TYPE' => 'Company type',
+  'LBL_COMPANY_NAME' => 'Company name',
 );

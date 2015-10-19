@@ -45,3 +45,8 @@ $GLOBALS['app_list_strings']['currency_list']=array (
   'chf' => 'CHF',
   '' => '',
 );
+$GLOBALS['app_list_strings']['contact_status_c_list']=array (
+  '' => '',
+  1 => 'Active',
+  0 => 'Inactive',
+);

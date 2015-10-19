@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-13 19:00:38
+// created: 2015-10-19 20:00:20
 $mod_strings = array (
   'LBL_ID' => 'ID:',
   'LBL_DATE_ENTERED' => 'Registration date',
@@ -72,7 +72,7 @@ $mod_strings = array (
   'db_email2' => 'LBL_LIST_OTHER_EMAIL_ADDRESS',
   'ERR_DELETE_RECORD' => 'Specify the record number to delete the contact.',
   'LBL_ACCOUNT_ID' => 'Company ID:',
-  'LBL_ACCOUNT_NAME' => 'Company Name:',
+  'LBL_ACCOUNT_NAME' => 'Relate Company:',
   'LBL_CAMPAIGN' => 'Campaign:',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_ADD_BUSINESSCARD' => 'Enter Business Card',
@@ -210,6 +210,7 @@ $mod_strings = array (
   'LBL_CURRENCY' => 'Currency',
   'LBL_REG_IP' => 'Reg ip',
   'LBL_COMPANY_TYPE' => 'Company type',
+  'LBL_COMPANY_NAME' => 'Company name',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_FP_EVENTS_CONTACTS_FROM_FP_EVENTS_TITLE' => 'Events',
   'LBL_FP_EVENT_DELEGATES_CONTACTS_1_FROM_FP_EVENT_DELEGATES_TITLE' => 'Delegates',

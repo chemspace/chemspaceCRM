@@ -2,7 +2,7 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2015-10-07 14:43:55
+ // created: 2015-10-19 19:49:45
 $dictionary['Contact']['fields']['status_c']['inline_edit']='1';
 $dictionary['Contact']['fields']['status_c']['labelValue']='Status';
 
@@ -204,6 +204,12 @@ $dictionary["Contact"]["fields"]["fp_events_contacts"] = array (
 
  // created: 2015-09-01 18:37:52
 $dictionary['Contact']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-10-19 19:51:36
+$dictionary['Contact']['fields']['company_name_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['company_name_c']['labelValue']='Company name';
 
  
 
