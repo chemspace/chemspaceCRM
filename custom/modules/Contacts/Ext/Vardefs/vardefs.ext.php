@@ -218,7 +218,7 @@ $dictionary['Contact']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
  
 
- // created: 2015-10-07 14:52:59
+ // created: 2015-10-21 11:37:00
 $dictionary['Contact']['fields']['country_c']['inline_edit']='1';
 $dictionary['Contact']['fields']['country_c']['labelValue']='Country';
 

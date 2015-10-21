@@ -79,6 +79,20 @@ array (
         array (
           0 => 
           array (
+            'name' => 'email1',
+            'studio' => 'false',
+            'label' => 'LBL_EMAIL',
+          ),
+          1 => 
+          array (
+            'name' => 'vat_number_c',
+            'label' => 'LBL_VAT_NUMBER',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
             'name' => 'website',
             'type' => 'link',
             'label' => 'LBL_WEBSITE',
@@ -94,33 +108,19 @@ array (
             'label' => 'LBL_FAX',
           ),
         ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'email1',
-            'studio' => 'false',
-            'label' => 'LBL_EMAIL',
-          ),
-          1 => 
-          array (
-            'name' => 'vat_number_c',
-            'label' => 'LBL_VAT_NUMBER',
-          ),
-        ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'billing_address_country',
-            'comment' => 'The country used for the billing address',
-            'label' => 'LBL_BILLING_ADDRESS_COUNTRY',
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
           1 => 
           array (
-            'name' => 'shipping_address_country',
-            'comment' => 'The country used for the shipping address',
-            'label' => 'LBL_SHIPPING_ADDRESS_COUNTRY',
+            'name' => 'country_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COUNTRY',
           ),
         ),
         4 => 
@@ -174,26 +174,8 @@ array (
         ),
         7 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-          1 => 
-          array (
-            'name' => 'rating',
-            'comment' => 'An arbitrary rating for this company for use in comparisons with others',
-            'label' => 'LBL_RATING',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO',
-          ),
+          0 => '',
+          1 => '',
         ),
       ),
       'LBL_PANEL_ADVANCED' => 
@@ -240,6 +222,20 @@ array (
             'name' => 'active_customer_c',
             'studio' => 'visible',
             'label' => 'LBL_ACTIVE_CUSTOMER',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO',
+          ),
+          1 => 
+          array (
+            'name' => 'rating',
+            'comment' => 'An arbitrary rating for this company for use in comparisons with others',
+            'label' => 'LBL_RATING',
           ),
         ),
       ),

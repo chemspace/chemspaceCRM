@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-05 14:29:15
+// created: 2015-10-21 11:39:50
 $mod_strings = array (
   'LBL_CONTACTS' => 'Contacts',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
@@ -22,4 +22,5 @@ $mod_strings = array (
   'LBL_BILLING_ADDRESS_STREET_3' => 'Billing street 3',
   'LBL_SHIPPING_ADDRESS_STREET_2' => 'Shipping street 2',
   'LBL_SHIPPING_ADDRESS_STREET_3' => 'Shipping street 3',
+  'LBL_COUNTRY' => 'Country',
 );

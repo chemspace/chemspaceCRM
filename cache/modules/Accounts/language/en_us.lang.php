@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-19 20:00:21
+// created: 2015-10-21 11:46:27
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -45,7 +45,7 @@ $mod_strings = array (
   'LBL_ACCOUNT_INFORMATION' => 'Overview',
   'LBL_CITY' => 'City:',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
-  'LBL_COUNTRY' => 'Country:',
+  'LBL_COUNTRY' => 'Country',
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Accounts',
   'LBL_DESCRIPTION_INFORMATION' => 'Description Information',
   'LBL_DUPLICATE' => 'Possible Duplicate Account',

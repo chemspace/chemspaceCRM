@@ -34,6 +34,14 @@ array (
     'label' => 'LBL_LIST_PHONE',
     'default' => true,
   ),
+  'COUNTRY_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_COUNTRY',
+    'width' => '10%',
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '10%',
