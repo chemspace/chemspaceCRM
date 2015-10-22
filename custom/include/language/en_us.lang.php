@@ -205,3 +205,8 @@ $GLOBALS['app_list_strings']['contact_country_c_list']=array (
   139 => 'Uruguay',
   140 => 'Venezuela',
 );
+$GLOBALS['app_list_strings']['chemspace_partner_list']=array (
+  '' => '',
+  1 => 'Yes',
+  0 => 'No',
+);

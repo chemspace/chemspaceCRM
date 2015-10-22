@@ -179,12 +179,22 @@ array (
       array (
         0 => 
         array (
-          0 => 'account_type',
+          0 => 
+          array (
+            'name' => 'company_type_multi_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_TYPE_MULTI',
+          ),
           1 => 'industry',
         ),
         1 => 
         array (
-          0 => 'annual_revenue',
+          0 => 
+          array (
+            'name' => 'chemspace_partner_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CHEMSPACE_PARTNER',
+          ),
           1 => 'employees',
         ),
         2 => 

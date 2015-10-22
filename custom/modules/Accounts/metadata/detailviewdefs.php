@@ -184,9 +184,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'account_type',
-            'comment' => 'The Company is of this type',
-            'label' => 'LBL_TYPE',
+            'name' => 'company_type_multi_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_TYPE_MULTI',
           ),
           1 => 
           array (
@@ -199,9 +199,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'annual_revenue',
-            'comment' => 'Annual revenue for this company',
-            'label' => 'LBL_ANNUAL_REVENUE',
+            'name' => 'chemspace_partner_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CHEMSPACE_PARTNER',
           ),
           1 => 
           array (

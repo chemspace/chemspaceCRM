@@ -67,6 +67,12 @@ $dictionary['Account']['fields']['shipping_address_street_3_c']['labelValue']='S
 
  
 
+ // created: 2015-10-22 17:56:20
+$dictionary['Account']['fields']['supplier_id_c']['inline_edit']='1';
+$dictionary['Account']['fields']['supplier_id_c']['labelValue']='Supplier id';
+
+ 
+
  // created: 2015-10-05 14:28:20
 $dictionary['Account']['fields']['shipping_address_street_2_c']['inline_edit']='1';
 $dictionary['Account']['fields']['shipping_address_street_2_c']['labelValue']='Shipping street 2';
@@ -82,6 +88,12 @@ $dictionary['Account']['fields']['billing_address_street_3_c']['labelValue']='Bi
  // created: 2015-10-02 16:03:45
 $dictionary['Account']['fields']['vat_number_c']['inline_edit']='1';
 $dictionary['Account']['fields']['vat_number_c']['labelValue']='VAT number';
+
+ 
+
+ // created: 2015-10-22 18:17:35
+$dictionary['Account']['fields']['chemspace_partner_c']['inline_edit']='1';
+$dictionary['Account']['fields']['chemspace_partner_c']['labelValue']='Chemspace partner';
 
  
 
@@ -134,8 +146,20 @@ $dictionary['Account']['fields']['billing_address_street_2_c']['labelValue']='Bi
 
  
 
+ // created: 2015-10-22 17:57:37
+$dictionary['Account']['fields']['cs_contact_id_c']['inline_edit']='1';
+$dictionary['Account']['fields']['cs_contact_id_c']['labelValue']='Contact id';
+
+ 
+
  // created: 2015-09-01 18:37:48
 $dictionary['Account']['fields']['jjwg_maps_lat_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-10-22 10:50:30
+$dictionary['Account']['fields']['company_type_multi_c']['inline_edit']='1';
+$dictionary['Account']['fields']['company_type_multi_c']['labelValue']='Company type';
 
  
 ?>

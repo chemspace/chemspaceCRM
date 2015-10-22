@@ -8,11 +8,13 @@ array (
     'link' => true,
     'default' => true,
   ),
-  'ACCOUNT_TYPE' => 
+  'COMPANY_TYPE_MULTI_C' => 
   array (
-    'width' => '10%',
-    'label' => 'LBL_TYPE',
+    'type' => 'multienum',
     'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_COMPANY_TYPE_MULTI',
+    'width' => '10%',
   ),
   'ACTIVE_CUSTOMER_C' => 
   array (
