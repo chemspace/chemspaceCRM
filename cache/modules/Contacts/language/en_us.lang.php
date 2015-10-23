@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-22 18:19:15
+// created: 2015-10-23 20:20:59
 $mod_strings = array (
   'LBL_ID' => 'ID:',
   'LBL_DATE_ENTERED' => 'Registration date',
@@ -211,6 +211,7 @@ $mod_strings = array (
   'LBL_REG_IP' => 'Reg ip',
   'LBL_COMPANY_TYPE' => 'Company type',
   'LBL_COMPANY_NAME' => 'Company name',
+  'LBL_CS_CONTACT_ID' => 'Contact id',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_FP_EVENTS_CONTACTS_FROM_FP_EVENTS_TITLE' => 'Events',
   'LBL_FP_EVENT_DELEGATES_CONTACTS_1_FROM_FP_EVENT_DELEGATES_TITLE' => 'Delegates',

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-10-22 10:52:17
+<?php /* Smarty version 2.6.11, created on 2015-10-23 20:20:54
          compiled from cache/modules/Accounts/EditView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'cache/modules/Accounts/EditView.tpl', 38, false),array('modifier', 'default', 'cache/modules/Accounts/EditView.tpl', 49, false),array('modifier', 'strip_semicolon', 'cache/modules/Accounts/EditView.tpl', 67, false),array('modifier', 'lookup', 'cache/modules/Accounts/EditView.tpl', 242, false),array('modifier', 'count', 'cache/modules/Accounts/EditView.tpl', 322, false),array('function', 'sugar_include', 'cache/modules/Accounts/EditView.tpl', 44, false),array('function', 'counter', 'cache/modules/Accounts/EditView.tpl', 50, false),array('function', 'sugar_getimagepath', 'cache/modules/Accounts/EditView.tpl', 53, false),array('function', 'sugar_translate', 'cache/modules/Accounts/EditView.tpl', 56, false),array('function', 'html_options', 'cache/modules/Accounts/EditView.tpl', 217, false),array('function', 'sugar_getjspath', 'cache/modules/Accounts/EditView.tpl', 432, false),array('function', 'multienum_to_array', 'cache/modules/Accounts/EditView.tpl', 727, false),)), $this); ?>
@@ -1435,8 +1435,8 @@ SyncToHidden(e.result.raw.key);
 
 <?php ob_start(); ?>
 <tr>
-<td valign="top" id='annual_revenue_label' width='12.5%' scope="col">
-<?php ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_ANNUAL_REVENUE','module' => 'Accounts'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+<td valign="top" id='chemspace_partner_c_label' width='12.5%' scope="col">
+<?php ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_CHEMSPACE_PARTNER','module' => 'Accounts'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 </td>
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
@@ -1446,14 +1446,255 @@ SyncToHidden(e.result.raw.key);
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
 
 
-<?php if (strlen ( $this->_tpl_vars['fields']['annual_revenue']['value'] ) <= 0):  $this->assign('value', $this->_tpl_vars['fields']['annual_revenue']['default_value']);  else:  $this->assign('value', $this->_tpl_vars['fields']['annual_revenue']['value']);  endif; ?>  
-<input type='text' name='<?php echo $this->_tpl_vars['fields']['annual_revenue']['name']; ?>
-' 
-id='<?php echo $this->_tpl_vars['fields']['annual_revenue']['name']; ?>
-' size='30' 
-maxlength='100' 
-value='<?php echo $this->_tpl_vars['value']; ?>
-' title=''      >
+<?php if (! isset ( $this->_tpl_vars['config']['enable_autocomplete'] ) || $this->_tpl_vars['config']['enable_autocomplete'] == false): ?>
+<select name="<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+" 
+id="<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+" 
+title=''       
+>
+<?php if (isset ( $this->_tpl_vars['fields']['chemspace_partner_c']['value'] ) && $this->_tpl_vars['fields']['chemspace_partner_c']['value'] != ''):  echo smarty_function_html_options(array('options' => $this->_tpl_vars['fields']['chemspace_partner_c']['options'],'selected' => $this->_tpl_vars['fields']['chemspace_partner_c']['value']), $this);?>
+
+<?php else:  echo smarty_function_html_options(array('options' => $this->_tpl_vars['fields']['chemspace_partner_c']['options'],'selected' => $this->_tpl_vars['fields']['chemspace_partner_c']['default']), $this);?>
+
+<?php endif; ?>
+</select>
+<?php else:  $this->assign('field_options', $this->_tpl_vars['fields']['chemspace_partner_c']['options']);  ob_start();  echo $this->_tpl_vars['fields']['chemspace_partner_c']['value'];  $this->_smarty_vars['capture']['field_val'] = ob_get_contents(); ob_end_clean();  $this->assign('field_val', $this->_smarty_vars['capture']['field_val']);  ob_start();  echo $this->_tpl_vars['fields']['chemspace_partner_c']['name'];  $this->_smarty_vars['capture']['ac_key'] = ob_get_contents(); ob_end_clean();  $this->assign('ac_key', $this->_smarty_vars['capture']['ac_key']); ?>
+<select style='display:none' name="<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+" 
+id="<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+" 
+title=''          
+>
+<?php if (isset ( $this->_tpl_vars['fields']['chemspace_partner_c']['value'] ) && $this->_tpl_vars['fields']['chemspace_partner_c']['value'] != ''):  echo smarty_function_html_options(array('options' => $this->_tpl_vars['fields']['chemspace_partner_c']['options'],'selected' => $this->_tpl_vars['fields']['chemspace_partner_c']['value']), $this);?>
+
+<?php else:  echo smarty_function_html_options(array('options' => $this->_tpl_vars['fields']['chemspace_partner_c']['options'],'selected' => $this->_tpl_vars['fields']['chemspace_partner_c']['default']), $this);?>
+
+<?php endif; ?>
+</select>
+<input
+id="<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+-input"
+name="<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+-input"
+size="30"
+value="<?php echo ((is_array($_tmp=$this->_tpl_vars['field_val'])) ? $this->_run_mod_handler('lookup', true, $_tmp, $this->_tpl_vars['field_options']) : smarty_modifier_lookup($_tmp, $this->_tpl_vars['field_options'])); ?>
+"
+type="text" style="vertical-align: top;">
+<span class="id-ff multiple">
+<button type="button"><img src="<?php echo smarty_function_sugar_getimagepath(array('file' => "id-ff-down.png"), $this);?>
+" id="<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+-image"></button><button type="button"
+id="btn-clear-<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+-input"
+title="Clear"
+onclick="SUGAR.clearRelateField(this.form, '<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+-input', '<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+');sync_<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+()"><img src="<?php echo smarty_function_sugar_getimagepath(array('file' => "id-ff-clear.png"), $this);?>
+"></button>
+</span>
+<?php echo '
+<script>
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo ' = [];
+'; ?>
+
+<?php echo '
+(function (){
+var selectElem = document.getElementById("';  echo $this->_tpl_vars['fields']['chemspace_partner_c']['name'];  echo '");
+if (typeof select_defaults =="undefined")
+select_defaults = [];
+select_defaults[selectElem.id] = {key:selectElem.value,text:\'\'};
+//get default
+for (i=0;i<selectElem.options.length;i++){
+if (selectElem.options[i].value==selectElem.value)
+select_defaults[selectElem.id].text = selectElem.options[i].innerHTML;
+}
+//SUGAR.AutoComplete.{$ac_key}.ds = 
+//get options array from vardefs
+var options = SUGAR.AutoComplete.getOptionsArray("");
+YUI().use(\'datasource\', \'datasource-jsonschema\',function (Y) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.ds = new Y.DataSource.Function({
+source: function (request) {
+var ret = [];
+for (i=0;i<selectElem.options.length;i++)
+if (!(selectElem.options[i].value==\'\' && selectElem.options[i].innerHTML==\'\'))
+ret.push({\'key\':selectElem.options[i].value,\'text\':selectElem.options[i].innerHTML});
+return ret;
+}
+});
+});
+})();
+'; ?>
+
+<?php echo '
+YUI().use("autocomplete", "autocomplete-filters", "autocomplete-highlighters", "node","node-event-simulate", function (Y) {
+'; ?>
+
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.inputNode = Y.one('#<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+-input');
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.inputImage = Y.one('#<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+-image');
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.inputHidden = Y.one('#<?php echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+');
+<?php echo '
+function SyncToHidden(selectme){
+var selectElem = document.getElementById("';  echo $this->_tpl_vars['fields']['chemspace_partner_c']['name'];  echo '");
+var doSimulateChange = false;
+if (selectElem.value!=selectme)
+doSimulateChange=true;
+selectElem.value=selectme;
+for (i=0;i<selectElem.options.length;i++){
+selectElem.options[i].selected=false;
+if (selectElem.options[i].value==selectme)
+selectElem.options[i].selected=true;
+}
+if (doSimulateChange)
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputHidden.simulate(\'change\');
+}
+//global variable 
+sync_';  echo $this->_tpl_vars['fields']['chemspace_partner_c']['name'];  echo ' = function(){
+SyncToHidden();
+}
+function syncFromHiddenToWidget(){
+var selectElem = document.getElementById("';  echo $this->_tpl_vars['fields']['chemspace_partner_c']['name'];  echo '");
+//if select no longer on page, kill timer
+if (selectElem==null || selectElem.options == null)
+return;
+var currentvalue = SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.get(\'value\');
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.simulate(\'keyup\');
+for (i=0;i<selectElem.options.length;i++){
+if (selectElem.options[i].value==selectElem.value && document.activeElement != document.getElementById(\'';  echo $this->_tpl_vars['fields']['chemspace_partner_c']['name']; ?>
+-input<?php echo '\'))
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.set(\'value\',selectElem.options[i].innerHTML);
+}
+}
+YAHOO.util.Event.onAvailable("';  echo $this->_tpl_vars['fields']['chemspace_partner_c']['name'];  echo '", syncFromHiddenToWidget);
+'; ?>
+
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.minQLen = 0;
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.queryDelay = 0;
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.numOptions = <?php echo count($this->_tpl_vars['field_options']); ?>
+;
+if(SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.numOptions >= 300) <?php echo '{
+'; ?>
+
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.minQLen = 1;
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.queryDelay = 200;
+<?php echo '
+}
+'; ?>
+
+if(SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.numOptions >= 3000) <?php echo '{
+'; ?>
+
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.minQLen = 1;
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.queryDelay = 500;
+<?php echo '
+}
+'; ?>
+
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.optionsVisible = false;
+<?php echo '
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.plug(Y.Plugin.AutoComplete, {
+activateFirstItem: true,
+'; ?>
+
+minQueryLength: SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.minQLen,
+queryDelay: SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.queryDelay,
+zIndex: 99999,
+<?php echo '
+source: SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.ds,
+resultTextLocator: \'text\',
+resultHighlighter: \'phraseMatch\',
+resultFilters: \'phraseMatch\',
+});
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.expandHover = function(ex){
+var hover = YAHOO.util.Dom.getElementsByClassName(\'dccontent\');
+if(hover[0] != null){
+if (ex) {
+var h = \'1000px\';
+hover[0].style.height = h;
+}
+else{
+hover[0].style.height = \'\';
+}
+}
+}
+if('; ?>
+SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
+.minQLen<?php echo ' == 0){
+// expand the dropdown options upon focus
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.on(\'focus\', function () {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.ac.sendRequest(\'\');
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.optionsVisible = true;
+});
+}
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.on(\'click\', function(e) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputHidden.simulate(\'click\');
+});
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.on(\'dblclick\', function(e) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputHidden.simulate(\'dblclick\');
+});
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.on(\'focus\', function(e) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputHidden.simulate(\'focus\');
+});
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.on(\'mouseup\', function(e) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputHidden.simulate(\'mouseup\');
+});
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.on(\'mousedown\', function(e) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputHidden.simulate(\'mousedown\');
+});
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.on(\'blur\', function(e) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputHidden.simulate(\'blur\');
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.optionsVisible = false;
+var selectElem = document.getElementById("';  echo $this->_tpl_vars['fields']['chemspace_partner_c']['name'];  echo '");
+//if typed value is a valid option, do nothing
+for (i=0;i<selectElem.options.length;i++)
+if (selectElem.options[i].innerHTML==SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.get(\'value\'))
+return;
+//typed value is invalid, so set the text and the hidden to blank
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.set(\'value\', select_defaults[selectElem.id].text);
+SyncToHidden(select_defaults[selectElem.id].key);
+});
+// when they click on the arrow image, toggle the visibility of the options
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputImage.ancestor().on(\'click\', function () {
+if (SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.optionsVisible) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.blur();
+} else {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.focus();
+}
+});
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.ac.on(\'query\', function () {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputHidden.set(\'value\', \'\');
+});
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.ac.on(\'visibleChange\', function (e) {
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.expandHover(e.newVal); // expand
+});
+// when they select an option, set the hidden input with the KEY, to be saved
+SUGAR.AutoComplete.';  echo $this->_tpl_vars['ac_key'];  echo '.inputNode.ac.on(\'select\', function(e) {
+SyncToHidden(e.result.raw.key);
+});
+});
+</script> 
+'; ?>
+
+<?php endif; ?>
 <td valign="top" id='employees_label' width='12.5%' scope="col">
 <?php ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_EMPLOYEES','module' => 'Accounts'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
@@ -2000,15 +2241,18 @@ addToValidate(\'EditView\', \'email\', \'email\', false,\'';  echo smarty_functi
 addToValidate(\'EditView\', \'campaign_id\', \'id\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_CAMPAIGN_ID','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'campaign_name\', \'relate\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_CAMPAIGN','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'shipping_address_street_3_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_SHIPPING_ADDRESS_STREET_3','module' => 'Accounts','for_js' => true), $this); echo '\' );
+addToValidate(\'EditView\', \'supplier_id_c\', \'int\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_SUPPLIER_ID','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'shipping_address_street_2_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_SHIPPING_ADDRESS_STREET_2','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'billing_address_street_3_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_BILLING_ADDRESS_STREET_3','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'vat_number_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_VAT_NUMBER','module' => 'Accounts','for_js' => true), $this); echo '\' );
+addToValidate(\'EditView\', \'chemspace_partner_c\', \'enum\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_CHEMSPACE_PARTNER','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'active_customer_c\', \'enum\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_ACTIVE_CUSTOMER','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'jjwg_maps_geocode_status_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_JJWG_MAPS_GEOCODE_STATUS','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'jjwg_maps_lng_c\', \'float\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_JJWG_MAPS_LNG','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'country_c\', \'enum\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_COUNTRY','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'jjwg_maps_address_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_JJWG_MAPS_ADDRESS','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'billing_address_street_2_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_BILLING_ADDRESS_STREET_2','module' => 'Accounts','for_js' => true), $this); echo '\' );
+addToValidate(\'EditView\', \'cs_contact_id_c\', \'int\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_CS_CONTACT_ID','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'jjwg_maps_lat_c\', \'float\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_JJWG_MAPS_LAT','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'company_type_multi_c[]\', \'multienum\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_COMPANY_TYPE_MULTI','module' => 'Accounts','for_js' => true), $this); echo '\' );
 addToValidateBinaryDependency(\'EditView\', \'assigned_user_name\', \'alpha\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'ERR_SQS_NO_MATCH_FIELD','module' => 'Accounts','for_js' => true), $this); echo ': ';  echo smarty_function_sugar_translate(array('label' => 'LBL_ASSIGNED_TO','module' => 'Accounts','for_js' => true), $this); echo '\', \'assigned_user_id\' );

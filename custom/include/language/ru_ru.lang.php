@@ -18,12 +18,6 @@ $GLOBALS['app_list_strings']['transportation_list']=array (
   'tnt' => 'TNT',
   '' => '',
 );
-
-$GLOBALS['app_list_strings']['active_customer_list']=array (
-  '' => '',
-  'yes' => 'Yes',
-  'no' => 'No',
-);
 $GLOBALS['app_list_strings']['account_type_dom']=array (
   '' => '',
   'Analyst' => 'Аналитик',
@@ -197,4 +191,10 @@ $GLOBALS['app_list_strings']['chemspace_partner_list']=array (
   '' => '',
   1 => 'Yes',
   0 => 'No',
+);
+
+$GLOBALS['app_list_strings']['active_customer_list']=array (
+  '' => '',
+  1 => 'Active',
+  0 => 'Inactive',
 );

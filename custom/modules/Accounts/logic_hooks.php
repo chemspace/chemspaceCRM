@@ -7,6 +7,7 @@ $hook_array = Array();
 $hook_array['after_ui_frame'] = Array(); 
 $hook_array['before_save'] = Array(); 
 $hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'custom/modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateGeocodeInfo');
+$hook_array['before_save'][] = Array(78, 'addContactToSubpanel', 'custom/modules/Accounts/Supplier_ContactLogicHook.php','Supplier_ContactLogicHook', 'addContactToSubpanel');
 $hook_array['after_save'] = Array();
 $hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'custom/modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
 $hook_array['after_save'][] = Array(78, 'updateRelatedProjectGeocodeInfo', 'custom/modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateRelatedProjectGeocodeInfo'); 
