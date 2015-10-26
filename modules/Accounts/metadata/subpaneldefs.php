@@ -153,7 +153,12 @@ $layout_defs['Accounts'] = array(
 			'sort_order' => 'asc',
 			'sort_by' => 'last_name, first_name',
 			'subpanel_name' => 'ForAccounts',
-			'get_subpanel_data' => 'contacts',
+			'get_subpanel_data' => 'function:getSubpanelQueryParts',
+			// Set to true to indicate we are building a custom SQL query
+			'generate_select' => true,
+			'function_parameters' => array(
+				// File where the above function is defined at
+				'import_function_file' => 'custom/Extension/application/Ext/Utils/Custom_Contacts_Subpanel_Relate.php',),
 			'add_subpanel_data' => 'contact_id',
 			'title_key' => 'LBL_CONTACTS_SUBPANEL_TITLE',
 			'top_buttons' => array(

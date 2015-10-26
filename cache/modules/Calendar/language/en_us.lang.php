@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-23 18:08:15
+// created: 2015-10-26 15:52:08
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Calendar',
   'LBL_MODULE_TITLE' => 'Calendar',

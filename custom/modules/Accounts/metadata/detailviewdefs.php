@@ -174,8 +174,12 @@ array (
         ),
         7 => 
         array (
-          0 => '',
-          1 => '',
+          0 => 
+          array (
+            'name' => 'ownership',
+            'comment' => '',
+            'label' => 'LBL_OWNERSHIP',
+          ),
         ),
       ),
       'LBL_PANEL_ADVANCED' => 
