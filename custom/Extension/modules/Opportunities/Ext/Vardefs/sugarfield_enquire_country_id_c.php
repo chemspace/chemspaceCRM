@@ -1,0 +1,6 @@
+<?php
+ // created: 2015-10-29 14:37:27
+$dictionary['Opportunity']['fields']['enquire_country_id_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['enquire_country_id_c']['labelValue']='Country id';
+
+ ?>

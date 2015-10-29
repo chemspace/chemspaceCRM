@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-26 17:52:34
+// created: 2015-10-29 18:52:39
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -9,7 +9,7 @@ $mod_strings = array (
   'LBL_MODIFIED_NAME' => 'Modified by User Name',
   'LBL_CREATED' => 'Created By',
   'LBL_CREATED_ID' => 'Created by ID',
-  'LBL_DESCRIPTION' => 'Description:',
+  'LBL_DESCRIPTION' => 'Message',
   'LBL_DELETED' => 'Deleted',
   'LBL_NAME' => 'Opportunity Name',
   'LBL_CREATED_USER' => 'Created User',
@@ -115,5 +115,18 @@ $mod_strings = array (
   'TWITTER_USER_C' => 'Twitter User',
   'LBL_CONTACTS' => 'Contacts',
   'LBL_ACCOUNTS' => 'Companies',
+  'LBL_ENQUIRE_EMAIL' => 'Enquire email',
+  'LBL_ENQUIRE_FIRST_NAME' => 'First name',
+  'LBL_ENQUIRE_LAST_NAME' => 'Last name',
+  'LBL_ENQUIRE_PHONE' => 'Phone',
+  'LBL_ENQUIRE_CITY' => 'City',
+  'LBL_ENQUIRE_STATE' => 'State',
+  'LBL_ENQUIRE_USER_ID' => 'User id',
+  'LBL_ENQUIRE_IP' => 'Ip',
+  'LBL_ENQUIRE_COUNTRY_ID' => 'Country id',
+  'LBL_ENQUIRE_ID' => 'Enquire id',
+  'LBL_ENQUIRE_ITEM_ID' => 'Item id',
+  'LBL_ENQUIRE_SUPPLIER_ID' => 'Supplier id',
+  'LBL_ENQUIRE_VENDOR_ITEM' => 'Vendor item',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );
