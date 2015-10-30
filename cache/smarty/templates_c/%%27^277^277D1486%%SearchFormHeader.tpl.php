@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.11, created on 2015-10-29 17:10:26
-         compiled from cache/modules/Opportunities/SearchFormHeader.tpl */ ?>
+<?php /* Smarty version 2.6.11, created on 2015-10-30 11:23:08
+         compiled from cache/modules/Accounts/SearchFormHeader.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getjspath', 'cache/modules/Opportunities/SearchFormHeader.tpl', 4, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getjspath', 'cache/modules/Accounts/SearchFormHeader.tpl', 4, false),)), $this); ?>
 
 <div class="clear"></div>
 <div class='listViewBody'>
