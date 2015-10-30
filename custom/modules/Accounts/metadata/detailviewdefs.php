@@ -19,7 +19,7 @@ array (
           ),
         ),
       ),
-      'maxColumns' => '2',
+      'maxColumns' => '3',
       'widths' => 
       array (
         0 => 
@@ -28,6 +28,11 @@ array (
           'field' => '30',
         ),
         1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        2 => 
         array (
           'label' => '10',
           'field' => '30',
@@ -44,11 +49,6 @@ array (
       'tabDefs' => 
       array (
         'LBL_ACCOUNT_INFORMATION' => 
-        array (
-          'newTab' => false,
-          'panelDefault' => 'expanded',
-        ),
-        'LBL_PANEL_ADVANCED' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
@@ -70,9 +70,14 @@ array (
           ),
           1 => 
           array (
-            'name' => 'phone_office',
-            'comment' => 'The office phone number',
-            'label' => 'LBL_PHONE_OFFICE',
+            'name' => 'company_type_multi_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_TYPE_MULTI',
+          ),
+          2 => 
+          array (
+            'name' => 'parent_name',
+            'label' => 'LBL_MEMBER_OF',
           ),
         ),
         1 => 
@@ -85,11 +90,59 @@ array (
           ),
           1 => 
           array (
-            'name' => 'vat_number_c',
-            'label' => 'LBL_VAT_NUMBER',
+            'name' => 'chemspace_partner_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CHEMSPACE_PARTNER',
+          ),
+          2 => 
+          array (
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO',
           ),
         ),
         2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'phone_office',
+            'comment' => 'The office phone number',
+            'label' => 'LBL_PHONE_OFFICE',
+          ),
+          1 => 
+          array (
+            'name' => 'active_customer_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ACTIVE_CUSTOMER',
+          ),
+          2 => 
+          array (
+            'name' => 'industry',
+            'comment' => 'The company belongs in this industry',
+            'label' => 'LBL_INDUSTRY',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'phone_fax',
+            'comment' => 'The fax phone number of this company',
+            'label' => 'LBL_FAX',
+          ),
+          1 => 
+          array (
+            'name' => 'rating',
+            'comment' => 'An arbitrary rating for this company for use in comparisons with others',
+            'label' => 'LBL_RATING',
+          ),
+          2 => 
+          array (
+            'name' => 'employees',
+            'comment' => 'Number of employees, varchar to accomodate for both number (100) or range (50-100)',
+            'label' => 'LBL_EMPLOYEES',
+          ),
+        ),
+        4 => 
         array (
           0 => 
           array (
@@ -101,14 +154,33 @@ array (
               'link_target' => '_blank',
             ),
           ),
+          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'jjwg_maps_address_c',
+            'label' => 'LBL_JJWG_MAPS_ADDRESS',
+          ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'vat_number_c',
+            'label' => 'LBL_VAT_NUMBER',
+          ),
           1 => 
           array (
-            'name' => 'phone_fax',
-            'comment' => 'The fax phone number of this company',
-            'label' => 'LBL_FAX',
+            'name' => 'ownership',
+            'comment' => '',
+            'label' => 'LBL_OWNERSHIP',
           ),
+          2 => '',
         ),
-        3 => 
+        7 => 
         array (
           0 => 
           array (
@@ -116,131 +188,7 @@ array (
             'comment' => 'Full text of the note',
             'label' => 'LBL_DESCRIPTION',
           ),
-          1 => 
-          array (
-            'name' => 'country_c',
-            'studio' => 'visible',
-            'label' => 'LBL_COUNTRY',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'billing_address_street',
-            'label' => 'LBL_BILLING_ADDRESS',
-            'type' => 'address',
-            'displayParams' => 
-            array (
-              'key' => 'billing',
-            ),
-          ),
-          1 => 
-          array (
-            'name' => 'shipping_address_street',
-            'label' => 'LBL_SHIPPING_ADDRESS',
-            'type' => 'address',
-            'displayParams' => 
-            array (
-              'key' => 'shipping',
-            ),
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'billing_address_street_2_c',
-            'label' => 'LBL_BILLING_ADDRESS_STREET_2',
-          ),
-          1 => 
-          array (
-            'name' => 'shipping_address_street_2_c',
-            'label' => 'LBL_SHIPPING_ADDRESS_STREET_2',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'billing_address_street_3_c',
-            'label' => 'LBL_BILLING_ADDRESS_STREET_3',
-          ),
-          1 => 
-          array (
-            'name' => 'shipping_address_street_3_c',
-            'label' => 'LBL_SHIPPING_ADDRESS_STREET_3',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ownership',
-            'comment' => '',
-            'label' => 'LBL_OWNERSHIP',
-          ),
-        ),
-      ),
-      'LBL_PANEL_ADVANCED' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            'name' => 'company_type_multi_c',
-            'studio' => 'visible',
-            'label' => 'LBL_COMPANY_TYPE_MULTI',
-          ),
-          1 => 
-          array (
-            'name' => 'industry',
-            'comment' => 'The company belongs in this industry',
-            'label' => 'LBL_INDUSTRY',
-          ),
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'chemspace_partner_c',
-            'studio' => 'visible',
-            'label' => 'LBL_CHEMSPACE_PARTNER',
-          ),
-          1 => 
-          array (
-            'name' => 'employees',
-            'comment' => 'Number of employees, varchar to accomodate for both number (100) or range (50-100)',
-            'label' => 'LBL_EMPLOYEES',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'parent_name',
-            'label' => 'LBL_MEMBER_OF',
-          ),
-          1 => 
-          array (
-            'name' => 'active_customer_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ACTIVE_CUSTOMER',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO',
-          ),
-          1 => 
-          array (
-            'name' => 'rating',
-            'comment' => 'An arbitrary rating for this company for use in comparisons with others',
-            'label' => 'LBL_RATING',
-          ),
+          1 => '',
         ),
       ),
     ),

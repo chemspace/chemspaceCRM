@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-22 18:17:35
+// created: 2015-10-30 12:28:10
 $mod_strings = array (
   'LBL_CONTACTS' => 'Contacts',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
@@ -16,7 +16,7 @@ $mod_strings = array (
   'LBL_HOMEPAGE_TITLE' => 'My Companies',
   'LBL_PARENT_ACCOUNT_ID' => 'Parent Company ID',
   'LBL_MODULE_NAME' => 'Companies',
-  'LBL_ACTIVE_CUSTOMER' => 'Active customer',
+  'LBL_ACTIVE_CUSTOMER' => 'Active',
   'LBL_VAT_NUMBER' => 'VAT number',
   'LBL_BILLING_ADDRESS_STREET_2' => 'Billing street 2',
   'LBL_BILLING_ADDRESS_STREET_3' => 'Billing street 3',
@@ -27,4 +27,6 @@ $mod_strings = array (
   'LBL_SUPPLIER_ID' => 'Supplier id',
   'LBL_CS_CONTACT_ID' => 'Contact id',
   'LBL_CHEMSPACE_PARTNER' => 'Chemspace partner',
+  'LBL_FAX' => 'Fax',
+  'LBL_PHONE_ALT' => 'Alternative Phone',
 );

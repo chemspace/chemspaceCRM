@@ -52,13 +52,13 @@ document.getElementById('detailpanel_1').className += ' expanded';
 {capture name="tr" assign="tableRow"}
 <tr>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
+<td width='8.33%' scope="col">
 {if !$fields.name.hidden}
 {capture name="label" assign="label"}{sugar_translate label='LBL_NAME' module='Accounts'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="name" field="name" width='37.5%'  >
+<td class="inlineEdit" type="name" field="name" width='25%'  >
 {if !$fields.name.hidden}
 {counter name="panelFieldCount"}
 
@@ -72,396 +72,13 @@ document.getElementById('detailpanel_1').className += ' expanded';
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
 </td>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.phone_office.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_PHONE_OFFICE' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="phone" field="phone_office" width='37.5%'  class="phone">
-{if !$fields.phone_office.hidden}
-{counter name="panelFieldCount"}
-
-{if !empty($fields.phone_office.value)}
-{assign var="phone_value" value=$fields.phone_office.value }
-{sugar_phone value=$phone_value usa_format="0"}
-{/if}
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.email1.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_EMAIL' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="email1" width='37.5%'  >
-{if !$fields.email1.hidden}
-{counter name="panelFieldCount"}
-<span id='email1_span'>
-{$fields.email1.value}
-</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.vat_number_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_VAT_NUMBER' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="vat_number_c" width='37.5%'  >
-{if !$fields.vat_number_c.hidden}
-{counter name="panelFieldCount"}
-
-{if strlen($fields.vat_number_c.value) <= 0}
-{assign var="value" value=$fields.vat_number_c.default_value }
-{else}
-{assign var="value" value=$fields.vat_number_c.value }
-{/if} 
-<span class="sugar_field" id="{$fields.vat_number_c.name}">{$fields.vat_number_c.value}</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.website.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_WEBSITE' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="url" field="website" width='37.5%'  >
-{if !$fields.website.hidden}
-{counter name="panelFieldCount"}
-
-{capture name=getLink assign=link}{$fields.website.value}{/capture}
-{if !empty($link)}
-{capture name=getStart assign=linkStart}{$link|substr:0:7}{/capture}
-<span class="sugar_field" id="{$fields.website.name}">
-<a href='{$link|to_url}' target='_blank' >{$link}</a>
-</span>
-{/if}
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.phone_fax.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_FAX' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="phone" field="phone_fax" width='37.5%'  class="phone">
-{if !$fields.phone_fax.hidden}
-{counter name="panelFieldCount"}
-
-{if !empty($fields.phone_fax.value)}
-{assign var="phone_value" value=$fields.phone_fax.value }
-{sugar_phone value=$phone_value usa_format="0"}
-{/if}
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.description.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_DESCRIPTION' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="text" field="description" width='37.5%'  >
-{if !$fields.description.hidden}
-{counter name="panelFieldCount"}
-
-<span class="sugar_field" id="{$fields.description.name|escape:'html'|url2html|nl2br}">{$fields.description.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.country_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_COUNTRY' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="enum" field="country_c" width='37.5%'  >
-{if !$fields.country_c.hidden}
-{counter name="panelFieldCount"}
-
-
-{if is_string($fields.country_c.options)}
-<input type="hidden" class="sugar_field" id="{$fields.country_c.name}" value="{ $fields.country_c.options }">
-{ $fields.country_c.options }
-{else}
-<input type="hidden" class="sugar_field" id="{$fields.country_c.name}" value="{ $fields.country_c.value }">
-{ $fields.country_c.options[$fields.country_c.value]}
-{/if}
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.billing_address_street.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_BILLING_ADDRESS' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="billing_address_street" width='37.5%'  >
-{if !$fields.billing_address_street.hidden}
-{counter name="panelFieldCount"}
-
-<table border='0' cellpadding='0' cellspacing='0' width='100%'>
-<tr>
-<td width='99%'>
-<input type="hidden" class="sugar_field" id="billing_address_street" value="{$fields.billing_address_street.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="billing_address_city" value="{$fields.billing_address_city.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="billing_address_state" value="{$fields.billing_address_state.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="billing_address_country" value="{$fields.billing_address_country.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="billing_address_postalcode" value="{$fields.billing_address_postalcode.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-{$fields.billing_address_street.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}<br>
-{$fields.billing_address_city.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br} {$fields.billing_address_state.value|escape:'htmlentitydecode'|strip_tags|url2html|nl2br}&nbsp;&nbsp;{$fields.billing_address_postalcode.value|escape:'htmlentitydecode'|strip_tags|url2html|nl2br}<br>
-{$fields.billing_address_country.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}
-</td>
-<td class='dataField' width='1%'>
-{$custom_code_billing}
-</td>
-</tr>
-</table>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.shipping_address_street.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_SHIPPING_ADDRESS' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="shipping_address_street" width='37.5%'  >
-{if !$fields.shipping_address_street.hidden}
-{counter name="panelFieldCount"}
-
-<table border='0' cellpadding='0' cellspacing='0' width='100%'>
-<tr>
-<td width='99%'>
-<input type="hidden" class="sugar_field" id="shipping_address_street" value="{$fields.shipping_address_street.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="shipping_address_city" value="{$fields.shipping_address_city.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="shipping_address_state" value="{$fields.shipping_address_state.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="shipping_address_country" value="{$fields.shipping_address_country.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="shipping_address_postalcode" value="{$fields.shipping_address_postalcode.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}">
-{$fields.shipping_address_street.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}<br>
-{$fields.shipping_address_city.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br} {$fields.shipping_address_state.value|escape:'htmlentitydecode'|strip_tags|url2html|nl2br}&nbsp;&nbsp;{$fields.shipping_address_postalcode.value|escape:'htmlentitydecode'|strip_tags|url2html|nl2br}<br>
-{$fields.shipping_address_country.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}
-</td>
-<td class='dataField' width='1%'>
-{$custom_code_shipping}
-</td>
-</tr>
-</table>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.billing_address_street_2_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_BILLING_ADDRESS_STREET_2' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="billing_address_street_2_c" width='37.5%'  >
-{if !$fields.billing_address_street_2_c.hidden}
-{counter name="panelFieldCount"}
-
-{if strlen($fields.billing_address_street_2_c.value) <= 0}
-{assign var="value" value=$fields.billing_address_street_2_c.default_value }
-{else}
-{assign var="value" value=$fields.billing_address_street_2_c.value }
-{/if} 
-<span class="sugar_field" id="{$fields.billing_address_street_2_c.name}">{$fields.billing_address_street_2_c.value}</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.shipping_address_street_2_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_SHIPPING_ADDRESS_STREET_2' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="shipping_address_street_2_c" width='37.5%'  >
-{if !$fields.shipping_address_street_2_c.hidden}
-{counter name="panelFieldCount"}
-
-{if strlen($fields.shipping_address_street_2_c.value) <= 0}
-{assign var="value" value=$fields.shipping_address_street_2_c.default_value }
-{else}
-{assign var="value" value=$fields.shipping_address_street_2_c.value }
-{/if} 
-<span class="sugar_field" id="{$fields.shipping_address_street_2_c.name}">{$fields.shipping_address_street_2_c.value}</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.billing_address_street_3_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_BILLING_ADDRESS_STREET_3' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="billing_address_street_3_c" width='37.5%'  >
-{if !$fields.billing_address_street_3_c.hidden}
-{counter name="panelFieldCount"}
-
-{if strlen($fields.billing_address_street_3_c.value) <= 0}
-{assign var="value" value=$fields.billing_address_street_3_c.default_value }
-{else}
-{assign var="value" value=$fields.billing_address_street_3_c.value }
-{/if} 
-<span class="sugar_field" id="{$fields.billing_address_street_3_c.name}">{$fields.billing_address_street_3_c.value}</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.shipping_address_street_3_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_SHIPPING_ADDRESS_STREET_3' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="shipping_address_street_3_c" width='37.5%'  >
-{if !$fields.shipping_address_street_3_c.hidden}
-{counter name="panelFieldCount"}
-
-{if strlen($fields.shipping_address_street_3_c.value) <= 0}
-{assign var="value" value=$fields.shipping_address_street_3_c.default_value }
-{else}
-{assign var="value" value=$fields.shipping_address_street_3_c.value }
-{/if} 
-<span class="sugar_field" id="{$fields.shipping_address_street_3_c.name}">{$fields.shipping_address_street_3_c.value}</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.ownership.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_OWNERSHIP' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td class="inlineEdit" type="varchar" field="ownership" width='37.5%' colspan='3' >
-{if !$fields.ownership.hidden}
-{counter name="panelFieldCount"}
-
-{if strlen($fields.ownership.value) <= 0}
-{assign var="value" value=$fields.ownership.default_value }
-{else}
-{assign var="value" value=$fields.ownership.value }
-{/if} 
-<span class="sugar_field" id="{$fields.ownership.name}">{$fields.ownership.value}</span>
-{/if}
-<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
-</td>
-</tr>
-{/capture}
-{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
-{$tableRow}
-{/if}
-</table>
-<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() {ldelim} initPanel(1, 'expanded'); {rdelim}); </script>
-</div>
-{if $panelFieldCount == 0}
-<script>document.getElementById("LBL_ACCOUNT_INFORMATION").style.display='none';</script>
-{/if}
-<div id='detailpanel_2' class='detail view  detail508 expanded'>
-{counter name="panelFieldCount" start=0 print=false assign="panelFieldCount"}
-<h4>
-<a href="javascript:void(0)" class="collapseLink" onclick="collapsePanel(2);">
-<img border="0" id="detailpanel_2_img_hide" src="{sugar_getimagepath file="basic_search.gif"}"></a>
-<a href="javascript:void(0)" class="expandLink" onclick="expandPanel(2);">
-<img border="0" id="detailpanel_2_img_show" src="{sugar_getimagepath file="advanced_search.gif"}"></a>
-{sugar_translate label='LBL_PANEL_ADVANCED' module='Accounts'}
-<script>
-document.getElementById('detailpanel_2').className += ' expanded';
-</script>
-</h4>
-<table id='LBL_PANEL_ADVANCED' class="panelContainer" cellspacing='{$gridline}'>
-{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
-{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
-{capture name="tr" assign="tableRow"}
-<tr>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
+<td width='8.33%' scope="col">
 {if !$fields.company_type_multi_c.hidden}
 {capture name="label" assign="label"}{sugar_translate label='LBL_COMPANY_TYPE_MULTI' module='Accounts'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="multienum" field="company_type_multi_c" width='37.5%'  >
+<td class="inlineEdit" type="multienum" field="company_type_multi_c" width='25%'  >
 {if !$fields.company_type_multi_c.hidden}
 {counter name="panelFieldCount"}
 
@@ -476,13 +93,143 @@ document.getElementById('detailpanel_2').className += ' expanded';
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
 </td>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
+<td width='8.33%' scope="col">
+{if !$fields.parent_name.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_MEMBER_OF' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="relate" field="parent_name" width='25%'  >
+{if !$fields.parent_name.hidden}
+{counter name="panelFieldCount"}
+
+{if !empty($fields.parent_id.value)}
+{capture assign="detail_url"}index.php?module=Accounts&action=DetailView&record={$fields.parent_id.value}{/capture}
+<a href="{sugar_ajax_url url=$detail_url}">{/if}
+<span id="parent_id" class="sugar_field" data-id-value="{$fields.parent_id.value}">{$fields.parent_name.value}</span>
+{if !empty($fields.parent_id.value)}</a>{/if}
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+{if !$fields.email1.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_EMAIL' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="varchar" field="email1" width='25%'  >
+{if !$fields.email1.hidden}
+{counter name="panelFieldCount"}
+<span id='email1_span'>
+{$fields.email1.value}
+</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+{if !$fields.chemspace_partner_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_CHEMSPACE_PARTNER' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="enum" field="chemspace_partner_c" width='25%'  >
+{if !$fields.chemspace_partner_c.hidden}
+{counter name="panelFieldCount"}
+
+
+{if is_string($fields.chemspace_partner_c.options)}
+<input type="hidden" class="sugar_field" id="{$fields.chemspace_partner_c.name}" value="{ $fields.chemspace_partner_c.options }">
+{ $fields.chemspace_partner_c.options }
+{else}
+<input type="hidden" class="sugar_field" id="{$fields.chemspace_partner_c.name}" value="{ $fields.chemspace_partner_c.value }">
+{ $fields.chemspace_partner_c.options[$fields.chemspace_partner_c.value]}
+{/if}
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+{if !$fields.assigned_user_name.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_ASSIGNED_TO' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="relate" field="assigned_user_name" width='25%'  >
+{if !$fields.assigned_user_name.hidden}
+{counter name="panelFieldCount"}
+
+<span id="assigned_user_id" class="sugar_field" data-id-value="{$fields.assigned_user_id.value}">{$fields.assigned_user_name.value}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+{if !$fields.phone_office.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_PHONE_OFFICE' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="phone" field="phone_office" width='25%'  class="phone">
+{if !$fields.phone_office.hidden}
+{counter name="panelFieldCount"}
+
+{if !empty($fields.phone_office.value)}
+{assign var="phone_value" value=$fields.phone_office.value }
+{sugar_phone value=$phone_value usa_format="0"}
+{/if}
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+{if !$fields.active_customer_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_ACTIVE_CUSTOMER' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="enum" field="active_customer_c" width='25%'  >
+{if !$fields.active_customer_c.hidden}
+{counter name="panelFieldCount"}
+
+
+{if is_string($fields.active_customer_c.options)}
+<input type="hidden" class="sugar_field" id="{$fields.active_customer_c.name}" value="{ $fields.active_customer_c.options }">
+{ $fields.active_customer_c.options }
+{else}
+<input type="hidden" class="sugar_field" id="{$fields.active_customer_c.name}" value="{ $fields.active_customer_c.value }">
+{ $fields.active_customer_c.options[$fields.active_customer_c.value]}
+{/if}
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
 {if !$fields.industry.hidden}
 {capture name="label" assign="label"}{sugar_translate label='LBL_INDUSTRY' module='Accounts'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="enum" field="industry" width='37.5%'  >
+<td class="inlineEdit" type="enum" field="industry" width='25%'  >
 {if !$fields.industry.hidden}
 {counter name="panelFieldCount"}
 
@@ -507,35 +254,51 @@ document.getElementById('detailpanel_2').className += ' expanded';
 {capture name="tr" assign="tableRow"}
 <tr>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.chemspace_partner_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_CHEMSPACE_PARTNER' module='Accounts'}{/capture}
+<td width='8.33%' scope="col">
+{if !$fields.phone_fax.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_FAX' module='Accounts'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="enum" field="chemspace_partner_c" width='37.5%'  >
-{if !$fields.chemspace_partner_c.hidden}
+<td class="inlineEdit" type="phone" field="phone_fax" width='25%'  class="phone">
+{if !$fields.phone_fax.hidden}
 {counter name="panelFieldCount"}
 
-
-{if is_string($fields.chemspace_partner_c.options)}
-<input type="hidden" class="sugar_field" id="{$fields.chemspace_partner_c.name}" value="{ $fields.chemspace_partner_c.options }">
-{ $fields.chemspace_partner_c.options }
-{else}
-<input type="hidden" class="sugar_field" id="{$fields.chemspace_partner_c.name}" value="{ $fields.chemspace_partner_c.value }">
-{ $fields.chemspace_partner_c.options[$fields.chemspace_partner_c.value]}
+{if !empty($fields.phone_fax.value)}
+{assign var="phone_value" value=$fields.phone_fax.value }
+{sugar_phone value=$phone_value usa_format="0"}
 {/if}
 {/if}
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
 </td>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
+<td width='8.33%' scope="col">
+{if !$fields.rating.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_RATING' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="varchar" field="rating" width='25%'  >
+{if !$fields.rating.hidden}
+{counter name="panelFieldCount"}
+
+{if strlen($fields.rating.value) <= 0}
+{assign var="value" value=$fields.rating.default_value }
+{else}
+{assign var="value" value=$fields.rating.value }
+{/if} 
+<span class="sugar_field" id="{$fields.rating.name}">{$fields.rating.value}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
 {if !$fields.employees.hidden}
 {capture name="label" assign="label"}{sugar_translate label='LBL_EMPLOYEES' module='Accounts'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="varchar" field="employees" width='37.5%'  >
+<td class="inlineEdit" type="varchar" field="employees" width='25%'  >
 {if !$fields.employees.hidden}
 {counter name="panelFieldCount"}
 
@@ -558,44 +321,31 @@ document.getElementById('detailpanel_2').className += ' expanded';
 {capture name="tr" assign="tableRow"}
 <tr>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.parent_name.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_MEMBER_OF' module='Accounts'}{/capture}
+<td width='8.33%' scope="col">
+{if !$fields.website.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_WEBSITE' module='Accounts'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="relate" field="parent_name" width='37.5%'  >
-{if !$fields.parent_name.hidden}
+<td class="inlineEdit" type="url" field="website" width='25%' colspan='2' >
+{if !$fields.website.hidden}
 {counter name="panelFieldCount"}
 
-{if !empty($fields.parent_id.value)}
-{capture assign="detail_url"}index.php?module=Accounts&action=DetailView&record={$fields.parent_id.value}{/capture}
-<a href="{sugar_ajax_url url=$detail_url}">{/if}
-<span id="parent_id" class="sugar_field" data-id-value="{$fields.parent_id.value}">{$fields.parent_name.value}</span>
-{if !empty($fields.parent_id.value)}</a>{/if}
+{capture name=getLink assign=link}{$fields.website.value}{/capture}
+{if !empty($link)}
+{capture name=getStart assign=linkStart}{$link|substr:0:7}{/capture}
+<span class="sugar_field" id="{$fields.website.name}">
+<a href='{$link|to_url}' target='_blank' >{$link}</a>
+</span>
+{/if}
 {/if}
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
 </td>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.active_customer_c.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_ACTIVE_CUSTOMER' module='Accounts'}{/capture}
-{$label|strip_semicolon}:
-{/if}
+<td width='8.33%' scope="col">
+&nbsp;
 </td>
-<td class="inlineEdit" type="enum" field="active_customer_c" width='37.5%'  >
-{if !$fields.active_customer_c.hidden}
-{counter name="panelFieldCount"}
-
-
-{if is_string($fields.active_customer_c.options)}
-<input type="hidden" class="sugar_field" id="{$fields.active_customer_c.name}" value="{ $fields.active_customer_c.options }">
-{ $fields.active_customer_c.options }
-{else}
-<input type="hidden" class="sugar_field" id="{$fields.active_customer_c.name}" value="{ $fields.active_customer_c.value }">
-{ $fields.active_customer_c.options[$fields.active_customer_c.value]}
-{/if}
-{/if}
+<td class="inlineEdit" type="" field="" width='25%' colspan='3' >
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
 </td>
 </tr>
@@ -608,38 +358,117 @@ document.getElementById('detailpanel_2').className += ' expanded';
 {capture name="tr" assign="tableRow"}
 <tr>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.assigned_user_name.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_ASSIGNED_TO' module='Accounts'}{/capture}
+<td width='8.33%' scope="col">
+{if !$fields.jjwg_maps_address_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_JJWG_MAPS_ADDRESS' module='Accounts'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="relate" field="assigned_user_name" width='37.5%'  >
-{if !$fields.assigned_user_name.hidden}
+<td class="inlineEdit" type="varchar" field="jjwg_maps_address_c" width='25%' colspan='2' >
+{if !$fields.jjwg_maps_address_c.hidden}
 {counter name="panelFieldCount"}
 
-<span id="assigned_user_id" class="sugar_field" data-id-value="{$fields.assigned_user_id.value}">{$fields.assigned_user_name.value}</span>
+{if strlen($fields.jjwg_maps_address_c.value) <= 0}
+{assign var="value" value=$fields.jjwg_maps_address_c.default_value }
+{else}
+{assign var="value" value=$fields.jjwg_maps_address_c.value }
+{/if} 
+<span class="sugar_field" id="{$fields.jjwg_maps_address_c.name}">{$fields.jjwg_maps_address_c.value}</span>
 {/if}
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
 </td>
 {counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.rating.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_RATING' module='Accounts'}{/capture}
+<td width='8.33%' scope="col">
+&nbsp;
+</td>
+<td class="inlineEdit" type="" field="" width='25%' colspan='3' >
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+{if !$fields.vat_number_c.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_VAT_NUMBER' module='Accounts'}{/capture}
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td class="inlineEdit" type="varchar" field="rating" width='37.5%'  >
-{if !$fields.rating.hidden}
+<td class="inlineEdit" type="varchar" field="vat_number_c" width='25%'  >
+{if !$fields.vat_number_c.hidden}
 {counter name="panelFieldCount"}
 
-{if strlen($fields.rating.value) <= 0}
-{assign var="value" value=$fields.rating.default_value }
+{if strlen($fields.vat_number_c.value) <= 0}
+{assign var="value" value=$fields.vat_number_c.default_value }
 {else}
-{assign var="value" value=$fields.rating.value }
+{assign var="value" value=$fields.vat_number_c.value }
 {/if} 
-<span class="sugar_field" id="{$fields.rating.name}">{$fields.rating.value}</span>
+<span class="sugar_field" id="{$fields.vat_number_c.name}">{$fields.vat_number_c.value}</span>
 {/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+{if !$fields.ownership.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_OWNERSHIP' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="varchar" field="ownership" width='25%'  >
+{if !$fields.ownership.hidden}
+{counter name="panelFieldCount"}
+
+{if strlen($fields.ownership.value) <= 0}
+{assign var="value" value=$fields.ownership.default_value }
+{else}
+{assign var="value" value=$fields.ownership.value }
+{/if} 
+<span class="sugar_field" id="{$fields.ownership.name}">{$fields.ownership.value}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+&nbsp;
+</td>
+<td class="inlineEdit" type="" field="" width='25%'  >
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+</tr>
+{/capture}
+{if $fieldsUsed > 0 && $fieldsUsed != $fieldsHidden}
+{$tableRow}
+{/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{counter name="fieldsHidden" start=0 print=false assign="fieldsHidden"}
+{capture name="tr" assign="tableRow"}
+<tr>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+{if !$fields.description.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_DESCRIPTION' module='Accounts'}{/capture}
+{$label|strip_semicolon}:
+{/if}
+</td>
+<td class="inlineEdit" type="text" field="description" width='25%' colspan='2' >
+{if !$fields.description.hidden}
+{counter name="panelFieldCount"}
+
+<span class="sugar_field" id="{$fields.description.name|escape:'html'|url2html|nl2br}">{$fields.description.value|escape:'htmlentitydecode'|escape:'html'|url2html|nl2br}</span>
+{/if}
+<div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
+</td>
+{counter name="fieldsUsed"}
+<td width='8.33%' scope="col">
+&nbsp;
+</td>
+<td class="inlineEdit" type="" field="" width='25%' colspan='3' >
 <div class="inlineEditIcon"> {sugar_getimage name="inline_edit_icon.svg" attr='border="0" ' alt="$alt_edit"}</div>
 </td>
 </tr>
@@ -648,10 +477,10 @@ document.getElementById('detailpanel_2').className += ' expanded';
 {$tableRow}
 {/if}
 </table>
-<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() {ldelim} initPanel(2, 'expanded'); {rdelim}); </script>
+<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() {ldelim} initPanel(1, 'expanded'); {rdelim}); </script>
 </div>
 {if $panelFieldCount == 0}
-<script>document.getElementById("LBL_PANEL_ADVANCED").style.display='none';</script>
+<script>document.getElementById("LBL_ACCOUNT_INFORMATION").style.display='none';</script>
 {/if}
 </div>
 </div>

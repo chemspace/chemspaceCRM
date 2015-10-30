@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-30 11:23:14
+// created: 2015-10-30 12:54:32
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -51,7 +51,7 @@ $mod_strings = array (
   'LBL_DUPLICATE' => 'Possible Duplicate Account',
   'LBL_EMAIL' => 'Email Address:',
   'LBL_EMPLOYEES' => 'Employees:',
-  'LBL_FAX' => 'Fax:',
+  'LBL_FAX' => 'Fax',
   'LBL_INDUSTRY' => 'Industry:',
   'LBL_LIST_ACCOUNT_NAME' => 'Name',
   'LBL_LIST_CITY' => 'City',
@@ -66,7 +66,7 @@ $mod_strings = array (
   'LBL_OTHER_PHONE' => 'Other Phone:',
   'LBL_OWNERSHIP' => 'Ownership:',
   'LBL_PARENT_ACCOUNT_ID' => 'Parent Company ID',
-  'LBL_PHONE_ALT' => 'Alternate Phone:',
+  'LBL_PHONE_ALT' => 'Alternative Phone',
   'LBL_PHONE_FAX' => 'Phone Fax:',
   'LBL_PHONE_OFFICE' => 'Office Phone:',
   'LBL_PHONE' => 'Phone:',
@@ -153,7 +153,7 @@ $mod_strings = array (
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
   'LBL_CONTACTS' => 'Contacts',
   'LBL_MEMBERS' => 'Members',
-  'LBL_ACTIVE_CUSTOMER' => 'Active customer',
+  'LBL_ACTIVE_CUSTOMER' => 'Active',
   'LBL_VAT_NUMBER' => 'VAT number',
   'LBL_COMPANY_TYPE_MULTI' => 'Company type',
   'LBL_SUPPLIER_ID' => 'Supplier id',
