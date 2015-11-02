@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-30 12:54:32
+// created: 2015-11-02 18:51:17
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -41,7 +41,7 @@ $mod_strings = array (
   'LBL_BILLING_ADDRESS_STREET_3' => 'Billing street 3',
   'LBL_BILLING_ADDRESS_STREET_4' => 'Billing Street 4',
   'LBL_BILLING_ADDRESS_STREET' => 'Billing Street:',
-  'LBL_BILLING_ADDRESS' => 'Billing Address:',
+  'LBL_BILLING_ADDRESS' => 'Primary Address:',
   'LBL_ACCOUNT_INFORMATION' => 'Overview',
   'LBL_CITY' => 'City:',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',

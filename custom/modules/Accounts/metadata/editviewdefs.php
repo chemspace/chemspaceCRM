@@ -137,8 +137,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'jjwg_maps_address_c',
-            'label' => 'LBL_JJWG_MAPS_ADDRESS',
+            'name' => 'country_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COUNTRY',
           ),
           1 => '',
         ),
@@ -146,18 +147,31 @@ array (
         array (
           0 => 
           array (
-            'name' => 'vat_number_c',
-            'label' => 'LBL_VAT_NUMBER',
+            'name' => 'billing_address_street',
+            'hideLabel' => true,
+            'type' => 'address',
+            'displayParams' => 
+            array (
+              'key' => 'billing',
+              'rows' => 2,
+              'cols' => 30,
+              'maxlength' => 150,
+            ),
           ),
-          1 => 
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => '',
+          1 => '',
+          2 => 
           array (
             'name' => 'ownership',
             'comment' => '',
             'label' => 'LBL_OWNERSHIP',
           ),
-          2 => '',
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
