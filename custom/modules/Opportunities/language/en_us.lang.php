@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-29 14:47:40
+// created: 2015-11-05 17:17:18
 $mod_strings = array (
   'TWITTER_USER_C' => 'Twitter User',
   'LBL_CONTACTS' => 'Contacts',
@@ -25,4 +25,5 @@ $mod_strings = array (
   'LBL_ENQUIRE_SUPPLIER_ID' => 'Supplier id',
   'LBL_ENQUIRE_VENDOR_ITEM' => 'Vendor item',
   'LBL_DESCRIPTION' => 'Message',
+  'LBL_OPPORTUNITY_AUTOINCREMENT_ID' => 'Opportunity id',
 );

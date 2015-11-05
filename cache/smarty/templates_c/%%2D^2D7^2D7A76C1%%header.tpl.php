@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-11-02 18:51:17
+<?php /* Smarty version 2.6.11, created on 2015-11-05 18:03:32
          compiled from themes/SuiteR/tpls/header.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "themes/SuiteR/tpls/_head.tpl", 'smarty_include_vars' => array()));

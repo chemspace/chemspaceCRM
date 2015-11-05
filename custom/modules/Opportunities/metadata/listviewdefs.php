@@ -1,18 +1,11 @@
 <?php
 $listViewDefs ['Opportunities'] = 
 array (
-  'NAME' => 
+  'OPPORTUNITY_AUTOINCREMENT_ID_C' => 
   array (
-    'width' => '30%',
-    'label' => 'LBL_LIST_OPPORTUNITY_NAME',
-    'link' => true,
+    'type' => 'int',
     'default' => true,
-  ),
-  'ENQUIRE_LAST_NAME_C' => 
-  array (
-    'type' => 'varchar',
-    'default' => true,
-    'label' => 'LBL_ENQUIRE_LAST_NAME',
+    'label' => 'LBL_OPPORTUNITY_AUTOINCREMENT_ID',
     'width' => '10%',
   ),
   'ENQUIRE_EMAIL_C' => 
@@ -58,27 +51,12 @@ array (
     'label' => 'LBL_ENQUIRE_SUPPLIER_ID',
     'width' => '10%',
   ),
-  'ENQUIRE_ITEM_ID_C' => 
-  array (
-    'type' => 'int',
-    'default' => true,
-    'label' => 'LBL_ENQUIRE_ITEM_ID',
-    'width' => '10%',
-  ),
   'ENQUIRE_VENDOR_ITEM_C' => 
   array (
     'type' => 'varchar',
     'default' => true,
     'label' => 'LBL_ENQUIRE_VENDOR_ITEM',
     'width' => '10%',
-  ),
-  'AMOUNT_USDOLLAR' => 
-  array (
-    'width' => '10%',
-    'label' => 'LBL_LIST_AMOUNT_USDOLLAR',
-    'align' => 'right',
-    'default' => true,
-    'currency_format' => true,
   ),
   'AMOUNT' => 
   array (
@@ -94,6 +72,27 @@ array (
     'label' => 'LBL_DATE_ENTERED',
     'default' => true,
   ),
+  'NAME' => 
+  array (
+    'width' => '30%',
+    'label' => 'LBL_LIST_OPPORTUNITY_NAME',
+    'link' => true,
+    'default' => false,
+  ),
+  'ENQUIRE_LAST_NAME_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_ENQUIRE_LAST_NAME',
+    'width' => '10%',
+  ),
+  'ENQUIRE_ITEM_ID_C' => 
+  array (
+    'type' => 'int',
+    'default' => false,
+    'label' => 'LBL_ENQUIRE_ITEM_ID',
+    'width' => '10%',
+  ),
   'OPPORTUNITY_TYPE' => 
   array (
     'width' => '15%',
@@ -105,6 +104,14 @@ array (
     'width' => '15%',
     'label' => 'LBL_LEAD_SOURCE',
     'default' => false,
+  ),
+  'AMOUNT_USDOLLAR' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_AMOUNT_USDOLLAR',
+    'align' => 'right',
+    'default' => false,
+    'currency_format' => true,
   ),
   'NEXT_STEP' => 
   array (
