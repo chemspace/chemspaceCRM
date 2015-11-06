@@ -229,7 +229,7 @@
       'len' => '255',
       'source' => 'non-db',
       'unified_search' => true,
-      'required' => true,
+      'required' => false,
       'importable' => 'required',
     ),
     'account_id' => 

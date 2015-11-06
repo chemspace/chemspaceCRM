@@ -117,6 +117,14 @@ $dictionary['Opportunity']['fields']['amount']['merge_filter']='disabled';
 
  
 
+/**
+ * Created by PhpStorm.
+ * User: root
+ * Date: 06.11.15
+ * Time: 17:54
+ */
+$dictionary['Opportunity']['fields']['account_name']['required']=false;
+
  // created: 2015-11-06 15:27:48
 $dictionary['Opportunity']['fields']['cs_partner_c']['inline_edit']='1';
 $dictionary['Opportunity']['fields']['cs_partner_c']['labelValue']='CS Partner';
