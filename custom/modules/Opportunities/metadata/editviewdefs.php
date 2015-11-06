@@ -90,11 +90,6 @@ array (
         ),
         4 => 
         array (
-          0 => 
-          array (
-            'name' => 'enquire_supplier_id_c',
-            'label' => 'LBL_ENQUIRE_SUPPLIER_ID',
-          ),
           1 => 
           array (
             'name' => 'enquire_country_id_c',
@@ -139,8 +134,21 @@ array (
         ),
         8 => 
         array (
-          0 => 'lead_source',
+          0 => 
+          array (
+            'name' => 'enquire_first_name_c',
+            'label' => 'LBL_ENQUIRE_FIRST_NAME',
+          ),
           1 => 'sales_stage',
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'enquire_last_name_c',
+            'label' => 'LBL_ENQUIRE_LAST_NAME',
+          ),
+          1 => 'lead_source',
         ),
       ),
       'LBL_PANEL_ASSIGNMENT' => 

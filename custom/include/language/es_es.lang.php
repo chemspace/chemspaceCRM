@@ -198,3 +198,24 @@ $GLOBALS['app_list_strings']['active_customer_list']=array (
   1 => 'Active',
   0 => 'Inactive',
 );
+$GLOBALS['app_list_strings']['enquire_supplier_id_list']=array (
+  5 => 'Abamachem Ltd',
+  6 => 'BCH Research LLP',
+  12 => 'ChemBridge Corp.',
+  11 => 'Enamine Ltd',
+  7 => 'FCH Group',
+  17 => 'G',
+  8 => 'Intermed Ltd',
+  15 => 'Literatura',
+  20 => 'My Chemical Company',
+  9 => 'Selena Chem Ltd',
+  10 => 'UkrOrgSyntez Ltd',
+  '' => '',
+);
+$GLOBALS['app_list_strings']['enquire_status_list']=array (
+  0 => 'new',
+  1 => 'processed',
+  2 => 'ordered',
+  3 => 'closed',
+  '' => '',
+);

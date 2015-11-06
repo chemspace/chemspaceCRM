@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-05 17:17:18
+// created: 2015-11-06 16:48:38
 $mod_strings = array (
   'TWITTER_USER_C' => 'Twitter User',
   'LBL_CONTACTS' => 'Contacts',
@@ -8,10 +8,10 @@ $mod_strings = array (
   'LBL_ACCOUNTS' => 'Companies',
   'LBL_ACCOUNT_ID' => 'Company ID',
   'LBL_LIST_ACCOUNT_NAME' => 'Company Name',
-  'LBL_OPPORTUNITY_NAME' => 'Opportunity Name:',
+  'LBL_OPPORTUNITY_NAME' => 'Customer Name',
   'LBL_DATE_CLOSED' => 'Expected Close Date:',
-  'LBL_AMOUNT' => 'Opportunity Amount:',
-  'LBL_ENQUIRE_EMAIL' => 'Enquire email',
+  'LBL_AMOUNT' => 'Enquiry Amount',
+  'LBL_ENQUIRE_EMAIL' => 'Enquiry email',
   'LBL_ENQUIRE_FIRST_NAME' => 'First name',
   'LBL_ENQUIRE_LAST_NAME' => 'Last name',
   'LBL_ENQUIRE_PHONE' => 'Phone',
@@ -19,11 +19,19 @@ $mod_strings = array (
   'LBL_ENQUIRE_STATE' => 'State',
   'LBL_ENQUIRE_USER_ID' => 'User id',
   'LBL_ENQUIRE_IP' => 'Ip',
-  'LBL_ENQUIRE_COUNTRY_ID' => 'Country id',
+  'LBL_ENQUIRE_COUNTRY_ID' => 'Customer Country',
   'LBL_ENQUIRE_ID' => 'Enquire id',
   'LBL_ENQUIRE_ITEM_ID' => 'Item id',
-  'LBL_ENQUIRE_SUPPLIER_ID' => 'Supplier id',
   'LBL_ENQUIRE_VENDOR_ITEM' => 'Vendor item',
   'LBL_DESCRIPTION' => 'Message',
-  'LBL_OPPORTUNITY_AUTOINCREMENT_ID' => 'Opportunity id',
+  'LBL_OPPORTUNITY_AUTOINCREMENT_ID' => 'Id',
+  'LBL_SALES_STAGE' => 'Status',
+  'LBL_LIST_OPPORTUNITY_NAME' => 'Customer name',
+  'LBL_ENQUIRE_SUPPLIER_ID' => 'Supplier',
+  'LBL_CS_PARTNER' => 'CS Partner',
+  'LBL_QTY_OF_ITEMS' => 'Qty of items',
+  'LBL_CUSTOMER_COMPANY_NAME' => 'Customer company name',
+  'LBL_LIST_SALES_STAGE' => 'Status',
+  'LBL_LIST_ASSIGNED_USER' => 'Assigned to',
+  'LBL_ENQUIRE_CURRENCY' => 'Currency',
 );

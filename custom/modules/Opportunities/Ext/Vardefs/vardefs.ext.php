@@ -32,6 +32,12 @@ $dictionary['Opportunity']['fields']['enquire_vendor_item_c']['labelValue']='Ven
 
  
 
+ // created: 2015-11-06 16:48:38
+$dictionary['Opportunity']['fields']['enquire_currency_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['enquire_currency_c']['labelValue']='Currency';
+
+ 
+
  // created: 2015-10-29 14:12:21
 $dictionary['Opportunity']['fields']['enquire_email_c']['inline_edit']='1';
 $dictionary['Opportunity']['fields']['enquire_email_c']['labelValue']='Enquire email';
@@ -60,16 +66,33 @@ $dictionary['Opportunity']['fields']['enquire_state_c']['labelValue']='State';
 
  
 
+ // created: 2015-11-06 15:25:39
+$dictionary['Opportunity']['fields']['sales_stage']['default']='0';
+$dictionary['Opportunity']['fields']['sales_stage']['len']=100;
+$dictionary['Opportunity']['fields']['sales_stage']['inline_edit']=true;
+$dictionary['Opportunity']['fields']['sales_stage']['options']='enquire_status_list';
+$dictionary['Opportunity']['fields']['sales_stage']['comments']='Indication of progression towards closure';
+$dictionary['Opportunity']['fields']['sales_stage']['merge_filter']='disabled';
+
+ 
+
+ // created: 2015-11-06 15:29:34
+$dictionary['Opportunity']['fields']['qty_of_items_c']['inline_edit']='';
+$dictionary['Opportunity']['fields']['qty_of_items_c']['labelValue']='Qty of items';
+
+ 
+
  // created: 2015-11-05 17:17:18
 $dictionary['Opportunity']['fields']['opportunity_autoincrement_id_c']['inline_edit']='1';
 $dictionary['Opportunity']['fields']['opportunity_autoincrement_id_c']['auto_increment']='1';
+$dictionary['Opportunity']['fields']['opportunity_autoincrement_id_c']['link']='1';
 $dictionary['Opportunity']['fields']['opportunity_autoincrement_id_c']['labelValue']='Opportunity id';
 
  
 
- // created: 2015-10-29 14:44:24
+ // created: 2015-11-06 15:01:58
 $dictionary['Opportunity']['fields']['enquire_supplier_id_c']['inline_edit']='1';
-$dictionary['Opportunity']['fields']['enquire_supplier_id_c']['labelValue']='Supplier id';
+$dictionary['Opportunity']['fields']['enquire_supplier_id_c']['labelValue']='Supplier';
 
  
 
@@ -94,6 +117,12 @@ $dictionary['Opportunity']['fields']['amount']['merge_filter']='disabled';
 
  
 
+ // created: 2015-11-06 15:27:48
+$dictionary['Opportunity']['fields']['cs_partner_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['cs_partner_c']['labelValue']='CS Partner';
+
+ 
+
  // created: 2015-09-01 18:37:56
 $dictionary['Opportunity']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
@@ -101,6 +130,12 @@ $dictionary['Opportunity']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
  // created: 2015-09-01 18:37:57
 $dictionary['Opportunity']['fields']['jjwg_maps_address_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-11-06 16:02:47
+$dictionary['Opportunity']['fields']['customer_company_name_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['customer_company_name_c']['labelValue']='Customer company name';
 
  
 
