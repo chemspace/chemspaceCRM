@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-11-06 18:01:50
+<?php /* Smarty version 2.6.11, created on 2015-11-08 13:07:09
          compiled from cache/modules/Opportunities/EditView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'cache/modules/Opportunities/EditView.tpl', 38, false),array('modifier', 'strip_semicolon', 'cache/modules/Opportunities/EditView.tpl', 57, false),array('modifier', 'lookup', 'cache/modules/Opportunities/EditView.tpl', 282, false),array('modifier', 'count', 'cache/modules/Opportunities/EditView.tpl', 362, false),array('modifier', 'default', 'cache/modules/Opportunities/EditView.tpl', 1292, false),array('function', 'sugar_include', 'cache/modules/Opportunities/EditView.tpl', 44, false),array('function', 'counter', 'cache/modules/Opportunities/EditView.tpl', 50, false),array('function', 'sugar_translate', 'cache/modules/Opportunities/EditView.tpl', 56, false),array('function', 'sugar_getimagepath', 'cache/modules/Opportunities/EditView.tpl', 97, false),array('function', 'sugar_number_format', 'cache/modules/Opportunities/EditView.tpl', 173, false),array('function', 'html_options', 'cache/modules/Opportunities/EditView.tpl', 257, false),)), $this); ?>
@@ -1573,7 +1573,7 @@ document.getElementById('detailpanel_2').className += ' expanded';
 
 
 
-<?php $this->assign('value', "11/05/2015"); ?>
+<?php $this->assign('value', "11/08/2015"); ?>
 <span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['date_entered']['name']; ?>
 "><?php echo $this->_tpl_vars['value']; ?>
 </span>
@@ -1589,7 +1589,7 @@ document.getElementById('detailpanel_2').className += ' expanded';
 
 
 
-<?php $this->assign('value', "11/06/2015"); ?>
+<?php $this->assign('value', "11/08/2015"); ?>
 <span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['date_modified']['name']; ?>
 "><?php echo $this->_tpl_vars['value']; ?>
 </span>
@@ -1794,7 +1794,7 @@ addToValidate(\'EditView\', \'enquire_email_c\', \'varchar\', false,\'';  echo s
 addToValidate(\'EditView\', \'enquire_phone_c\', \'phone\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_ENQUIRE_PHONE','module' => 'Opportunities','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'enquire_state_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_ENQUIRE_STATE','module' => 'Opportunities','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'qty_of_items_c\', \'int\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_QTY_OF_ITEMS','module' => 'Opportunities','for_js' => true), $this); echo '\' );
-addToValidate(\'EditView\', \'opportunity_autoincrement_id_c\', \'int\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_OPPORTUNITY_AUTOINCREMENT_ID','module' => 'Opportunities','for_js' => true), $this); echo '\' );
+addToValidateRange(\'EditView\', \'opportunity_autoincrement_id_c\', \'int\', false, \'';  echo smarty_function_sugar_translate(array('label' => 'LBL_OPPORTUNITY_AUTOINCREMENT_ID','module' => 'Opportunities','for_js' => true), $this); echo '\', 2015000, 2015999);
 addToValidate(\'EditView\', \'enquire_supplier_id_c\', \'enum\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_ENQUIRE_SUPPLIER_ID','module' => 'Opportunities','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'enquire_country_id_c\', \'enum\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_ENQUIRE_COUNTRY_ID','module' => 'Opportunities','for_js' => true), $this); echo '\' );
 addToValidate(\'EditView\', \'jjwg_maps_geocode_status_c\', \'varchar\', false,\'';  echo smarty_function_sugar_translate(array('label' => 'LBL_JJWG_MAPS_GEOCODE_STATUS','module' => 'Opportunities','for_js' => true), $this); echo '\' );
