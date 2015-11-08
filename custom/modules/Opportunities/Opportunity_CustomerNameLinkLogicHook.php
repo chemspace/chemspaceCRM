@@ -11,7 +11,7 @@ class Opportunity_CustomerNameLinkLogicHook {
         // before_save
 
         if (!empty($bean->first_name) && !empty($bean->last_name)){
-            $bean->name = $bean->enquire_first_name_c . $bean->enquire_last_name_c;
+            $bean->name = $bean->enquire_first_name_c . ' ' . $bean->enquire_last_name_c;
 
         }
 
