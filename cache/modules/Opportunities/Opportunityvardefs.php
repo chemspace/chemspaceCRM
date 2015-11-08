@@ -857,8 +857,14 @@
       'size' => '20',
       'enable_range_search' => false,
       'disable_num_format' => '1',
-      'min' => false,
-      'max' => false,
+      'min' => 2015000,
+      'max' => 2015999,
+      'validation' => 
+      array (
+        'type' => 'range',
+        'min' => 2015000,
+        'max' => 2015999,
+      ),
       'id' => 'Opportunitiesopportunity_autoincrement_id_c',
       'custom_module' => 'Opportunities',
     ),
