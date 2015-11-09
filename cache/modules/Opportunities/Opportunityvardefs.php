@@ -45,6 +45,9 @@
       'comment' => 'Date record created',
       'enable_range_search' => true,
       'options' => 'date_range_search_dom',
+      'inline_edit' => '',
+      'comments' => 'Date record created',
+      'merge_filter' => 'disabled',
     ),
     'date_modified' => 
     array (
@@ -724,6 +727,7 @@
     'enquire_email_c' => 
     array (
       'inline_edit' => '1',
+      'link' => '1',
       'labelValue' => 'Enquire email',
       'required' => false,
       'source' => 'custom_fields',
@@ -1032,6 +1036,7 @@
     'customer_company_name_c' => 
     array (
       'inline_edit' => '1',
+      'link' => '1',
       'labelValue' => 'Customer company name',
       'required' => false,
       'source' => 'custom_fields',

@@ -71,21 +71,21 @@
 	
 	<td scope="row" nowrap="nowrap" width='1%' >
 		
-		<label for='current_user_only_basic' >{sugar_translate label='LBL_CURRENT_USER_FILTER' module='Opportunities'}</label>
+		<label for='customer_company_name_c_basic' >{sugar_translate label='LBL_CUSTOMER_COMPANY_NAME' module='Opportunities'}</label>
     	</td>
 
 	
 	<td  nowrap="nowrap" width='1%'>
 			
-{if strval($fields.current_user_only_basic.value) == "1" || strval($fields.current_user_only_basic.value) == "yes" || strval($fields.current_user_only_basic.value) == "on"} 
-{assign var="checked" value="CHECKED"}
+{if strlen($fields.customer_company_name_c_basic.value) <= 0}
+{assign var="value" value=$fields.customer_company_name_c_basic.default_value }
 {else}
-{assign var="checked" value=""}
-{/if}
-<input type="hidden" name="{$fields.current_user_only_basic.name}" value="0"> 
-<input type="checkbox" id="{$fields.current_user_only_basic.name}" 
-name="{$fields.current_user_only_basic.name}" 
-value="1" title='' tabindex="" {$checked} >
+{assign var="value" value=$fields.customer_company_name_c_basic.value }
+{/if}  
+<input type='text' name='{$fields.customer_company_name_c_basic.name}' 
+    id='{$fields.customer_company_name_c_basic.name}' size='30' 
+    maxlength='255' 
+    value='{$value}' title=''      >
    	   	</td>
     
       
@@ -101,20 +101,111 @@ value="1" title='' tabindex="" {$checked} >
 	
 	<td scope="row" nowrap="nowrap" width='1%' >
 		
-		<label for='open_only_basic' >{sugar_translate label='LBL_OPEN_ITEMS' module='Opportunities'}</label>
+		<label for='cs_partner_c_basic' >{sugar_translate label='LBL_CS_PARTNER' module='Opportunities'}</label>
     	</td>
 
 	
 	<td  nowrap="nowrap" width='1%'>
 			
-{if strval($fields.open_only_basic.value) == "1" || strval($fields.open_only_basic.value) == "yes" || strval($fields.open_only_basic.value) == "on"} 
+{assign var="yes" value=""}
+{assign var="no" value=""}
+{assign var="default" value=""}
+
+{if strval($fields.cs_partner_c_basic.value) == "1"}
+	{assign var="yes" value="SELECTED"}
+{elseif strval($fields.cs_partner_c_basic.value) == "0"}
+	{assign var="no" value="SELECTED"}
+{else}
+	{assign var="default" value="SELECTED"}
+{/if}
+
+<select id="{$fields.cs_partner_c_basic.name}" name="{$fields.cs_partner_c_basic.name}"   >
+ <option value="" {$default}></option>
+ <option value = "0" {$no}> {$APP.LBL_SEARCH_DROPDOWN_NO}</option>
+ <option value = "1" {$yes}> {$APP.LBL_SEARCH_DROPDOWN_YES}</option>
+</select>
+
+   	   	</td>
+    
+      
+	{counter assign=index}
+	{math equation="left % right"
+   		  left=$index
+          right=$basicMaxColumns
+          assign=modVal
+    }
+	{if ($index % $basicMaxColumns == 1 && $index != 1)}
+		</tr><tr>
+	{/if}
+	
+	<td scope="row" nowrap="nowrap" width='1%' >
+		
+		<label for='enquire_supplier_id_c_basic' >{sugar_translate label='LBL_ENQUIRE_SUPPLIER_ID' module='Opportunities'}</label>
+    	</td>
+
+	
+	<td  nowrap="nowrap" width='1%'>
+			
+{html_options id='enquire_supplier_id_c_basic' name='enquire_supplier_id_c_basic[]' options=$fields.enquire_supplier_id_c_basic.options size="6" style="width: 150px" multiple="1" selected=$fields.enquire_supplier_id_c_basic.value}
+   	   	</td>
+    
+      
+	{counter assign=index}
+	{math equation="left % right"
+   		  left=$index
+          right=$basicMaxColumns
+          assign=modVal
+    }
+	{if ($index % $basicMaxColumns == 1 && $index != 1)}
+		</tr><tr>
+	{/if}
+	
+	<td scope="row" nowrap="nowrap" width='1%' >
+		
+		<label for='opportunity_autoincrement_id_c_basic' >{sugar_translate label='LBL_OPPORTUNITY_AUTOINCREMENT_ID' module='Opportunities'}</label>
+    	</td>
+
+	
+	<td  nowrap="nowrap" width='1%'>
+			
+{if strlen($fields.opportunity_autoincrement_id_c_basic.value) <= 0}
+{assign var="value" value=$fields.opportunity_autoincrement_id_c_basic.default_value }
+{else}
+{assign var="value" value=$fields.opportunity_autoincrement_id_c_basic.value }
+{/if}  
+<input type='text' name='{$fields.opportunity_autoincrement_id_c_basic.name}' 
+    id='{$fields.opportunity_autoincrement_id_c_basic.name}' size='30' 
+     
+    value='{$value}' title='' tabindex='' > 
+   	   	</td>
+    
+      
+	{counter assign=index}
+	{math equation="left % right"
+   		  left=$index
+          right=$basicMaxColumns
+          assign=modVal
+    }
+	{if ($index % $basicMaxColumns == 1 && $index != 1)}
+		</tr><tr>
+	{/if}
+	
+	<td scope="row" nowrap="nowrap" width='1%' >
+		
+		<label for='current_user_only_basic' >{sugar_translate label='LBL_CURRENT_USER_FILTER' module='Opportunities'}</label>
+    	</td>
+
+	
+	<td  nowrap="nowrap" width='1%'>
+			
+{if strval($fields.current_user_only_basic.value) == "1" || strval($fields.current_user_only_basic.value) == "yes" || strval($fields.current_user_only_basic.value) == "on"} 
 {assign var="checked" value="CHECKED"}
 {else}
 {assign var="checked" value=""}
 {/if}
-<input type="hidden" name="{$fields.open_only_basic.name}" value="0"> 
-<input type="checkbox" id="{$fields.open_only_basic.name}" 
-name="{$fields.open_only_basic.name}" 
+<input type="hidden" name="{$fields.current_user_only_basic.name}" value="0"> 
+<input type="checkbox" id="{$fields.current_user_only_basic.name}" 
+name="{$fields.current_user_only_basic.name}" 
 value="1" title='' tabindex="" {$checked} >
    	   	</td>
     {if $formData|@count >= $basicMaxColumns+1}

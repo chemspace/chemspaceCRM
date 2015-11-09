@@ -40,6 +40,7 @@ $dictionary['Opportunity']['fields']['enquire_currency_c']['labelValue']='Curren
 
  // created: 2015-10-29 14:12:21
 $dictionary['Opportunity']['fields']['enquire_email_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['enquire_email_c']['link']='1';
 $dictionary['Opportunity']['fields']['enquire_email_c']['labelValue']='Enquire email';
 
  
@@ -79,6 +80,13 @@ $dictionary['Opportunity']['fields']['sales_stage']['merge_filter']='disabled';
  // created: 2015-11-06 15:29:34
 $dictionary['Opportunity']['fields']['qty_of_items_c']['inline_edit']='';
 $dictionary['Opportunity']['fields']['qty_of_items_c']['labelValue']='Qty of items';
+
+ 
+
+ // created: 2015-11-09 12:49:33
+$dictionary['Opportunity']['fields']['date_entered']['inline_edit']='';
+$dictionary['Opportunity']['fields']['date_entered']['comments']='Date record created';
+$dictionary['Opportunity']['fields']['date_entered']['merge_filter']='disabled';
 
  
 
@@ -143,6 +151,7 @@ $dictionary['Opportunity']['fields']['jjwg_maps_address_c']['inline_edit']=1;
 
  // created: 2015-11-06 16:02:47
 $dictionary['Opportunity']['fields']['customer_company_name_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['customer_company_name_c']['link']='1';
 $dictionary['Opportunity']['fields']['customer_company_name_c']['labelValue']='Customer company name';
 
  

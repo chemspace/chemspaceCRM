@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.11, created on 2015-11-08 13:35:19
+<?php /* Smarty version 2.6.11, created on 2015-11-09 12:51:50
          compiled from cache/modules/Opportunities/SearchForm_basic.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'cache/modules/Opportunities/SearchForm_basic.tpl', 33, false),array('function', 'math', 'cache/modules/Opportunities/SearchForm_basic.tpl', 34, false),array('function', 'sugar_translate', 'cache/modules/Opportunities/SearchForm_basic.tpl', 43, false),array('function', 'sugar_getimagepath', 'cache/modules/Opportunities/SearchForm_basic.tpl', 130, false),array('modifier', 'count', 'cache/modules/Opportunities/SearchForm_basic.tpl', 117, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'cache/modules/Opportunities/SearchForm_basic.tpl', 33, false),array('function', 'math', 'cache/modules/Opportunities/SearchForm_basic.tpl', 34, false),array('function', 'sugar_translate', 'cache/modules/Opportunities/SearchForm_basic.tpl', 43, false),array('function', 'html_options', 'cache/modules/Opportunities/SearchForm_basic.tpl', 145, false),array('function', 'sugar_getimagepath', 'cache/modules/Opportunities/SearchForm_basic.tpl', 218, false),array('modifier', 'count', 'cache/modules/Opportunities/SearchForm_basic.tpl', 205, false),)), $this); ?>
 
 <input type='hidden' id="orderByInput" name='orderBy' value=''/>
 <input type='hidden' id="sortOrder" name='sortOrder' value=''/>
@@ -70,6 +70,124 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
 	
 	<td scope="row" nowrap="nowrap" width='1%' >
 		
+		<label for='customer_company_name_c_basic' ><?php echo smarty_function_sugar_translate(array('label' => 'LBL_CUSTOMER_COMPANY_NAME','module' => 'Opportunities'), $this);?>
+</label>
+    	</td>
+
+	
+	<td  nowrap="nowrap" width='1%'>
+			
+<?php if (strlen ( $this->_tpl_vars['fields']['customer_company_name_c_basic']['value'] ) <= 0):  $this->assign('value', $this->_tpl_vars['fields']['customer_company_name_c_basic']['default_value']);  else:  $this->assign('value', $this->_tpl_vars['fields']['customer_company_name_c_basic']['value']);  endif; ?>  
+<input type='text' name='<?php echo $this->_tpl_vars['fields']['customer_company_name_c_basic']['name']; ?>
+' 
+    id='<?php echo $this->_tpl_vars['fields']['customer_company_name_c_basic']['name']; ?>
+' size='30' 
+    maxlength='255' 
+    value='<?php echo $this->_tpl_vars['value']; ?>
+' title=''      >
+   	   	</td>
+    
+      
+	<?php echo smarty_function_counter(array('assign' => 'index'), $this);?>
+
+	<?php echo smarty_function_math(array('equation' => "left % right",'left' => $this->_tpl_vars['index'],'right' => $this->_tpl_vars['basicMaxColumns'],'assign' => 'modVal'), $this);?>
+
+	<?php if (( $this->_tpl_vars['index'] % $this->_tpl_vars['basicMaxColumns'] == 1 && $this->_tpl_vars['index'] != 1 )): ?>
+		</tr><tr>
+	<?php endif; ?>
+	
+	<td scope="row" nowrap="nowrap" width='1%' >
+		
+		<label for='cs_partner_c_basic' ><?php echo smarty_function_sugar_translate(array('label' => 'LBL_CS_PARTNER','module' => 'Opportunities'), $this);?>
+</label>
+    	</td>
+
+	
+	<td  nowrap="nowrap" width='1%'>
+			
+<?php $this->assign('yes', "");  $this->assign('no', "");  $this->assign('default', ""); ?>
+
+<?php if (strval ( $this->_tpl_vars['fields']['cs_partner_c_basic']['value'] ) == '1'): ?>
+	<?php $this->assign('yes', 'SELECTED');  elseif (strval ( $this->_tpl_vars['fields']['cs_partner_c_basic']['value'] ) == '0'): ?>
+	<?php $this->assign('no', 'SELECTED');  else: ?>
+	<?php $this->assign('default', 'SELECTED');  endif; ?>
+
+<select id="<?php echo $this->_tpl_vars['fields']['cs_partner_c_basic']['name']; ?>
+" name="<?php echo $this->_tpl_vars['fields']['cs_partner_c_basic']['name']; ?>
+"   >
+ <option value="" <?php echo $this->_tpl_vars['default']; ?>
+></option>
+ <option value = "0" <?php echo $this->_tpl_vars['no']; ?>
+> <?php echo $this->_tpl_vars['APP']['LBL_SEARCH_DROPDOWN_NO']; ?>
+</option>
+ <option value = "1" <?php echo $this->_tpl_vars['yes']; ?>
+> <?php echo $this->_tpl_vars['APP']['LBL_SEARCH_DROPDOWN_YES']; ?>
+</option>
+</select>
+
+   	   	</td>
+    
+      
+	<?php echo smarty_function_counter(array('assign' => 'index'), $this);?>
+
+	<?php echo smarty_function_math(array('equation' => "left % right",'left' => $this->_tpl_vars['index'],'right' => $this->_tpl_vars['basicMaxColumns'],'assign' => 'modVal'), $this);?>
+
+	<?php if (( $this->_tpl_vars['index'] % $this->_tpl_vars['basicMaxColumns'] == 1 && $this->_tpl_vars['index'] != 1 )): ?>
+		</tr><tr>
+	<?php endif; ?>
+	
+	<td scope="row" nowrap="nowrap" width='1%' >
+		
+		<label for='enquire_supplier_id_c_basic' ><?php echo smarty_function_sugar_translate(array('label' => 'LBL_ENQUIRE_SUPPLIER_ID','module' => 'Opportunities'), $this);?>
+</label>
+    	</td>
+
+	
+	<td  nowrap="nowrap" width='1%'>
+			
+<?php echo smarty_function_html_options(array('id' => 'enquire_supplier_id_c_basic','name' => 'enquire_supplier_id_c_basic[]','options' => $this->_tpl_vars['fields']['enquire_supplier_id_c_basic']['options'],'size' => '6','style' => "width: 150px",'multiple' => '1','selected' => $this->_tpl_vars['fields']['enquire_supplier_id_c_basic']['value']), $this);?>
+
+   	   	</td>
+    
+      
+	<?php echo smarty_function_counter(array('assign' => 'index'), $this);?>
+
+	<?php echo smarty_function_math(array('equation' => "left % right",'left' => $this->_tpl_vars['index'],'right' => $this->_tpl_vars['basicMaxColumns'],'assign' => 'modVal'), $this);?>
+
+	<?php if (( $this->_tpl_vars['index'] % $this->_tpl_vars['basicMaxColumns'] == 1 && $this->_tpl_vars['index'] != 1 )): ?>
+		</tr><tr>
+	<?php endif; ?>
+	
+	<td scope="row" nowrap="nowrap" width='1%' >
+		
+		<label for='opportunity_autoincrement_id_c_basic' ><?php echo smarty_function_sugar_translate(array('label' => 'LBL_OPPORTUNITY_AUTOINCREMENT_ID','module' => 'Opportunities'), $this);?>
+</label>
+    	</td>
+
+	
+	<td  nowrap="nowrap" width='1%'>
+			
+<?php if (strlen ( $this->_tpl_vars['fields']['opportunity_autoincrement_id_c_basic']['value'] ) <= 0):  $this->assign('value', $this->_tpl_vars['fields']['opportunity_autoincrement_id_c_basic']['default_value']);  else:  $this->assign('value', $this->_tpl_vars['fields']['opportunity_autoincrement_id_c_basic']['value']);  endif; ?>  
+<input type='text' name='<?php echo $this->_tpl_vars['fields']['opportunity_autoincrement_id_c_basic']['name']; ?>
+' 
+    id='<?php echo $this->_tpl_vars['fields']['opportunity_autoincrement_id_c_basic']['name']; ?>
+' size='30' 
+     
+    value='<?php echo $this->_tpl_vars['value']; ?>
+' title='' tabindex='' > 
+   	   	</td>
+    
+      
+	<?php echo smarty_function_counter(array('assign' => 'index'), $this);?>
+
+	<?php echo smarty_function_math(array('equation' => "left % right",'left' => $this->_tpl_vars['index'],'right' => $this->_tpl_vars['basicMaxColumns'],'assign' => 'modVal'), $this);?>
+
+	<?php if (( $this->_tpl_vars['index'] % $this->_tpl_vars['basicMaxColumns'] == 1 && $this->_tpl_vars['index'] != 1 )): ?>
+		</tr><tr>
+	<?php endif; ?>
+	
+	<td scope="row" nowrap="nowrap" width='1%' >
+		
 		<label for='current_user_only_basic' ><?php echo smarty_function_sugar_translate(array('label' => 'LBL_CURRENT_USER_FILTER','module' => 'Opportunities'), $this);?>
 </label>
     	</td>
@@ -84,36 +202,6 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
 <input type="checkbox" id="<?php echo $this->_tpl_vars['fields']['current_user_only_basic']['name']; ?>
 " 
 name="<?php echo $this->_tpl_vars['fields']['current_user_only_basic']['name']; ?>
-" 
-value="1" title='' tabindex="" <?php echo $this->_tpl_vars['checked']; ?>
- >
-   	   	</td>
-    
-      
-	<?php echo smarty_function_counter(array('assign' => 'index'), $this);?>
-
-	<?php echo smarty_function_math(array('equation' => "left % right",'left' => $this->_tpl_vars['index'],'right' => $this->_tpl_vars['basicMaxColumns'],'assign' => 'modVal'), $this);?>
-
-	<?php if (( $this->_tpl_vars['index'] % $this->_tpl_vars['basicMaxColumns'] == 1 && $this->_tpl_vars['index'] != 1 )): ?>
-		</tr><tr>
-	<?php endif; ?>
-	
-	<td scope="row" nowrap="nowrap" width='1%' >
-		
-		<label for='open_only_basic' ><?php echo smarty_function_sugar_translate(array('label' => 'LBL_OPEN_ITEMS','module' => 'Opportunities'), $this);?>
-</label>
-    	</td>
-
-	
-	<td  nowrap="nowrap" width='1%'>
-			
-<?php if (strval ( $this->_tpl_vars['fields']['open_only_basic']['value'] ) == '1' || strval ( $this->_tpl_vars['fields']['open_only_basic']['value'] ) == 'yes' || strval ( $this->_tpl_vars['fields']['open_only_basic']['value'] ) == 'on'): ?> 
-<?php $this->assign('checked', 'CHECKED');  else:  $this->assign('checked', "");  endif; ?>
-<input type="hidden" name="<?php echo $this->_tpl_vars['fields']['open_only_basic']['name']; ?>
-" value="0"> 
-<input type="checkbox" id="<?php echo $this->_tpl_vars['fields']['open_only_basic']['name']; ?>
-" 
-name="<?php echo $this->_tpl_vars['fields']['open_only_basic']['name']; ?>
 " 
 value="1" title='' tabindex="" <?php echo $this->_tpl_vars['checked']; ?>
  >

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-08 10:52:19
+// created: 2015-11-09 12:51:23
 $searchFields['Opportunities'] = array (
   'name' => 
   array (
@@ -147,6 +147,10 @@ $searchFields['Opportunities'] = array (
     'enable_range_search' => true,
   ),
   'date_closed' => 
+  array (
+    'query_type' => 'default',
+  ),
+  'date_entered' => 
   array (
     'query_type' => 'default',
   ),
