@@ -8,6 +8,7 @@ $hook_array['before_save'] = Array();
 $hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'custom/modules/Opportunities/OpportunitiesJjwg_MapsLogicHook.php','OpportunitiesJjwg_MapsLogicHook', 'updateGeocodeInfo'); 
 $hook_array['before_save'][] = Array(1, 'Opportunities push feed', 'modules/Opportunities/SugarFeeds/OppFeed.php','OppFeed', 'pushFeed');
 $hook_array['before_save'][] = Array(2, 'linkFistNameAndLastName', 'custom/modules/Opportunities/Opportunity_CustomerNameLinkLogicHook.php','Opportunity_CustomerNameLinkLogicHook', 'linkFistNameAndLastName');
+$hook_array['before_save'][] = Array(3, 'showCSPartnerFieldValue', 'custom/modules/Opportunities/Supplier_EnquiryCSPartnerLinkLogicHook.php','Supplier_EnquiryCSPartnerLinkLogicHook', 'showCSPartnerFieldValue');
 $hook_array['after_save'] = Array();
 $hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'custom/modules/Opportunities/OpportunitiesJjwg_MapsLogicHook.php','OpportunitiesJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
 $hook_array['after_save'][] = Array(78, 'updateRelatedProjectGeocodeInfo', 'custom/modules/Opportunities/OpportunitiesJjwg_MapsLogicHook.php','OpportunitiesJjwg_MapsLogicHook', 'updateRelatedProjectGeocodeInfo'); 

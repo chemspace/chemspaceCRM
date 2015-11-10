@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:28:40
+// created: 2015-11-10 12:35:26
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Project',
   'LBL_MODULE_TITLE' => 'Projects: Home',
@@ -57,7 +57,7 @@ $mod_strings = array (
   'LBL_PROJECT_TASKS_SUBPANEL_TITLE' => 'Project Tasks',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Companies',
-  'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Opportunities',
+  'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Enquiries',
   'LBL_CASES_SUBPANEL_TITLE' => 'Cases',
   'LBL_BUGS_SUBPANEL_TITLE' => 'Bugs',
   'LBL_PRODUCTS_SUBPANEL_TITLE' => 'Products',
@@ -79,7 +79,7 @@ $mod_strings = array (
   'LBL_PREDECESSORS_WIDGET' => 'predecessors_',
   'LBL_PERCENT_COMPLETE_WIDGET' => 'percent_complete',
   'LBL_EDIT_PROJECT_TASKS_TITLE' => 'Edit Project Tasks',
-  'LBL_OPPORTUNITIES' => 'Opportunities',
+  'LBL_OPPORTUNITIES' => 'Enquiries',
   'LBL_LAST_WEEK' => 'Previous',
   'LBL_NEXT_WEEK' => 'Next',
   'LBL_PROJECTRESOURCES_SUBPANEL_TITLE' => 'Project Resources',

@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.11, created on 2015-11-09 15:31:10
-         compiled from include/SugarFields/Fields/Int/EditView.tpl */ ?>
+<?php /* Smarty version 2.6.11, created on 2015-11-09 17:53:29
+         compiled from include/SugarFields/Fields/Relate/DetailView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'sugarvar', 'include/SugarFields/Fields/Int/EditView.tpl', 41, false),array('modifier', 'default', 'include/SugarFields/Fields/Int/EditView.tpl', 47, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'sugarvar', 'include/SugarFields/Fields/Relate/DetailView.tpl', 42, false),array('function', 'sugarvar_connector', 'include/SugarFields/Fields/Relate/DetailView.tpl', 52, false),)), $this); ?>
 {*
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
@@ -42,20 +42,25 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugarvar', 
  ********************************************************************************/
 
 *}
-{if strlen(<?php echo smarty_function_sugarvar(array('key' => 'value','string' => true), $this);?>
-) <= 0}
-{assign var="value" value=<?php echo smarty_function_sugarvar(array('key' => 'default_value','string' => true), $this);?>
- }
-{else}
-{assign var="value" value=<?php echo smarty_function_sugarvar(array('key' => 'value','string' => true), $this);?>
- }
-{/if}  
-<input type='text' name='<?php if (empty ( $this->_tpl_vars['displayParams']['idName'] )):  echo smarty_function_sugarvar(array('key' => 'name'), $this); else:  echo $this->_tpl_vars['displayParams']['idName'];  endif; ?>' 
-id='<?php if (empty ( $this->_tpl_vars['displayParams']['idName'] )):  echo smarty_function_sugarvar(array('key' => 'name'), $this); else:  echo $this->_tpl_vars['displayParams']['idName'];  endif; ?>' size='<?php echo ((is_array($_tmp=@$this->_tpl_vars['displayParams']['size'])) ? $this->_run_mod_handler('default', true, $_tmp, 30) : smarty_modifier_default($_tmp, 30)); ?>
-' <?php if (isset ( $this->_tpl_vars['displayParams']['maxlength'] )): ?>maxlength='<?php echo $this->_tpl_vars['displayParams']['maxlength']; ?>
-'<?php elseif (isset ( $this->_tpl_vars['vardef']['len'] )): ?>maxlength='<?php echo $this->_tpl_vars['vardef']['len']; ?>
-'<?php endif; ?> value='<?php if ($this->_tpl_vars['vardef']['disable_num_format']): ?>{$value}<?php else: ?>{sugar_number_format precision=0 var=$value}<?php endif; ?>' title='<?php echo $this->_tpl_vars['vardef']['help']; ?>
-' tabindex='<?php echo $this->_tpl_vars['tabindex']; ?>
-' <?php echo $this->_tpl_vars['displayParams']['field']; ?>
- <?php if (! empty ( $this->_tpl_vars['displayParams']['accesskey'] )): ?> accesskey='<?php echo $this->_tpl_vars['displayParams']['accesskey']; ?>
-' <?php endif; ?>  >
+<?php if (! $this->_tpl_vars['nolink'] && ! empty ( $this->_tpl_vars['vardef']['id_name'] )): ?> 
+{if !empty(<?php echo smarty_function_sugarvar(array('memberName' => 'vardef.id_name','key' => 'value','string' => 'true'), $this);?>
+)}
+{capture assign="detail_url"}index.php?module=<?php echo $this->_tpl_vars['vardef']['module']; ?>
+&action=DetailView&record=<?php echo smarty_function_sugarvar(array('memberName' => 'vardef.id_name','key' => 'value'), $this);?>
+{/capture}
+<a href="{sugar_ajax_url url=$detail_url}">{/if}
+<?php endif; ?>
+<span id="<?php echo $this->_tpl_vars['vardef']['id_name']; ?>
+" class="sugar_field" data-id-value="<?php echo smarty_function_sugarvar(array('memberName' => 'vardef.id_name','key' => 'value'), $this);?>
+"><?php echo smarty_function_sugarvar(array('key' => 'value'), $this);?>
+</span>
+<?php if (! $this->_tpl_vars['nolink'] && ! empty ( $this->_tpl_vars['vardef']['id_name'] )): ?>
+{if !empty(<?php echo smarty_function_sugarvar(array('memberName' => 'vardef.id_name','key' => 'value','string' => 'true'), $this);?>
+)}</a>{/if}
+<?php endif;  if (! empty ( $this->_tpl_vars['displayParams']['enableConnectors'] ) && ! empty ( $this->_tpl_vars['vardef']['id_name'] )): ?>
+{if !empty(<?php echo smarty_function_sugarvar(array('memberName' => 'vardef.id_name','key' => 'value','string' => 'true'), $this);?>
+)}
+<?php echo smarty_function_sugarvar_connector(array('view' => 'DetailView'), $this);?>
+ 
+{/if}
+<?php endif; ?>

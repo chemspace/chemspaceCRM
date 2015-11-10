@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:31:12
+// created: 2015-11-10 12:36:18
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -130,7 +130,7 @@ $mod_strings = array (
   'LBL_MODULE_TITLE' => 'Accounts: Home',
   'LBL_MODULE_ID' => 'Accounts',
   'LBL_NEW_FORM_TITLE' => 'New Account',
-  'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Opportunities',
+  'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Enquiries',
   'LBL_PRODUCTS_TITLE' => 'Products',
   'LBL_PROJECTS_SUBPANEL_TITLE' => 'Projects',
   'LBL_PUSH_CONTACTS_BUTTON_LABEL' => 'Copy to Contacts',
@@ -159,5 +159,6 @@ $mod_strings = array (
   'LBL_SUPPLIER_ID' => 'Supplier id',
   'LBL_CS_CONTACT_ID' => 'Contact id',
   'LBL_CHEMSPACE_PARTNER' => 'Chemspace partner',
+  'LBL_OPPORTUNITY' => 'Enquiry',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:28:34
+// created: 2015-11-10 12:35:26
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -124,6 +124,7 @@ $mod_strings = array (
   'LBL_SYNCED_RECURRING_MSG' => 'This call originated in another system and was synced to Sugar. To make changes, go to the original call within the other system. Changes made in the other system can be synced to this record.',
   'LBL_CONTACTS' => 'Contacts',
   'LBL_ACCOUNT' => 'Company',
+  'LBL_OPPORTUNITY' => 'Enquiry',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_RESCHEDULE' => 'Reschedule',
   'LBL_RESCHEDULE_COUNT' => 'Call Attempts',

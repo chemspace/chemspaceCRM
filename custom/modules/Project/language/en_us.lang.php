@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-28 18:29:03
+// created: 2015-11-09 17:01:59
 $mod_strings = array (
   'LBL_PROJECT_TASKS_SUBPANEL_TITLE' => 'Project Tasks',
   'LBL_VIEW_GANTT_TITLE' => 'View Gantt',
@@ -58,4 +58,6 @@ $mod_strings = array (
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_ACCOUNTS' => 'Companies',
   'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Companies',
+  'LBL_OPPORTUNITIES' => 'Enquiries',
+  'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Enquiries',
 );

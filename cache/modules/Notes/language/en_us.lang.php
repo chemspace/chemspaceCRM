@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:28:34
+// created: 2015-11-10 12:35:26
 $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
@@ -33,7 +33,7 @@ $mod_strings = array (
   'LBL_NOTE_SUBJECT' => 'Subject:',
   'LBL_NOTES_SUBPANEL_TITLE' => 'Attachments',
   'LBL_NOTE' => 'Note:',
-  'LBL_OPPORTUNITY_ID' => 'Opportunity ID:',
+  'LBL_OPPORTUNITY_ID' => 'Enquiry ID:',
   'LBL_PARENT_ID' => 'Parent ID:',
   'LBL_PARENT_TYPE' => 'Parent Type',
   'LBL_PHONE' => 'Phone:',
@@ -69,5 +69,6 @@ $mod_strings = array (
   'LBL_DATE_MODIFIED' => 'Date Modified',
   'LBL_DELETED' => 'Deleted',
   'LBL_ACCOUNTS' => 'Companies',
+  'LBL_OPPORTUNITIES' => 'Enquiries',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:28:40
+// created: 2015-11-10 12:35:26
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -89,7 +89,7 @@ $mod_strings = array (
   'LBL_CONTACT' => 'Lead:',
   'LBL_CONVERTED_ACCOUNT' => 'Converted Company:',
   'LBL_CONVERTED_CONTACT' => 'Converted Contact:',
-  'LBL_CONVERTED_OPP' => 'Converted Opportunity:',
+  'LBL_CONVERTED_OPP' => 'Converted Enquiry:',
   'LBL_CONVERTED' => 'Converted',
   'LBL_CONVERTLEAD_BUTTON_KEY' => 'V',
   'LBL_CONVERTLEAD_TITLE' => 'Convert Lead',
@@ -140,9 +140,9 @@ $mod_strings = array (
   'LBL_NEW_FORM_TITLE' => 'New Lead',
   'LBL_NEW_PORTAL_PASSWORD' => 'New Portal Password:',
   'LBL_OPP_NAME' => 'Opportunity Name:',
-  'LBL_OPPORTUNITY_AMOUNT' => 'Opportunity Amount:',
-  'LBL_OPPORTUNITY_ID' => 'Opportunity ID',
-  'LBL_OPPORTUNITY_NAME' => 'Opportunity Name:',
+  'LBL_OPPORTUNITY_AMOUNT' => 'Enquiry Amount:',
+  'LBL_OPPORTUNITY_ID' => 'Enquiry ID',
+  'LBL_OPPORTUNITY_NAME' => 'Enquiry Name:',
   'LBL_PHONE' => 'Phone:',
   'LBL_PORTAL_ACTIVE' => 'Portal Active:',
   'LBL_PORTAL_APP' => 'Portal Application',
@@ -236,6 +236,7 @@ $mod_strings = array (
   'LBL_CONTACTS' => 'Contacts',
   'LBL_LEADS' => 'Leads',
   'LBL_ACCOUNT' => 'Company',
+  'LBL_OPPORTUNITIES' => 'Enquiries',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_FP_EVENTS_LEADS_1_FROM_FP_EVENTS_TITLE' => 'Events',
 );

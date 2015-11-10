@@ -1,5 +1,5 @@
 <?php
-// created: 2015-10-23 11:22:01
+// created: 2015-11-09 17:01:59
 $mod_strings = array (
   'LNK_NEW_CONTACT' => 'Create Contact',
   'LNK_CONTACT_LIST' => 'View Contacts',
@@ -30,4 +30,7 @@ $mod_strings = array (
   'LBL_COMPANY_TYPE' => 'Company type',
   'LBL_COMPANY_NAME' => 'Company name',
   'LBL_CS_CONTACT_ID' => 'Contact id',
+  'LBL_OPPORTUNITIES' => 'Enquiries',
+  'LBL_OPPORTUNITY_ROLE' => 'Enquiry Role',
+  'LBL_OPPORTUNITY_ROLE_ID' => 'Enquiry Role ID:',
 );

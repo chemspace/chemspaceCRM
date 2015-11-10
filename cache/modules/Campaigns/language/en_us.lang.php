@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:31:12
+// created: 2015-11-10 12:36:18
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -105,7 +105,7 @@ $mod_strings = array (
   'LBL_LOG_ENTRIES_REMOVED_TITLE' => 'Opted Out',
   'LBL_LOG_ENTRIES_LEAD_TITLE' => 'Leads Created',
   'LBL_CAMPAIGN_LEAD_SUBPANEL_TITLE' => 'Leads',
-  'LBL_OPPORTUNITY_SUBPANEL_TITLE' => 'Opportunities',
+  'LBL_OPPORTUNITY_SUBPANEL_TITLE' => 'Enquiries',
   'LBL_LOG_ENTRIES_CONTACT_TITLE' => 'Contacts Created',
   'LBL_BACK_TO_CAMPAIGNS' => 'Back to Campaigns',
   'ERR_NO_EMAIL_MARKETING' => 'There must be at least one active Email Marketing message associated with the campaign.',
@@ -348,7 +348,7 @@ $mod_strings = array (
   'LBL_LEADS' => 'Leads',
   'LBL_CONTACTS' => 'Contacts',
   'LBL_ACCOUNTS' => 'Companies',
-  'LBL_OPPORTUNITIES' => 'Opportunities',
+  'LBL_OPPORTUNITIES' => 'Enquiries',
   'LBL_LOG_ENTRIES' => 'Log Entries',
   'LBL_PROSPECTLISTS_SUBPANEL_TITLE' => 'Prospect List',
   'LBL_EMAILMARKETING_SUBPANEL_TITLE' => 'Email Marketing',

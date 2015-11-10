@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 12:49:33
+// created: 2015-11-09 17:01:59
 $mod_strings = array (
   'TWITTER_USER_C' => 'Twitter User',
   'LBL_CONTACTS' => 'Contacts',
@@ -35,4 +35,12 @@ $mod_strings = array (
   'LBL_LIST_ASSIGNED_USER' => 'Assigned to',
   'LBL_ENQUIRE_CURRENCY' => 'Currency',
   'LBL_DATE_ENTERED' => 'Date Created',
+  'LNK_NEW_OPPORTUNITY' => 'Create Enquiry',
+  'LNK_OPPORTUNITY_LIST' => 'View Enquiries',
+  'LNK_IMPORT_OPPORTUNITIES' => 'Import Enquiries',
+  'LBL_LIST_FORM_TITLE' => 'Enquiry List',
+  'LBL_SEARCH_FORM_TITLE' => 'Enquiry Search',
+  'LBL_MY_CLOSED_OPPORTUNITIES' => 'My Closed Enquiries',
+  'LBL_TOP_OPPORTUNITIES' => 'My Top Open Enquiries',
+  'LBL_MODULE_NAME' => 'Enquiries',
 );

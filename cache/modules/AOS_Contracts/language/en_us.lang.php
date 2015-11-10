@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:28:40
+// created: 2015-11-10 12:35:26
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -20,7 +20,7 @@ $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
   'LBL_ASSIGNED_TO_NAME' => 'Contract Manager',
   'LBL_CONTRACT_ACCOUNT' => 'Account',
-  'LBL_OPPORTUNITY' => 'Opportunity',
+  'LBL_OPPORTUNITY' => 'Enquiry',
   'LBL_LIST_FORM_TITLE' => 'Contracts List',
   'LBL_MODULE_NAME' => 'Contracts',
   'LBL_MODULE_TITLE' => 'Contracts: Home',

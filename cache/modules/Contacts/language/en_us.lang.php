@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:28:40
+// created: 2015-11-10 12:35:26
 $mod_strings = array (
   'LBL_ID' => 'ID:',
   'LBL_DATE_ENTERED' => 'Registration date',
@@ -126,8 +126,8 @@ $mod_strings = array (
   'LBL_NEW_PORTAL_PASSWORD' => 'New Portal Password:',
   'LBL_NOTE_SUBJECT' => 'Note Subject',
   'LBL_OPP_NAME' => 'Opportunity Name:',
-  'LBL_OPPORTUNITY_ROLE_ID' => 'Opportunity Role ID:',
-  'LBL_OPPORTUNITY_ROLE' => 'Opportunity Role',
+  'LBL_OPPORTUNITY_ROLE_ID' => 'Enquiry Role ID:',
+  'LBL_OPPORTUNITY_ROLE' => 'Enquiry Role',
   'LBL_PHONE' => 'Phone:',
   'LBL_PORTAL_ACTIVE' => 'Portal Active:',
   'LBL_PORTAL_APP' => 'Portal Application:',
@@ -181,7 +181,7 @@ $mod_strings = array (
   'LBL_LIST_CITY' => 'City',
   'LBL_LIST_STATE' => 'State',
   'LBL_HOMEPAGE_TITLE' => 'My Contacts',
-  'LBL_OPPORTUNITIES' => 'Opportunities',
+  'LBL_OPPORTUNITIES' => 'Enquiries',
   'LBL_CHECKOUT_DATE' => 'Checkout Date',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_PROJECT_SUBPANEL_TITLE' => 'Projects',

@@ -231,3 +231,8 @@ $GLOBALS['app_list_strings']['enquire_status_list']=array (
   3 => 'closed',
   '' => '',
 );
+$app_list_strings['moduleList']['Opportunities']='Enquiries';
+$app_list_strings['moduleListSingular']['Opportunities']='Enquiry';
+$app_list_strings['record_type_display']['Opportunities']='Enquiry';
+$app_list_strings['parent_type_display']['Opportunities']='Enquiry';
+$app_list_strings['record_type_display_notes']['Opportunities']='Enquiry';

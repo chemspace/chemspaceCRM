@@ -187,16 +187,22 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'nl2br' => true,
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO',
+          ),
+          1 => 
+          array (
+            'name' => 'enquire_supplier_id_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ENQUIRE_SUPPLIER_ID',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO',
+            'name' => 'description',
+            'nl2br' => true,
           ),
         ),
       ),

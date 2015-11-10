@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-28 18:29:03
+// created: 2015-11-09 17:01:59
 $mod_strings = array (
   'LNK_NEW_RECORD' => 'Create Quote',
   'LNK_LIST' => 'View Orders',
@@ -37,4 +37,5 @@ $mod_strings = array (
   'LBL_SUPPLIER_COMPANIES_ID' => 'Supplier companies id',
   'LBL_SELLER_COMPANIES_ID' => 'Seller companies id',
   'LBL_BILLING_ACCOUNT' => 'Company',
+  'LBL_OPPORTUNITY' => 'Enquiry',
 );

@@ -836,7 +836,7 @@
     ),
     'opportunity_autoincrement_id_c' => 
     array (
-      'inline_edit' => '1',
+      'inline_edit' => '0',
       'auto_increment' => '1',
       'link' => '1',
       'labelValue' => 'Opportunity id',

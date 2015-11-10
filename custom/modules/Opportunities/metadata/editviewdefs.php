@@ -179,11 +179,17 @@ array (
         ),
         1 => 
         array (
-          0 => 'description',
+          0 => 'assigned_user_name',
+          1 => 
+          array (
+            'name' => 'enquire_supplier_id_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ENQUIRE_SUPPLIER_ID',
+          ),
         ),
         2 => 
         array (
-          0 => 'assigned_user_name',
+          0 => 'description',
         ),
       ),
     ),

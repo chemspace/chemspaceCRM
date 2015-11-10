@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 15:29:26
+// created: 2015-11-10 12:36:17
 $mod_strings = array (
   'LBL_FW' => 'FW:',
   'LBL_RE' => 'RE:',
@@ -60,7 +60,7 @@ $mod_strings = array (
   'LBL_EMAILS_CASES_REL' => 'Emails:Cases',
   'LBL_EMAILS_CONTACTS_REL' => 'Emails:Contacts',
   'LBL_EMAILS_LEADS_REL' => 'Emails:Leads',
-  'LBL_EMAILS_OPPORTUNITIES_REL' => 'Emails:Opportunities',
+  'LBL_EMAILS_OPPORTUNITIES_REL' => 'Emails:Enquiries',
   'LBL_EMAILS_NOTES_REL' => 'Emails:Notes',
   'LBL_EMAILS_PROJECT_REL' => 'Emails:Project',
   'LBL_EMAILS_PROJECT_TASK_REL' => 'Emails:ProjectTask',
@@ -88,7 +88,7 @@ $mod_strings = array (
   'LBL_NOT_SENT' => 'Send Error',
   'LBL_NOTE_SEMICOLON' => 'Note: Use commas or semi-colons as separators for multiple email addresses.',
   'LBL_NOTES_SUBPANEL_TITLE' => 'Attachments',
-  'LBL_OPPORTUNITY_SUBPANEL_TITLE' => 'Opportunities',
+  'LBL_OPPORTUNITY_SUBPANEL_TITLE' => 'Enquiries',
   'LBL_PROJECT_SUBPANEL_TITLE' => 'Projects',
   'LBL_PROJECT_TASK_SUBPANEL_TITLE' => 'Project Tasks',
   'LBL_RAW' => 'Raw Email',
