@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-11-10 16:51:28
+<?php /* Smarty version 2.6.11, created on 2015-11-10 17:44:27
          compiled from cache/include/InlineEditing/ContactsEditViewname.tpl */ ?>
 
 <?php if (strlen ( $this->_tpl_vars['fields']['name']['value'] ) <= 0):  $this->assign('value', $this->_tpl_vars['fields']['name']['default_value']);  else:  $this->assign('value', $this->_tpl_vars['fields']['name']['value']);  endif; ?>  
