@@ -1,6 +1,6 @@
 <?php
- // created: 2015-11-06 15:27:48
-$dictionary['Opportunity']['fields']['cs_partner_c']['inline_edit']='1';
-$dictionary['Opportunity']['fields']['cs_partner_c']['labelValue']='CS Partner';
+ // created: 2015-11-10 13:47:55
+$dictionary['Opportunity']['fields']['cs_partner_c']['inline_edit']='';
+$dictionary['Opportunity']['fields']['cs_partner_c']['labelValue']='CS partner';
 
  ?>

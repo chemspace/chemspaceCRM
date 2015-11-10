@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.11, created on 2015-11-10 12:36:18
+<?php /* Smarty version 2.6.11, created on 2015-11-10 13:51:42
          compiled from cache/modules/Opportunities/SearchForm_basic.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'cache/modules/Opportunities/SearchForm_basic.tpl', 33, false),array('function', 'math', 'cache/modules/Opportunities/SearchForm_basic.tpl', 34, false),array('function', 'sugar_translate', 'cache/modules/Opportunities/SearchForm_basic.tpl', 43, false),array('function', 'html_options', 'cache/modules/Opportunities/SearchForm_basic.tpl', 145, false),array('function', 'sugar_getimagepath', 'cache/modules/Opportunities/SearchForm_basic.tpl', 218, false),array('modifier', 'count', 'cache/modules/Opportunities/SearchForm_basic.tpl', 205, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'cache/modules/Opportunities/SearchForm_basic.tpl', 33, false),array('function', 'math', 'cache/modules/Opportunities/SearchForm_basic.tpl', 34, false),array('function', 'sugar_translate', 'cache/modules/Opportunities/SearchForm_basic.tpl', 43, false),array('function', 'html_options', 'cache/modules/Opportunities/SearchForm_basic.tpl', 107, false),array('function', 'sugar_getimagepath', 'cache/modules/Opportunities/SearchForm_basic.tpl', 201, false),array('modifier', 'count', 'cache/modules/Opportunities/SearchForm_basic.tpl', 188, false),)), $this); ?>
 
 <input type='hidden' id="orderByInput" name='orderBy' value=''/>
 <input type='hidden' id="sortOrder" name='sortOrder' value=''/>
@@ -105,25 +105,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
 	
 	<td  nowrap="nowrap" width='1%'>
 			
-<?php $this->assign('yes', "");  $this->assign('no', "");  $this->assign('default', ""); ?>
-
-<?php if (strval ( $this->_tpl_vars['fields']['cs_partner_c_basic']['value'] ) == '1'): ?>
-	<?php $this->assign('yes', 'SELECTED');  elseif (strval ( $this->_tpl_vars['fields']['cs_partner_c_basic']['value'] ) == '0'): ?>
-	<?php $this->assign('no', 'SELECTED');  else: ?>
-	<?php $this->assign('default', 'SELECTED');  endif; ?>
-
-<select id="<?php echo $this->_tpl_vars['fields']['cs_partner_c_basic']['name']; ?>
-" name="<?php echo $this->_tpl_vars['fields']['cs_partner_c_basic']['name']; ?>
-"   >
- <option value="" <?php echo $this->_tpl_vars['default']; ?>
-></option>
- <option value = "0" <?php echo $this->_tpl_vars['no']; ?>
-> <?php echo $this->_tpl_vars['APP']['LBL_SEARCH_DROPDOWN_NO']; ?>
-</option>
- <option value = "1" <?php echo $this->_tpl_vars['yes']; ?>
-> <?php echo $this->_tpl_vars['APP']['LBL_SEARCH_DROPDOWN_YES']; ?>
-</option>
-</select>
+<?php echo smarty_function_html_options(array('id' => 'cs_partner_c_basic','name' => 'cs_partner_c_basic[]','options' => $this->_tpl_vars['fields']['cs_partner_c_basic']['options'],'size' => '6','style' => "width: 150px",'multiple' => '1','selected' => $this->_tpl_vars['fields']['cs_partner_c_basic']['value']), $this);?>
 
    	   	</td>
     

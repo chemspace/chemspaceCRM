@@ -107,24 +107,7 @@
 	
 	<td  nowrap="nowrap" width='1%'>
 			
-{assign var="yes" value=""}
-{assign var="no" value=""}
-{assign var="default" value=""}
-
-{if strval($fields.cs_partner_c_basic.value) == "1"}
-	{assign var="yes" value="SELECTED"}
-{elseif strval($fields.cs_partner_c_basic.value) == "0"}
-	{assign var="no" value="SELECTED"}
-{else}
-	{assign var="default" value="SELECTED"}
-{/if}
-
-<select id="{$fields.cs_partner_c_basic.name}" name="{$fields.cs_partner_c_basic.name}"   >
- <option value="" {$default}></option>
- <option value = "0" {$no}> {$APP.LBL_SEARCH_DROPDOWN_NO}</option>
- <option value = "1" {$yes}> {$APP.LBL_SEARCH_DROPDOWN_YES}</option>
-</select>
-
+{html_options id='cs_partner_c_basic' name='cs_partner_c_basic[]' options=$fields.cs_partner_c_basic.options size="6" style="width: 150px" multiple="1" selected=$fields.cs_partner_c_basic.value}
    	   	</td>
     
       

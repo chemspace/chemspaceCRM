@@ -156,6 +156,7 @@ array (
           1 => 
           array (
             'name' => 'cs_partner_c',
+            'studio' => 'visible',
             'label' => 'LBL_CS_PARTNER',
           ),
         ),

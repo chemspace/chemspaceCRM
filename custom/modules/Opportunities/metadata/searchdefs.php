@@ -22,8 +22,9 @@ array (
       ),
       'cs_partner_c' => 
       array (
-        'type' => 'bool',
+        'type' => 'enum',
         'default' => true,
+        'studio' => 'visible',
         'label' => 'LBL_CS_PARTNER',
         'width' => '10%',
         'name' => 'cs_partner_c',

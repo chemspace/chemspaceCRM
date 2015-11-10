@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 17:01:59
+// created: 2015-11-10 13:47:55
 $mod_strings = array (
   'TWITTER_USER_C' => 'Twitter User',
   'LBL_CONTACTS' => 'Contacts',
@@ -28,7 +28,6 @@ $mod_strings = array (
   'LBL_SALES_STAGE' => 'Status',
   'LBL_LIST_OPPORTUNITY_NAME' => 'Customer name',
   'LBL_ENQUIRE_SUPPLIER_ID' => 'Supplier',
-  'LBL_CS_PARTNER' => 'CS Partner',
   'LBL_QTY_OF_ITEMS' => 'Qty of items',
   'LBL_CUSTOMER_COMPANY_NAME' => 'Customer company name',
   'LBL_LIST_SALES_STAGE' => 'Status',
@@ -43,4 +42,5 @@ $mod_strings = array (
   'LBL_MY_CLOSED_OPPORTUNITIES' => 'My Closed Enquiries',
   'LBL_TOP_OPPORTUNITIES' => 'My Top Open Enquiries',
   'LBL_MODULE_NAME' => 'Enquiries',
+  'LBL_CS_PARTNER' => 'CS partner',
 );

@@ -59,8 +59,9 @@ array (
   ),
   'CS_PARTNER_C' => 
   array (
-    'type' => 'bool',
+    'type' => 'enum',
     'default' => true,
+    'studio' => 'visible',
     'label' => 'LBL_CS_PARTNER',
     'width' => '10%',
   ),
