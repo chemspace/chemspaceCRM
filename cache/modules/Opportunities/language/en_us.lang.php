@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-10 13:51:42
+// created: 2015-11-10 16:51:40
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -134,5 +134,6 @@ $mod_strings = array (
   'LBL_LIST_ASSIGNED_USER' => 'Assigned to',
   'LBL_ENQUIRE_CURRENCY' => 'Currency',
   'LBL_CS_PARTNER' => 'CS partner',
+  'LBL_SUPPLIER_ID' => 'Supplier id',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
 );
