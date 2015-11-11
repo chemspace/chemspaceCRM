@@ -191,6 +191,11 @@ array (
         2 => 
         array (
           0 => 'description',
+          1 => 
+          array (
+            'name' => 'supplier_id_c',
+            'label' => 'LBL_SUPPLIER_ID',
+          ),
         ),
       ),
     ),

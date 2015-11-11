@@ -205,6 +205,11 @@ array (
             'name' => 'description',
             'nl2br' => true,
           ),
+          1 => 
+          array (
+            'name' => 'supplier_id_c',
+            'label' => 'LBL_SUPPLIER_ID',
+          ),
         ),
       ),
     ),

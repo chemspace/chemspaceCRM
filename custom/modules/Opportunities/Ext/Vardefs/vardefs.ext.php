@@ -20,6 +20,12 @@ $dictionary['Opportunity']['fields']['enquire_id_c']['labelValue']='Enquire id';
 
  
 
+ // created: 2015-11-11 18:41:31
+$dictionary['Opportunity']['fields']['supplier_id_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['supplier_id_c']['labelValue']='Supplier id';
+
+ 
+
  // created: 2015-10-29 14:14:35
 $dictionary['Opportunity']['fields']['enquire_last_name_c']['inline_edit']='1';
 $dictionary['Opportunity']['fields']['enquire_last_name_c']['labelValue']='Last name';
