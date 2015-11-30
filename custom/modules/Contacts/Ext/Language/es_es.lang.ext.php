@@ -2,15 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
-
-$mod_strings = array_merge($mod_strings,
-	array(
-		 'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => "Grupos de Seguridad",
-	)
-);
-
-
-
 //THIS FILE IS AUTO GENERATED, DO NOT MODIFY
 $mod_strings['LBL_FP_EVENTS_CONTACTS_FROM_FP_EVENTS_TITLE'] = 'Eventos';
 $mod_strings['LBL_FP_EVENT_DELEGATES_CONTACTS_1_FROM_FP_EVENT_DELEGATES_TITLE'] = 'Delegados';
@@ -49,5 +40,14 @@ $mod_strings['LBL_CREATE_PORTAL_USER_SUCCESS'] = "Usuario del portal creado";
 $mod_strings['LBL_ENABLE_PORTAL_USER_SUCCESS'] = "Usuario del portal habilitado";
 $mod_strings['LBL_DISABLE_PORTAL_USER_SUCCESS'] = "Usuario del portal deshabilitado";
 $mod_strings['LBL_NO_JOOMLA_URL'] = "No se especificó URL del portal";
+
+
+
+$mod_strings = array_merge($mod_strings,
+	array(
+		 'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => "Grupos de Seguridad",
+	)
+);
+
 
 ?>

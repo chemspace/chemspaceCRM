@@ -236,3 +236,5 @@ $app_list_strings['moduleListSingular']['Opportunities']='Enquiry';
 $app_list_strings['record_type_display']['Opportunities']='Enquiry';
 $app_list_strings['parent_type_display']['Opportunities']='Enquiry';
 $app_list_strings['record_type_display_notes']['Opportunities']='Enquiry';
+$GLOBALS['app_list_strings']['fe_country_id_list']=array (
+);

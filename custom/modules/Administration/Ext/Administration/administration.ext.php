@@ -2,16 +2,103 @@
  //WARNING: The contents of this file are auto-generated
 
 
+/**
+ *
+ * @package Advanced OpenDiscovery
+ * @copyright SalesAgility Ltd http://www.salesagility.com
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
+ * along with this program; if not, see http://www.gnu.org/licenses
+ * or write to the Free Software Foundation,Inc., 51 Franklin Street,
+ * Fifth Floor, Boston, MA 02110-1301  USA
+ *
+ * @author Salesagility Ltd <support@salesagility.com>
+ */
+$admin_option_defs = array();
+$admin_option_defs['Administration']['aod'] = array(
+    'edit',
+    'LBL_AOD_SETTINGS',
+    'Change settings for Advanced OpenDiscovery',
+    './index.php?module=Administration&action=AODAdmin'
+);
+if (isset($admin_group_header['sagility']))  $admin_option_defs['Administration'] = array_merge((array)$admin_option_defs['Administration'], (array)$admin_group_header['sagility'][3]['Administration']);
 
-$admin_option_defs=array();
-$admin_option_defs['Administration']['securitygroup_management']= array('SecurityGroups','LBL_MANAGE_SECURITYGROUPS_TITLE','LBL_MANAGE_SECURITYGROUPS','./index.php?module=SecurityGroups&action=index');
-$admin_option_defs['Administration']['securitygroup_config']= array('SecurityGroups','LBL_CONFIG_SECURITYGROUPS_TITLE','LBL_CONFIG_SECURITYGROUPS','./index.php?module=SecurityGroups&action=config');
+$admin_group_header['sagility'] = array(
+    'LBL_SALESAGILITY_ADMIN',
+    '',
+    false,
+    $admin_option_defs,
+    ''
+);
 
-$admin_option_defs['Administration'] = array_merge((array)$admin_group_header[0][3]['Administration'], (array)$admin_option_defs['Administration']);
+
+/**
+ *
+ * @package Advanced OpenPortal
+ * @copyright SalesAgility Ltd http://www.salesagility.com
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
+ * along with this program; if not, see http://www.gnu.org/licenses
+ * or write to the Free Software Foundation,Inc., 51 Franklin Street,
+ * Fifth Floor, Boston, MA 02110-1301  USA
+ *
+ * @author Salesagility Ltd <support@salesagility.com>
+ */
+$admin_option_defs = array();
+$admin_option_defs['Administration']['aop'] = array(
+    'edit',
+    'LBL_AOP_SETTINGS',
+    'Change settings for Advanced OpenPortal',
+    './index.php?module=Administration&action=AOPAdmin'
+);
+if (isset($admin_group_header['sagility']))  $admin_option_defs['Administration'] = array_merge((array)$admin_option_defs['Administration'], (array)$admin_group_header['sagility'][3]['Administration']);
+
+$admin_group_header['sagility'] = array(
+    'LBL_SALESAGILITY_ADMIN',
+    '',
+    false,
+    $admin_option_defs,
+    ''
+);
 
 
-$admin_group_header[0]= array('LBL_USERS_TITLE','',false,array_merge((array)$admin_group_header[0][3], (array)$admin_option_defs), 'LBL_USERS_DESC');
+$admin_option_defs = array();
+$admin_option_defs['Administration']['aos'] = array(
+    'edit',
+    'LBL_AOS_SETTINGS',
+    'LBL_CHANGE_SETTINGS',
+    './index.php?module=Administration&action=AOSAdmin'
+);
 
+if (isset($admin_group_header['sagility']))  $admin_option_defs['Administration'] = array_merge((array)$admin_option_defs['Administration'], (array)$admin_group_header['sagility'][3]['Administration']);
+
+$admin_group_header['sagility'] = array(
+    'LBL_SALESAGILITY_ADMIN',
+    '',
+    false,
+    $admin_option_defs,
+    ''
+);
 
 
 
@@ -92,65 +179,6 @@ $admin_group_header[]= array(
 
 
 
-/**
- *
- * @package Advanced OpenPortal
- * @copyright SalesAgility Ltd http://www.salesagility.com
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
- * the Free Software Foundation; either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
- * along with this program; if not, see http://www.gnu.org/licenses
- * or write to the Free Software Foundation,Inc., 51 Franklin Street,
- * Fifth Floor, Boston, MA 02110-1301  USA
- *
- * @author Salesagility Ltd <support@salesagility.com>
- */
-$admin_option_defs = array();
-$admin_option_defs['Administration']['aop'] = array(
-    'edit',
-    'LBL_AOP_SETTINGS',
-    'Change settings for Advanced OpenPortal',
-    './index.php?module=Administration&action=AOPAdmin'
-);
-if (isset($admin_group_header['sagility']))  $admin_option_defs['Administration'] = array_merge((array)$admin_option_defs['Administration'], (array)$admin_group_header['sagility'][3]['Administration']);
-
-$admin_group_header['sagility'] = array(
-    'LBL_SALESAGILITY_ADMIN',
-    '',
-    false,
-    $admin_option_defs,
-    ''
-);
-
-
-$admin_option_defs = array();
-$admin_option_defs['Administration']['aos'] = array(
-    'edit',
-    'LBL_AOS_SETTINGS',
-    'LBL_CHANGE_SETTINGS',
-    './index.php?module=Administration&action=AOSAdmin'
-);
-
-if (isset($admin_group_header['sagility']))  $admin_option_defs['Administration'] = array_merge((array)$admin_option_defs['Administration'], (array)$admin_group_header['sagility'][3]['Administration']);
-
-$admin_group_header['sagility'] = array(
-    'LBL_SALESAGILITY_ADMIN',
-    '',
-    false,
-    $admin_option_defs,
-    ''
-);
-
-
 /*********************************************************************************
  * This file is part of QuickCRM Mobile CE.
  * QuickCRM Mobile CE is a mobile client for SugarCRM
@@ -176,46 +204,6 @@ $admin_group_header[1]= array('LBL_ADMINISTRATION_HOME_TITLE','',false,$admin_op
 
 
 
-/**
- *
- * @package Advanced OpenDiscovery
- * @copyright SalesAgility Ltd http://www.salesagility.com
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
- * the Free Software Foundation; either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
- * along with this program; if not, see http://www.gnu.org/licenses
- * or write to the Free Software Foundation,Inc., 51 Franklin Street,
- * Fifth Floor, Boston, MA 02110-1301  USA
- *
- * @author Salesagility Ltd <support@salesagility.com>
- */
-$admin_option_defs = array();
-$admin_option_defs['Administration']['aod'] = array(
-    'edit',
-    'LBL_AOD_SETTINGS',
-    'Change settings for Advanced OpenDiscovery',
-    './index.php?module=Administration&action=AODAdmin'
-);
-if (isset($admin_group_header['sagility']))  $admin_option_defs['Administration'] = array_merge((array)$admin_option_defs['Administration'], (array)$admin_group_header['sagility'][3]['Administration']);
-
-$admin_group_header['sagility'] = array(
-    'LBL_SALESAGILITY_ADMIN',
-    '',
-    false,
-    $admin_option_defs,
-    ''
-);
-
-
 
 $admin_option_defs=array();
 $admin_option_defs['Administration']['reschedule']= array('Calls_Reschedule','LBL_RESCHEDULE_ADMIN','LBL_RESCHEDULE_ADMIN_DESC','./index.php?module=Administration&action=Reschedule_admin');
@@ -231,6 +219,18 @@ $admin_group_header['sagility'] = array(
 );
 
 
+
+
+
+
+$admin_option_defs=array();
+$admin_option_defs['Administration']['securitygroup_management']= array('SecurityGroups','LBL_MANAGE_SECURITYGROUPS_TITLE','LBL_MANAGE_SECURITYGROUPS','./index.php?module=SecurityGroups&action=index');
+$admin_option_defs['Administration']['securitygroup_config']= array('SecurityGroups','LBL_CONFIG_SECURITYGROUPS_TITLE','LBL_CONFIG_SECURITYGROUPS','./index.php?module=SecurityGroups&action=config');
+
+$admin_option_defs['Administration'] = array_merge((array)$admin_group_header[0][3]['Administration'], (array)$admin_option_defs['Administration']);
+
+
+$admin_group_header[0]= array('LBL_USERS_TITLE','',false,array_merge((array)$admin_group_header[0][3], (array)$admin_option_defs), 'LBL_USERS_DESC');
 
 
 ?>

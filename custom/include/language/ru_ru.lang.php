@@ -219,3 +219,5 @@ $GLOBALS['app_list_strings']['enquire_status_list']=array (
   3 => 'closed',
   '' => '',
 );
+$GLOBALS['app_list_strings']['fe_country_id_list']=array (
+);

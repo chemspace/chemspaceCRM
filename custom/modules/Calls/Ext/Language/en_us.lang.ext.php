@@ -2,15 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
-
-$mod_strings = array_merge($mod_strings,
-	array(
-		 'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => "Security Groups",
-	)
-);
-
-
-
 $mod_strings = array_merge($mod_strings, 
 	array (
 		'LBL_RESCHEDULE' => 'Reschedule',
@@ -23,5 +14,14 @@ $mod_strings = array_merge($mod_strings,
 		'LBL_RESCHEDULE_HISTORY' => 'Call Attempt History'
 	)
 );
+
+
+
+$mod_strings = array_merge($mod_strings,
+	array(
+		 'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => "Security Groups",
+	)
+);
+
 
 ?>

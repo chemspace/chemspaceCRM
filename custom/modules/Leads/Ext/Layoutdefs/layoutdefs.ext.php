@@ -2,24 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
-
-$layout_defs['Leads']['subpanel_setup']['securitygroups'] = array(
-	'top_buttons' => array(array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => 'SecurityGroups', 'mode' => 'MultiSelect'),),
-	'order' => 900,
-	'sort_by' => 'name',
-	'sort_order' => 'asc',
-	'module' => 'SecurityGroups',
-	'refresh_page'=>1,
-	'subpanel_name' => 'default',
-	'get_subpanel_data' => 'SecurityGroups',
-	'add_subpanel_data' => 'securitygroup_id',
-	'title_key' => 'LBL_SECURITYGROUPS_SUBPANEL_TITLE',
-);
-
-
-
-
-
  // created: 2013-04-30 14:52:24
 $layout_defs["Leads"]["subpanel_setup"]['fp_events_leads_1'] = array (
   'order' => 100,
@@ -42,6 +24,24 @@ $layout_defs["Leads"]["subpanel_setup"]['fp_events_leads_1'] = array (
     ),
   ),
 );
+
+
+
+$layout_defs['Leads']['subpanel_setup']['securitygroups'] = array(
+	'top_buttons' => array(array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => 'SecurityGroups', 'mode' => 'MultiSelect'),),
+	'order' => 900,
+	'sort_by' => 'name',
+	'sort_order' => 'asc',
+	'module' => 'SecurityGroups',
+	'refresh_page'=>1,
+	'subpanel_name' => 'default',
+	'get_subpanel_data' => 'SecurityGroups',
+	'add_subpanel_data' => 'securitygroup_id',
+	'title_key' => 'LBL_SECURITYGROUPS_SUBPANEL_TITLE',
+);
+
+
+
 
 
 /**

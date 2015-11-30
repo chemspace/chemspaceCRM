@@ -2,6 +2,11 @@
  //WARNING: The contents of this file are auto-generated
 
 
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_FP_EVENTS_CONTACTS_FROM_FP_EVENTS_TITLE'] = 'События';
+$mod_strings['LBL_FP_EVENT_DELEGATES_CONTACTS_1_FROM_FP_EVENT_DELEGATES_TITLE'] = 'Участники';
+
+
 /**
  *
  * @package Advanced OpenPortal
@@ -36,11 +41,6 @@ $mod_strings['LBL_ENABLE_PORTAL_USER_SUCCESS'] = "Включить пользо�
 $mod_strings['LBL_DISABLE_PORTAL_USER_SUCCESS'] = "Отключить пользователя портала";
 $mod_strings['LBL_NO_JOOMLA_URL'] = "Не указан URL портала";
 $mod_strings['LBL_PORTAL_USER_TYPE'] = "Пользователь портала";
-
-
-//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
-$mod_strings['LBL_FP_EVENTS_CONTACTS_FROM_FP_EVENTS_TITLE'] = 'События';
-$mod_strings['LBL_FP_EVENT_DELEGATES_CONTACTS_1_FROM_FP_EVENT_DELEGATES_TITLE'] = 'Участники';
 
 
 

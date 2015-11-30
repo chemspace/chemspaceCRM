@@ -2,52 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2015-10-19 19:49:45
-$dictionary['Contact']['fields']['status_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['status_c']['labelValue']='Status';
-
- 
-
-
-$dictionary['Contact']['fields']['SecurityGroups'] = array (
-  	'name' => 'SecurityGroups',
-    'type' => 'link',
-	'relationship' => 'securitygroups_contacts',
-	'module'=>'SecurityGroups',
-	'bean_name'=>'SecurityGroup',
-    'source'=>'non-db',
-	'vname'=>'LBL_SECURITYGROUPS',
-);
-
-
-
-
-
-
- // created: 2015-10-08 18:30:58
-$dictionary['Contact']['fields']['company_type_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['company_type_c']['labelValue']='Company type';
-
- 
-
- // created: 2015-10-07 14:04:41
-$dictionary['Contact']['fields']['position_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['position_c']['labelValue']='Position';
-
- 
-
-// created: 2014-06-24 15:48:56
-$dictionary["Contact"]["fields"]["project_contacts_1"] = array (
-  'name' => 'project_contacts_1',
-  'type' => 'link',
-  'relationship' => 'project_contacts_1',
-  'source' => 'non-db',
-  'module' => 'Project',
-  'bean_name' => 'Project',
-  'vname' => 'LBL_PROJECT_CONTACTS_1_FROM_PROJECT_TITLE',
-);
-
-
 $dictionary["Contact"]["fields"]["aos_quotes"] = array (
   'name' => 'aos_quotes',
     'type' => 'link',
@@ -179,19 +133,6 @@ $dictionary["Contact"]["fields"]["portal_user_type"] = array (
 );
  
 
- // created: 2015-10-07 14:41:53
-$dictionary['Contact']['fields']['role_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['role_c']['labelValue']='Role';
-
- 
-
- // created: 2015-10-07 14:45:02
-$dictionary['Contact']['fields']['date_entered']['inline_edit']=true;
-$dictionary['Contact']['fields']['date_entered']['comments']='Date record created';
-$dictionary['Contact']['fields']['date_entered']['merge_filter']='disabled';
-
- 
-
 // created: 2013-04-15 12:13:27
 $dictionary["Contact"]["fields"]["fp_events_contacts"] = array (
   'name' => 'fp_events_contacts',
@@ -202,36 +143,37 @@ $dictionary["Contact"]["fields"]["fp_events_contacts"] = array (
 );
 
 
- // created: 2015-09-01 18:37:52
-$dictionary['Contact']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
+// created: 2014-06-24 15:48:56
+$dictionary["Contact"]["fields"]["project_contacts_1"] = array (
+  'name' => 'project_contacts_1',
+  'type' => 'link',
+  'relationship' => 'project_contacts_1',
+  'source' => 'non-db',
+  'module' => 'Project',
+  'bean_name' => 'Project',
+  'vname' => 'LBL_PROJECT_CONTACTS_1_FROM_PROJECT_TITLE',
+);
 
- 
 
- // created: 2015-10-19 19:51:36
-$dictionary['Contact']['fields']['company_name_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['company_name_c']['labelValue']='Company name';
 
- 
+$dictionary['Contact']['fields']['SecurityGroups'] = array (
+  	'name' => 'SecurityGroups',
+    'type' => 'link',
+	'relationship' => 'securitygroups_contacts',
+	'module'=>'SecurityGroups',
+	'bean_name'=>'SecurityGroup',
+    'source'=>'non-db',
+	'vname'=>'LBL_SECURITYGROUPS',
+);
 
- // created: 2015-09-01 18:37:51
-$dictionary['Contact']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
- 
 
- // created: 2015-10-21 11:37:00
-$dictionary['Contact']['fields']['country_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['country_c']['labelValue']='Country';
 
- 
 
- // created: 2015-09-01 18:37:52
-$dictionary['Contact']['fields']['jjwg_maps_address_c']['inline_edit']=1;
 
- 
-
- // created: 2015-10-23 11:22:01
-$dictionary['Contact']['fields']['cs_contact_id_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['cs_contact_id_c']['labelValue']='Contact id';
+ // created: 2015-10-07 14:47:16
+$dictionary['Contact']['fields']['ban_date_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['ban_date_c']['labelValue']='Ban date';
 
  
 
@@ -241,8 +183,40 @@ $dictionary['Contact']['fields']['ban_reason_c']['labelValue']='Ban reason';
 
  
 
- // created: 2015-09-01 18:37:52
-$dictionary['Contact']['fields']['jjwg_maps_lat_c']['inline_edit']=1;
+ // created: 2015-10-19 19:51:36
+$dictionary['Contact']['fields']['company_name_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['company_name_c']['labelValue']='Company name';
+
+ 
+
+ // created: 2015-10-08 18:30:58
+$dictionary['Contact']['fields']['company_type_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['company_type_c']['labelValue']='Company type';
+
+ 
+
+ // created: 2015-10-21 11:37:00
+$dictionary['Contact']['fields']['country_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['country_c']['labelValue']='Country';
+
+ 
+
+ // created: 2015-10-23 11:22:01
+$dictionary['Contact']['fields']['cs_contact_id_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['cs_contact_id_c']['labelValue']='Contact id';
+
+ 
+
+ // created: 2015-10-07 14:51:02
+$dictionary['Contact']['fields']['currency_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['currency_c']['labelValue']='Currency';
+
+ 
+
+ // created: 2015-10-07 14:45:02
+$dictionary['Contact']['fields']['date_entered']['inline_edit']=true;
+$dictionary['Contact']['fields']['date_entered']['comments']='Date record created';
+$dictionary['Contact']['fields']['date_entered']['merge_filter']='disabled';
 
  
 
@@ -322,9 +296,95 @@ $dictionary['Contact']['fields']['event_status_id'] =
     );
 
 
- // created: 2015-10-07 14:47:16
-$dictionary['Contact']['fields']['ban_date_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['ban_date_c']['labelValue']='Ban date';
+ // created: 2015-11-30 13:41:33
+$dictionary['Contact']['fields']['fe_company_name_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_company_name_c']['labelValue']='FE Company Name';
+
+ 
+
+ // created: 2015-11-30 13:36:00
+$dictionary['Contact']['fields']['fe_country_id_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_country_id_c']['labelValue']='FE Country';
+
+ 
+
+ // created: 2015-11-30 16:29:54
+$dictionary['Contact']['fields']['fe_currency_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_currency_c']['labelValue']='FE Currency';
+
+ 
+
+ // created: 2015-11-30 13:23:54
+$dictionary['Contact']['fields']['fe_email_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_email_c']['labelValue']='FE Email';
+
+ 
+
+ // created: 2015-11-30 16:40:48
+$dictionary['Contact']['fields']['fe_email_notification_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_email_notification_c']['labelValue']='FE Email Notification';
+
+ 
+
+ // created: 2015-11-30 13:28:32
+$dictionary['Contact']['fields']['fe_first_name_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_first_name_c']['labelValue']='FE First Name';
+
+ 
+
+ // created: 2015-11-30 13:29:36
+$dictionary['Contact']['fields']['fe_last_name_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_last_name_c']['labelValue']='FE Last Name';
+
+ 
+
+ // created: 2015-11-30 16:51:47
+$dictionary['Contact']['fields']['fe_reg_date_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_reg_date_c']['labelValue']='FE Registartion Date';
+
+ 
+
+ // created: 2015-11-30 13:25:45
+$dictionary['Contact']['fields']['fe_salutation_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_salutation_c']['labelValue']='FE Salutation';
+
+ 
+
+ // created: 2015-11-30 16:55:55
+$dictionary['Contact']['fields']['fe_social_account_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_social_account_c']['labelValue']='FE Social Account';
+
+ 
+
+ // created: 2015-11-30 13:22:21
+$dictionary['Contact']['fields']['fe_user_id_c']['inline_edit']='';
+$dictionary['Contact']['fields']['fe_user_id_c']['labelValue']='FE User id';
+
+ 
+
+ // created: 2015-09-01 18:37:52
+$dictionary['Contact']['fields']['jjwg_maps_address_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-09-01 18:37:52
+$dictionary['Contact']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-09-01 18:37:52
+$dictionary['Contact']['fields']['jjwg_maps_lat_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-09-01 18:37:51
+$dictionary['Contact']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-10-07 14:04:41
+$dictionary['Contact']['fields']['position_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['position_c']['labelValue']='Position';
 
  
 
@@ -334,9 +394,15 @@ $dictionary['Contact']['fields']['reg_ip_c']['labelValue']='Reg ip';
 
  
 
- // created: 2015-10-07 14:51:02
-$dictionary['Contact']['fields']['currency_c']['inline_edit']='1';
-$dictionary['Contact']['fields']['currency_c']['labelValue']='Currency';
+ // created: 2015-10-07 14:41:53
+$dictionary['Contact']['fields']['role_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['role_c']['labelValue']='Role';
+
+ 
+
+ // created: 2015-10-19 19:49:45
+$dictionary['Contact']['fields']['status_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['status_c']['labelValue']='Status';
 
  
 ?>

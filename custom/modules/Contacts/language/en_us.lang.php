@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-09 17:01:59
+// created: 2015-11-30 16:54:52
 $mod_strings = array (
   'LNK_NEW_CONTACT' => 'Create Contact',
   'LNK_CONTACT_LIST' => 'View Contacts',
@@ -33,4 +33,16 @@ $mod_strings = array (
   'LBL_OPPORTUNITIES' => 'Enquiries',
   'LBL_OPPORTUNITY_ROLE' => 'Enquiry Role',
   'LBL_OPPORTUNITY_ROLE_ID' => 'Enquiry Role ID:',
+  'LBL_EDITVIEW_PANEL1' => 'FrontEnd (FE) profile',
+  'LBL_FE_USER_ID' => 'FE User id',
+  'LBL_FE_EMAIL' => 'FE Email',
+  'LBL_FE_SALUTATION' => 'FE Salutation',
+  'LBL_FE_FIRST_NAME' => 'FE First Name',
+  'LBL_FE_LAST_NAME' => 'FE Last Name',
+  'LBL_FE_COUNTRY_ID' => 'FE Country',
+  'LBL_FE_COMPANY_NAME' => 'FE Company Name',
+  'LBL_FE_CURRENCY' => 'FE Currency',
+  'LBL_FE_EMAIL_NOTIFICATION' => 'FE Email Notification',
+  'LBL_FE_REG_DATE' => 'FE Registartion Date',
+  'LBL_FE_SOCIAL_ACCOUNT' => 'FE Social Account',
 );

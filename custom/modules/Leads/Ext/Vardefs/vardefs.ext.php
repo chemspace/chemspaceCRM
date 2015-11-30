@@ -12,16 +12,6 @@ $dictionary["Lead"]["fields"]["fp_events_leads_1"] = array (
 );
 
 
- // created: 2015-09-01 18:37:53
-$dictionary['Lead']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
-
- 
-
- // created: 2015-09-01 18:37:53
-$dictionary['Lead']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
-
- 
-
 
 $dictionary['Lead']['fields']['SecurityGroups'] = array (
   	'name' => 'SecurityGroups',
@@ -37,11 +27,6 @@ $dictionary['Lead']['fields']['SecurityGroups'] = array (
 
 
 
-
- // created: 2015-09-01 18:37:54
-$dictionary['Lead']['fields']['jjwg_maps_address_c']['inline_edit']=1;
-
- 
 
 
 $dictionary['Lead']['fields']['e_invite_status_fields'] =
@@ -119,8 +104,23 @@ $dictionary['Lead']['fields']['event_status_id'] =
         'studio' => array('listview' => false),
     );
 
+ // created: 2015-09-01 18:37:54
+$dictionary['Lead']['fields']['jjwg_maps_address_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-09-01 18:37:53
+$dictionary['Lead']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
+
+ 
+
  // created: 2015-09-01 18:37:53
 $dictionary['Lead']['fields']['jjwg_maps_lat_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-09-01 18:37:53
+$dictionary['Lead']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
  
 ?>

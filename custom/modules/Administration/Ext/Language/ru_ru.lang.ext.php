@@ -2,23 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
-
-$mod_strings['LBL_JJWG_MAPS_ADMIN_HEADER'] = 'Карты Google';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DESC'] = 'Управление геокодированием, тестирование геокодирования, просмотр результатов геокодирования, настройка параметров карт';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_TITLE'] = 'Настройка карт Google';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_DESC'] = 'Настройка параметров карт Google';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_TITLE'] = 'Результаты геокодирования';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_DESC'] = 'Просмотр статистики геокодирования, данные по каждому модулю сгруппированы в зависимости от полученных результатов';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_TITLE'] = 'Поддержка проекта';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_DESC'] = ' ';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_TITLE'] = 'Геокодирование адресов';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_DESC'] = 'Геокодирование адресов системы, этот процесс может занять продолжительное время!';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_TITLE'] = 'Тестирование геокодирования';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_DESC'] = 'Запуск геокодирования введённого адреса с детальным просмотром результатов';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_TITLE'] = 'Кэш адресов';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_DESC'] = 'Доступ к кэшу адресов. Обратите внимание: это только кэш!';
-
-
 $mod_strings['LBL_SALESAGILITY_ADMIN'] = 'OpenAdmin';
 $mod_strings['LBL_AOS_ADMIN_CONTRACT_SETTINGS'] = 'Параметры договоров';
 $mod_strings['LBL_AOS_ADMIN_CONTRACT_RENEWAL_REMINDER'] = 'Период действия договора';
@@ -30,63 +13,6 @@ $mod_strings['LBL_AOS_ADMIN_INITIAL_QUOTE_NUMBER'] = 'Начинать нуме�
 $mod_strings['LBL_AOS_ADMIN_LINE_ITEM_SETTINGS'] = 'Настройка позиций в бланках';
 $mod_strings['LBL_AOS_ADMIN_ENABLE_LINE_ITEM_GROUPS'] = 'Возможность группировки позиций';
 $mod_strings['LBL_AOS_ADMIN_ENABLE_LINE_ITEM_TOTAL_TAX'] = 'Включать НДС в сумму<br>(для каждой позиции)';
-
-
-
-
-$mod_strings['LBL_JJWG_MAPS_ADMIN_HEADER'] = 'Карты Google';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DESC'] = 'Управление геокодированием, тестирование геокодирования, просмотр результатов геокодирования, настройка параметров карт';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_TITLE'] = 'Настройка карт Google';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_DESC'] = 'Настройка параметров карт Google';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_TITLE'] = 'Результаты геокодирования';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_DESC'] = 'Просмотр статистики геокодирования, данные по каждому модулю сгруппированы в зависимости от полученных результатов';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_TITLE'] = 'Поддержка проекта';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_DESC'] = ' ';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_TITLE'] = 'Геокодирование адресов';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_DESC'] = 'Геокодирование адресов системы, этот процесс может занять продолжительное время!';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_TITLE'] = 'Тестирование геокодирования';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_DESC'] = 'Запуск геокодирования введённого адреса с детальным просмотром результатов';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_TITLE'] = 'Кэш адресов';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_DESC'] = 'Доступ к кэшу адресов. Обратите внимание: это только кэш!';
-
-
-    
-$mod_strings['LBL_RESCHEDULE_REBUILD'] = 'Восстановить отложенные звонки';
-$mod_strings['LBL_RESCHEDULE_REBUILD_DESC'] = 'Восстановление модуля отложенных звонков';
-$mod_strings['LBL_RESCHEDULE_ADMIN'] = 'Отложенные звонки';
-$mod_strings['LBL_RESCHEDULE_ADMIN_DESC'] = 'Настройка отложенных звонков';
-$mod_strings['LBL_REPAIR_RESCHEDULE_DONE'] = 'Отложенные звонки успешно восстановлены';
-$mod_strings['LBL_SALESAGILITY_ADMIN'] = 'OpenAdmin';
-
-
-
-
-$mod_strings['LBL_UPDATE_QUICKCRM_TITLE'] = "Настройка QuickCRM"; 
-$mod_strings['LBL_UPDATE_QUICKCRM'] = "Настройка приложения для работы через мобильные устройства";
-$mod_strings['LBL_QUICKCRM'] = 'QuickCRM Mobile';
-$mod_strings['LBL_CONFIG_QUICKCRM_TITLE'] = "Configuration of QuickCRM Mobile";
-$mod_strings['LBL_CONFIG_QUICKCRM'] = "Definition of visible modules and fields";
-$mod_strings['LBL_UPDATE_MSG'] = '<strong>Приложение настроено для работы через мобильные устройства.</strong><br/> Мобильная версия доступна по ссылке:';
-$mod_strings['LBL_ERR_DIR_MSG'] = 'Некоторые файлы не могут быть созданы. Проверьте права доступа для: ';  
-
-
-
-
-
-$mod_strings['LBL_MANAGE_SECURITYGROUPS_TITLE'] = 'Создание Групп пользователей';
-$mod_strings['LBL_MANAGE_SECURITYGROUPS'] = 'Создание Групп пользователей и включение в них Пользователей и Ролей';
-$mod_strings['LBL_SECURITYGROUPS'] = 'Security Suite';
-$mod_strings['LBL_CONFIG_SECURITYGROUPS_TITLE'] = 'Управление Группами пользователей';
-$mod_strings['LBL_CONFIG_SECURITYGROUPS'] = 'Настройка Групп пользователей';
-$mod_strings['LBL_SECURITYGROUPS_UPGRADE_INFO_TITLE'] = "Upgrade and General Info"; ///
-$mod_strings['LBL_SECURITYGROUPS_INFO_TITLE'] = "Security Suite Info"; ///
-$mod_strings['LBL_SECURITYGROUPS_INFO'] = "General information";
-$mod_strings['LBL_SECURITYGROUPS_DASHLETPUSH_TITLE'] = "Push Message Dashlet"; ///
-$mod_strings['LBL_SECURITYGROUPS_DASHLETPUSH'] = "Push the Message Dashlet to the Home page for all users. This process may take some time to complete depending on the number of users"; ///
-$mod_strings['LBL_SECURITYGROUPS_HOOKUP_TITLE'] = "Hookup Module"; ///
-$mod_strings['LBL_SECURITYGROUPS_HOOKUP'] = "Hookup Security Suite to work with your custom modules"; ///
-$mod_strings['LBL_SECURITYGROUPS_SUGAROUTFITTERS_TITLE'] = "SugarOutfitters";
-$mod_strings['LBL_SECURITYGROUPS_SUGAROUTFITTERS'] = "Grab the latest version of SecuritySuite and find other SugarCRM modules, themes, and integrations along with reviews, docs, support, and community verified versions.";
 
 
 
@@ -212,4 +138,78 @@ $mod_strings['LBL_COLOUR_ADMIN_TABSNUM'] = 'Количество отображ�
 
 $mod_strings['LBL_DEFAULT_ADMIN_DASHLET'] = 'Настройка колонок дашлетов';
 $mod_strings['LBL_DASHLET_COLUMNS'] = 'Количество колонок для расположения дашлетов: ';
+
+
+$mod_strings['LBL_JJWG_MAPS_ADMIN_HEADER'] = 'Карты Google';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DESC'] = 'Управление геокодированием, тестирование геокодирования, просмотр результатов геокодирования, настройка параметров карт';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_TITLE'] = 'Настройка карт Google';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_DESC'] = 'Настройка параметров карт Google';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_TITLE'] = 'Результаты геокодирования';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_DESC'] = 'Просмотр статистики геокодирования, данные по каждому модулю сгруппированы в зависимости от полученных результатов';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_TITLE'] = 'Поддержка проекта';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_DESC'] = ' ';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_TITLE'] = 'Геокодирование адресов';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_DESC'] = 'Геокодирование адресов системы, этот процесс может занять продолжительное время!';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_TITLE'] = 'Тестирование геокодирования';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_DESC'] = 'Запуск геокодирования введённого адреса с детальным просмотром результатов';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_TITLE'] = 'Кэш адресов';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_DESC'] = 'Доступ к кэшу адресов. Обратите внимание: это только кэш!';
+
+
+
+$mod_strings['LBL_JJWG_MAPS_ADMIN_HEADER'] = 'Карты Google';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DESC'] = 'Управление геокодированием, тестирование геокодирования, просмотр результатов геокодирования, настройка параметров карт';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_TITLE'] = 'Настройка карт Google';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_DESC'] = 'Настройка параметров карт Google';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_TITLE'] = 'Результаты геокодирования';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_DESC'] = 'Просмотр статистики геокодирования, данные по каждому модулю сгруппированы в зависимости от полученных результатов';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_TITLE'] = 'Поддержка проекта';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_DESC'] = ' ';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_TITLE'] = 'Геокодирование адресов';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_DESC'] = 'Геокодирование адресов системы, этот процесс может занять продолжительное время!';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_TITLE'] = 'Тестирование геокодирования';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_DESC'] = 'Запуск геокодирования введённого адреса с детальным просмотром результатов';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_TITLE'] = 'Кэш адресов';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_DESC'] = 'Доступ к кэшу адресов. Обратите внимание: это только кэш!';
+
+
+
+$mod_strings['LBL_UPDATE_QUICKCRM_TITLE'] = "Настройка QuickCRM"; 
+$mod_strings['LBL_UPDATE_QUICKCRM'] = "Настройка приложения для работы через мобильные устройства";
+$mod_strings['LBL_QUICKCRM'] = 'QuickCRM Mobile';
+$mod_strings['LBL_CONFIG_QUICKCRM_TITLE'] = "Configuration of QuickCRM Mobile";
+$mod_strings['LBL_CONFIG_QUICKCRM'] = "Definition of visible modules and fields";
+$mod_strings['LBL_UPDATE_MSG'] = '<strong>Приложение настроено для работы через мобильные устройства.</strong><br/> Мобильная версия доступна по ссылке:';
+$mod_strings['LBL_ERR_DIR_MSG'] = 'Некоторые файлы не могут быть созданы. Проверьте права доступа для: ';  
+
+
+
+
+    
+$mod_strings['LBL_RESCHEDULE_REBUILD'] = 'Восстановить отложенные звонки';
+$mod_strings['LBL_RESCHEDULE_REBUILD_DESC'] = 'Восстановление модуля отложенных звонков';
+$mod_strings['LBL_RESCHEDULE_ADMIN'] = 'Отложенные звонки';
+$mod_strings['LBL_RESCHEDULE_ADMIN_DESC'] = 'Настройка отложенных звонков';
+$mod_strings['LBL_REPAIR_RESCHEDULE_DONE'] = 'Отложенные звонки успешно восстановлены';
+$mod_strings['LBL_SALESAGILITY_ADMIN'] = 'OpenAdmin';
+
+
+
+
+$mod_strings['LBL_MANAGE_SECURITYGROUPS_TITLE'] = 'Создание Групп пользователей';
+$mod_strings['LBL_MANAGE_SECURITYGROUPS'] = 'Создание Групп пользователей и включение в них Пользователей и Ролей';
+$mod_strings['LBL_SECURITYGROUPS'] = 'Security Suite';
+$mod_strings['LBL_CONFIG_SECURITYGROUPS_TITLE'] = 'Управление Группами пользователей';
+$mod_strings['LBL_CONFIG_SECURITYGROUPS'] = 'Настройка Групп пользователей';
+$mod_strings['LBL_SECURITYGROUPS_UPGRADE_INFO_TITLE'] = "Upgrade and General Info"; ///
+$mod_strings['LBL_SECURITYGROUPS_INFO_TITLE'] = "Security Suite Info"; ///
+$mod_strings['LBL_SECURITYGROUPS_INFO'] = "General information";
+$mod_strings['LBL_SECURITYGROUPS_DASHLETPUSH_TITLE'] = "Push Message Dashlet"; ///
+$mod_strings['LBL_SECURITYGROUPS_DASHLETPUSH'] = "Push the Message Dashlet to the Home page for all users. This process may take some time to complete depending on the number of users"; ///
+$mod_strings['LBL_SECURITYGROUPS_HOOKUP_TITLE'] = "Hookup Module"; ///
+$mod_strings['LBL_SECURITYGROUPS_HOOKUP'] = "Hookup Security Suite to work with your custom modules"; ///
+$mod_strings['LBL_SECURITYGROUPS_SUGAROUTFITTERS_TITLE'] = "SugarOutfitters";
+$mod_strings['LBL_SECURITYGROUPS_SUGAROUTFITTERS'] = "Grab the latest version of SecuritySuite and find other SugarCRM modules, themes, and integrations along with reviews, docs, support, and community verified versions.";
+
+
 ?>

@@ -2,41 +2,50 @@
  //WARNING: The contents of this file are auto-generated
 
 
-
-$mod_strings['LBL_MANAGE_SECURITYGROUPS_TITLE'] = 'Security Suite Group Management';
-$mod_strings['LBL_MANAGE_SECURITYGROUPS'] = 'Security Suite Group Editor';
-$mod_strings['LBL_SECURITYGROUPS'] = 'Security Suite';
-$mod_strings['LBL_CONFIG_SECURITYGROUPS_TITLE'] = 'Security Suite Settings';
-$mod_strings['LBL_CONFIG_SECURITYGROUPS'] = 'Configure Security Suite settings such as group inheritance, additive security, etc';
-$mod_strings['LBL_SECURITYGROUPS'] = 'Security Suite';
-$mod_strings['LBL_SECURITYGROUPS_UPGRADE_INFO_TITLE'] = "Upgrade and General Info";
-$mod_strings['LBL_SECURITYGROUPS_INFO_TITLE'] = "Security Suite Info";
-$mod_strings['LBL_SECURITYGROUPS_INFO'] = "General information";
-$mod_strings['LBL_SECURITYGROUPS_DASHLETPUSH_TITLE'] = "Push Message Dashlet";
-$mod_strings['LBL_SECURITYGROUPS_DASHLETPUSH'] = "Push the Message Dashlet to the Home page for all users. This process may take some time to complete depending on the number of users";
-$mod_strings['LBL_SECURITYGROUPS_HOOKUP_TITLE'] = "Hookup Module";
-$mod_strings['LBL_SECURITYGROUPS_HOOKUP'] = "Hookup Security Suite to work with your custom modules";
-$mod_strings['LBL_SECURITYGROUPS_SUGAROUTFITTERS_TITLE'] = "SugarOutfitters";
-$mod_strings['LBL_SECURITYGROUPS_SUGAROUTFITTERS'] = "Grab the latest version of SecuritySuite and find other SugarCRM modules, themes, and integrations along with reviews, docs, support, and community verified versions.";
-
-
+$mod_strings['LBL_SALESAGILITY_ADMIN'] = 'Advanced OpenAdmin';
+$mod_strings['LBL_AOS_ADMIN_CONTRACT_SETTINGS'] = 'Contract Settings';
+$mod_strings['LBL_AOS_ADMIN_CONTRACT_RENEWAL_REMINDER'] = 'Renewal Reminder period';
+$mod_strings['LBL_AOS_ADMIN_MANAGE_AOS'] = 'Advanced OpenSales Settings';
+$mod_strings['LBL_AOS_ADMIN_INVOICE_SETTINGS'] = 'Invoice Settings';
+$mod_strings['LBL_AOS_ADMIN_INITIAL_INVOICE_NUMBER'] = 'Initial Invoice Number';
+$mod_strings['LBL_AOS_ADMIN_QUOTE_SETTINGS'] = 'Quote Settings';
+$mod_strings['LBL_AOS_ADMIN_INITIAL_QUOTE_NUMBER'] = 'Initial Quote Number';
+$mod_strings['LBL_AOS_ADMIN_LINE_ITEM_SETTINGS'] = 'Line Item Settings';
+$mod_strings['LBL_AOS_ADMIN_ENABLE_LINE_ITEM_GROUPS'] = 'Enable Line Items Groups';
+$mod_strings['LBL_AOS_ADMIN_ENABLE_LINE_ITEM_TOTAL_TAX'] = 'Add TAX To Line Total';
+$mod_strings['LBL_AOS_SETTINGS'] = 'AOS Settings';
+$mod_strings['LBL_AOS_PRODUCTS'] = 'AOS Products';
+$mod_strings['LBL_AOS_EDIT'] = 'edit';
+$mod_strings['LBL_AOS_DAYS'] = 'days';
+$mod_strings['LBL_CHANGE_SETTINGS'] = 'Change settings for Advanced OpenSales';
 
 
-
-$mod_strings['LBL_JJWG_MAPS_ADMIN_HEADER'] = 'Google Maps';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DESC'] = 'Manage your geocoding, testing geocoding, view geocoding result totals and configure advanced settings.';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_TITLE'] = 'Google Maps Settings';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_DESC'] = 'Configuration settings to adjust your Google Maps';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_TITLE'] = 'Geocoded Counts';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_DESC'] = 'Shows the number of module objects geocoded, grouped by geocoding response.';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_TITLE'] = 'Donate to this Project';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_DESC'] = 'Please consider donating to this project!';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_TITLE'] = 'Geocode Addresses';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_DESC'] = 'Geocode your object addreses. This process may take a few minutes!';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_TITLE'] = 'Geocoding Test';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_DESC'] = 'Run a single geocoding test with detailed display results.';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_TITLE'] = 'Address Cache';
-$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_DESC'] = 'Provides access to Address Cache information. This is only cache.';
+/**
+ *
+ * @package Advanced OpenDiscovery
+ * @copyright SalesAgility Ltd http://www.salesagility.com
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
+ * along with this program; if not, see http://www.gnu.org/licenses
+ * or write to the Free Software Foundation,Inc., 51 Franklin Street,
+ * Fifth Floor, Boston, MA 02110-1301  USA
+ *
+ * @author Salesagility Ltd <support@salesagility.com>
+ */
+$mod_strings['LBL_SALESAGILITY_ADMIN'] = 'Advanced OpenAdmin';
+$mod_strings['LBL_AOD_ADMIN_MANAGE_AOD'] = 'Advanced OpenDiscovery Settings';
+$mod_strings['LBL_AOD_ENABLE'] = 'Enable AOD';
+$mod_strings['LBL_AOD_SETTINGS'] = 'AOD Settings';
 
 
 /**
@@ -100,74 +109,6 @@ $mod_strings['LBL_AOP_REMOVE_STATUS'] = 'Remove';
 
 
 
-
-$mod_strings['LBL_UPDATE_QUICKCRM_TITLE'] = "QuickCRM Update";
-$mod_strings['LBL_UPDATE_QUICKCRM'] = "Rebuild fields definition";
-$mod_strings['LBL_QUICKCRM'] = 'QuickCRM Mobile';
-$mod_strings['LBL_CONFIG_QUICKCRM_TITLE'] = "Configuration of QuickCRM Mobile";
-$mod_strings['LBL_CONFIG_QUICKCRM'] = "Definition of visible modules and fields";
-$mod_strings['LBL_UPDATE_MSG'] = '<strong>Application updated for QuickCRM on mobile</strong><br/>You can access the mobile version at:';
-$mod_strings['LBL_ERR_DIR_MSG'] = 'Some files could not be created. Please check write access permissions for: ';
-
-
-
-
-/**
- *
- * @package Advanced OpenDiscovery
- * @copyright SalesAgility Ltd http://www.salesagility.com
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
- * the Free Software Foundation; either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
- * along with this program; if not, see http://www.gnu.org/licenses
- * or write to the Free Software Foundation,Inc., 51 Franklin Street,
- * Fifth Floor, Boston, MA 02110-1301  USA
- *
- * @author Salesagility Ltd <support@salesagility.com>
- */
-$mod_strings['LBL_SALESAGILITY_ADMIN'] = 'Advanced OpenAdmin';
-$mod_strings['LBL_AOD_ADMIN_MANAGE_AOD'] = 'Advanced OpenDiscovery Settings';
-$mod_strings['LBL_AOD_ENABLE'] = 'Enable AOD';
-$mod_strings['LBL_AOD_SETTINGS'] = 'AOD Settings';
-
-
-    
-$mod_strings['LBL_RESCHEDULE_REBUILD'] = 'Repair Reschedule';
-$mod_strings['LBL_RESCHEDULE_REBUILD_DESC'] = 'Repairs the Reschedule Module';
-$mod_strings['LBL_RESCHEDULE_ADMIN'] = 'Reschedule Settings';
-$mod_strings['LBL_RESCHEDULE_ADMIN_DESC'] = 'Configure and Manage Reschedule';
-$mod_strings['LBL_REPAIR_RESCHEDULE_DONE'] = 'Reschedule Successfully Repaired';
-$mod_strings['LBL_SALESAGILITY_ADMIN'] = 'Advanced OpenAdmin';
-
-
-
-$mod_strings['LBL_SALESAGILITY_ADMIN'] = 'Advanced OpenAdmin';
-$mod_strings['LBL_AOS_ADMIN_CONTRACT_SETTINGS'] = 'Contract Settings';
-$mod_strings['LBL_AOS_ADMIN_CONTRACT_RENEWAL_REMINDER'] = 'Renewal Reminder period';
-$mod_strings['LBL_AOS_ADMIN_MANAGE_AOS'] = 'Advanced OpenSales Settings';
-$mod_strings['LBL_AOS_ADMIN_INVOICE_SETTINGS'] = 'Invoice Settings';
-$mod_strings['LBL_AOS_ADMIN_INITIAL_INVOICE_NUMBER'] = 'Initial Invoice Number';
-$mod_strings['LBL_AOS_ADMIN_QUOTE_SETTINGS'] = 'Quote Settings';
-$mod_strings['LBL_AOS_ADMIN_INITIAL_QUOTE_NUMBER'] = 'Initial Quote Number';
-$mod_strings['LBL_AOS_ADMIN_LINE_ITEM_SETTINGS'] = 'Line Item Settings';
-$mod_strings['LBL_AOS_ADMIN_ENABLE_LINE_ITEM_GROUPS'] = 'Enable Line Items Groups';
-$mod_strings['LBL_AOS_ADMIN_ENABLE_LINE_ITEM_TOTAL_TAX'] = 'Add TAX To Line Total';
-$mod_strings['LBL_AOS_SETTINGS'] = 'AOS Settings';
-$mod_strings['LBL_AOS_PRODUCTS'] = 'AOS Products';
-$mod_strings['LBL_AOS_EDIT'] = 'edit';
-$mod_strings['LBL_AOS_DAYS'] = 'days';
-$mod_strings['LBL_CHANGE_SETTINGS'] = 'Change settings for Advanced OpenSales';
-
-
 /**
  * Created by PhpStorm.
  * User: will
@@ -220,5 +161,64 @@ $mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_TITLE'] = 'Geocoding Test';
 $mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_DESC'] = 'Run a single geocoding test with detailed display results.';
 $mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_TITLE'] = 'Address Cache';
 $mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_DESC'] = 'Provides access to Address Cache information. This is only cache.';
+
+
+
+$mod_strings['LBL_JJWG_MAPS_ADMIN_HEADER'] = 'Google Maps';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DESC'] = 'Manage your geocoding, testing geocoding, view geocoding result totals and configure advanced settings.';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_TITLE'] = 'Google Maps Settings';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_CONFIG_DESC'] = 'Configuration settings to adjust your Google Maps';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_TITLE'] = 'Geocoded Counts';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODED_COUNTS_DESC'] = 'Shows the number of module objects geocoded, grouped by geocoding response.';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_TITLE'] = 'Donate to this Project';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_DONATE_DESC'] = 'Please consider donating to this project!';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_TITLE'] = 'Geocode Addresses';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODE_ADDRESSES_DESC'] = 'Geocode your object addreses. This process may take a few minutes!';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_TITLE'] = 'Geocoding Test';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_GEOCODING_TEST_DESC'] = 'Run a single geocoding test with detailed display results.';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_TITLE'] = 'Address Cache';
+$mod_strings['LBL_JJWG_MAPS_ADMIN_ADDRESS_CACHE_DESC'] = 'Provides access to Address Cache information. This is only cache.';
+
+
+
+$mod_strings['LBL_UPDATE_QUICKCRM_TITLE'] = "QuickCRM Update";
+$mod_strings['LBL_UPDATE_QUICKCRM'] = "Rebuild fields definition";
+$mod_strings['LBL_QUICKCRM'] = 'QuickCRM Mobile';
+$mod_strings['LBL_CONFIG_QUICKCRM_TITLE'] = "Configuration of QuickCRM Mobile";
+$mod_strings['LBL_CONFIG_QUICKCRM'] = "Definition of visible modules and fields";
+$mod_strings['LBL_UPDATE_MSG'] = '<strong>Application updated for QuickCRM on mobile</strong><br/>You can access the mobile version at:';
+$mod_strings['LBL_ERR_DIR_MSG'] = 'Some files could not be created. Please check write access permissions for: ';
+
+
+
+
+    
+$mod_strings['LBL_RESCHEDULE_REBUILD'] = 'Repair Reschedule';
+$mod_strings['LBL_RESCHEDULE_REBUILD_DESC'] = 'Repairs the Reschedule Module';
+$mod_strings['LBL_RESCHEDULE_ADMIN'] = 'Reschedule Settings';
+$mod_strings['LBL_RESCHEDULE_ADMIN_DESC'] = 'Configure and Manage Reschedule';
+$mod_strings['LBL_REPAIR_RESCHEDULE_DONE'] = 'Reschedule Successfully Repaired';
+$mod_strings['LBL_SALESAGILITY_ADMIN'] = 'Advanced OpenAdmin';
+
+
+
+
+$mod_strings['LBL_MANAGE_SECURITYGROUPS_TITLE'] = 'Security Suite Group Management';
+$mod_strings['LBL_MANAGE_SECURITYGROUPS'] = 'Security Suite Group Editor';
+$mod_strings['LBL_SECURITYGROUPS'] = 'Security Suite';
+$mod_strings['LBL_CONFIG_SECURITYGROUPS_TITLE'] = 'Security Suite Settings';
+$mod_strings['LBL_CONFIG_SECURITYGROUPS'] = 'Configure Security Suite settings such as group inheritance, additive security, etc';
+$mod_strings['LBL_SECURITYGROUPS'] = 'Security Suite';
+$mod_strings['LBL_SECURITYGROUPS_UPGRADE_INFO_TITLE'] = "Upgrade and General Info";
+$mod_strings['LBL_SECURITYGROUPS_INFO_TITLE'] = "Security Suite Info";
+$mod_strings['LBL_SECURITYGROUPS_INFO'] = "General information";
+$mod_strings['LBL_SECURITYGROUPS_DASHLETPUSH_TITLE'] = "Push Message Dashlet";
+$mod_strings['LBL_SECURITYGROUPS_DASHLETPUSH'] = "Push the Message Dashlet to the Home page for all users. This process may take some time to complete depending on the number of users";
+$mod_strings['LBL_SECURITYGROUPS_HOOKUP_TITLE'] = "Hookup Module";
+$mod_strings['LBL_SECURITYGROUPS_HOOKUP'] = "Hookup Security Suite to work with your custom modules";
+$mod_strings['LBL_SECURITYGROUPS_SUGAROUTFITTERS_TITLE'] = "SugarOutfitters";
+$mod_strings['LBL_SECURITYGROUPS_SUGAROUTFITTERS'] = "Grab the latest version of SecuritySuite and find other SugarCRM modules, themes, and integrations along with reviews, docs, support, and community verified versions.";
+
+
 
 ?>

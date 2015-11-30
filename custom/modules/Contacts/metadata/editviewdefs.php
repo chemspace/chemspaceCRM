@@ -38,6 +38,11 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
         'LBL_PANEL_ADVANCED' => 
         array (
           'newTab' => false,
@@ -179,6 +184,76 @@ array (
               'cols' => 30,
               'maxlength' => 150,
             ),
+          ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fe_user_id_c',
+            'label' => 'LBL_FE_USER_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'fe_email_c',
+            'label' => 'LBL_FE_EMAIL',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fe_salutation_c',
+            'label' => 'LBL_FE_SALUTATION',
+          ),
+          1 => 
+          array (
+            'name' => 'fe_country_id_c',
+            'studio' => 'visible',
+            'label' => 'LBL_FE_COUNTRY_ID',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fe_first_name_c',
+            'label' => 'LBL_FE_FIRST_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'fe_last_name_c',
+            'label' => 'LBL_FE_LAST_NAME',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fe_currency_c',
+            'studio' => 'visible',
+            'label' => 'LBL_FE_CURRENCY',
+          ),
+          1 => 
+          array (
+            'name' => 'fe_company_name_c',
+            'label' => 'LBL_FE_COMPANY_NAME',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fe_email_notification_c',
+            'label' => 'LBL_FE_EMAIL_NOTIFICATION',
+          ),
+          1 => 
+          array (
+            'name' => 'fe_reg_date_c',
+            'label' => 'LBL_FE_REG_DATE',
           ),
         ),
       ),

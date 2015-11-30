@@ -7,12 +7,6 @@
 	    'auth' => false
 	);
 
-$entry_point_registry['QuickCRMgetConfig'] = array(
-	'file' => 'custom/QuickCRM/getConfig.php',
-	'auth' => false
-);
-
-
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
@@ -53,5 +47,11 @@ $entry_point_registry['QuickCRMgetConfig'] = array(
 
 
 $entry_point_registry['deleteAttachment'] = array('file' => 'include/SugarFields/Fields/Image/deleteAttachment.php' , 'auth' => '1');
+
+
+$entry_point_registry['QuickCRMgetConfig'] = array(
+	'file' => 'custom/QuickCRM/getConfig.php',
+	'auth' => false
+);
 
 ?>
