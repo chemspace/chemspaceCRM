@@ -7,6 +7,43 @@ if(!defined('sugarEntry'))define('sugarEntry', true);
 require_once 'service/v3_1/SugarWebServiceImplv3_1.php';
 class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 
+	function change_user_profile($session, $json)
+	{
+		$GLOBALS['log']->debug('Begin: change_user_profile [start]');
+
+		//Here we check that $session represents a valid session
+		if (!self::$helperObject->checkSessionAndModuleAccess(
+			$session,
+			'invalid_session', '', '', '', new SoapError())
+		) {
+			$GLOBALS['log']->error('End: change_user_profile - session is invalid [error]');
+			return false;
+		}
+
+		// Check the data
+		$data = json_decode($json, true);
+		if (empty($data)) {
+			$GLOBALS['log']->error('End: change_user_profile - data is empty [error]');
+			return false;
+		}
+		if (!is_array($data)) {
+			$GLOBALS['log']->error('End: change_user_profile - data not array [error]');
+			return false;
+		}
+		$keys = array('user_id', 'change_date');
+		foreach ($keys as $key) {
+			if (!isset($data[$key])) {
+				$GLOBALS['log']->error('End: change_user_profile - data[' . $key . '] not set [error]');
+				return false;
+			}
+		}
+
+		// Do the writing ...
+
+		$GLOBALS['log']->debug('End: change_user_profile [finish]');
+		return true;
+	}
+
 	function register_new_user($session, $json)
 	{
 		$GLOBALS['log']->debug('Begin: register_new_user [start]');
