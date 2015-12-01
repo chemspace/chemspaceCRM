@@ -7,6 +7,60 @@ if(!defined('sugarEntry'))define('sugarEntry', true);
 require_once 'service/v3_1/SugarWebServiceImplv3_1.php';
 class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 
+	function record_user_login($session, $json)
+	{
+		$GLOBALS['log']->debug('Begin: record_user_login [start]');
+
+		//Here we check that $session represents a valid session
+		if (!self::$helperObject->checkSessionAndModuleAccess(
+			$session,
+			'invalid_session', '', '', '', new SoapError())
+		) {
+			$GLOBALS['log']->error('End: record_user_login - session is invalid [error]');
+			return false;
+		}
+
+		// Check the data
+		$data = json_decode($json, true);
+		if (empty($data)) {
+			$GLOBALS['log']->error('End: record_user_login - data is empty [error]');
+			return false;
+		}
+		if (!is_array($data)) {
+			$GLOBALS['log']->error('End: record_user_login - data not array [error]');
+			return false;
+		}
+		$keys = array('user_id', 'last_visit');
+		foreach ($keys as $key) {
+			if (!isset($data[$key])) {
+				$GLOBALS['log']->error('End: record_user_login - data[' . $key . '] not set [error]');
+				return false;
+			}
+		}
+		if (0 >= intval($data['user_id'])) {
+			$GLOBALS['log']->error('End: record_user_login - user_id not positive [error]');
+			return false;
+		}
+
+		$contactsBean = BeanFactory::newBean('Contacts');
+		$bean = $contactsBean->retrieve_by_string_fields(
+			array('fe_user_id_c' => intval($data['user_id']))
+		);
+		if (null === $bean) {
+			$GLOBALS['log']->error('End: record_user_login - user_id not found [error]');
+			return false;
+		}
+		// Do the writing ...
+		$count_logins_all = intval($bean->fe_count_logins_all_c);
+		$bean->fe_count_logins_all_c = (0 < $count_logins_all) ? ($count_logins_all + 1) : 2;
+		$bean->fe_last_visit_c = strval($data['last_visit']);
+
+		$bean->save();
+
+		$GLOBALS['log']->debug('End: record_user_login [finish]');
+		return true;
+	}
+
 	function change_user_profile($session, $json)
 	{
 		$GLOBALS['log']->debug('Begin: change_user_profile [start]');
@@ -175,25 +229,6 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		$bean->save();
 
 		$GLOBALS['log']->debug('End: register_new_user [finish]');
-		return true;
-	}
-
-	function write_user_data($session, $json)
-	{
-		$GLOBALS['log']->debug('Begin: write_user_data [start]');
-
-		//Here we check that $session represents a valid session
-		if (!self::$helperObject->checkSessionAndModuleAccess(
-			$session,
-			'invalid_session', '', '', '', new SoapError())
-		)
-		{
-			$GLOBALS['log']->error('End: write_user_data [error]');
-			return false;
-		}
-		$GLOBALS['log']->info($json);
-		// do the writing ...
-		$GLOBALS['log']->debug('End: write_user_data [finish]');
 		return true;
 	}
 }

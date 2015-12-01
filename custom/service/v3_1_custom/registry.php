@@ -12,6 +12,17 @@ class registry_v3_1_custom extends registry_v3_1 {
 		parent::registerFunction();
 
 		$this->serviceClass->registerFunction(
+			'record_user_login',
+			array(
+				'session'=>'xsd:string',
+				'json'=>'xsd:string'
+			),
+			array(
+				'return'=>'xsd:boolean'
+			)
+		);
+
+		$this->serviceClass->registerFunction(
 			'change_user_profile',
 			array(
 				'session'=>'xsd:string',
@@ -24,17 +35,6 @@ class registry_v3_1_custom extends registry_v3_1 {
 
 		$this->serviceClass->registerFunction(
 			'register_new_user',
-			array(
-				'session'=>'xsd:string',
-				'json'=>'xsd:string'
-			),
-			array(
-				'return'=>'xsd:boolean'
-			)
-		);
-
-		$this->serviceClass->registerFunction(
-			'write_user_data',
 			array(
 				'session'=>'xsd:string',
 				'json'=>'xsd:string'
