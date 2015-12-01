@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-30 16:54:52
+// created: 2015-12-01 15:52:00
 $mod_strings = array (
   'LNK_NEW_CONTACT' => 'Create Contact',
   'LNK_CONTACT_LIST' => 'View Contacts',
@@ -45,4 +45,8 @@ $mod_strings = array (
   'LBL_FE_EMAIL_NOTIFICATION' => 'FE Email Notification',
   'LBL_FE_REG_DATE' => 'FE Registartion Date',
   'LBL_FE_SOCIAL_ACCOUNT' => 'FE Social Account',
+  'LBL_FE_POSITION' => 'FE Position',
+  'LBL_FE_CHANGE_DATE' => 'FE Profile Change Date',
+  'LBL_FE_PHONE' => 'FE Phone',
+  'LBL_FE_FAX' => 'FE Fax',
 );

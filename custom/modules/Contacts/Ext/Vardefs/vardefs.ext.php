@@ -296,6 +296,12 @@ $dictionary['Contact']['fields']['event_status_id'] =
     );
 
 
+ // created: 2015-12-01 15:49:52
+$dictionary['Contact']['fields']['fe_change_date_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_change_date_c']['labelValue']='FE Profile Change Date';
+
+ 
+
  // created: 2015-11-30 13:41:33
 $dictionary['Contact']['fields']['fe_company_name_c']['inline_edit']='1';
 $dictionary['Contact']['fields']['fe_company_name_c']['labelValue']='FE Company Name';
@@ -326,6 +332,12 @@ $dictionary['Contact']['fields']['fe_email_notification_c']['labelValue']='FE Em
 
  
 
+ // created: 2015-12-01 15:52:00
+$dictionary['Contact']['fields']['fe_fax_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_fax_c']['labelValue']='FE Fax';
+
+ 
+
  // created: 2015-11-30 13:28:32
 $dictionary['Contact']['fields']['fe_first_name_c']['inline_edit']='1';
 $dictionary['Contact']['fields']['fe_first_name_c']['labelValue']='FE First Name';
@@ -335,6 +347,18 @@ $dictionary['Contact']['fields']['fe_first_name_c']['labelValue']='FE First Name
  // created: 2015-11-30 13:29:36
 $dictionary['Contact']['fields']['fe_last_name_c']['inline_edit']='1';
 $dictionary['Contact']['fields']['fe_last_name_c']['labelValue']='FE Last Name';
+
+ 
+
+ // created: 2015-12-01 15:50:59
+$dictionary['Contact']['fields']['fe_phone_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_phone_c']['labelValue']='FE Phone';
+
+ 
+
+ // created: 2015-12-01 15:47:47
+$dictionary['Contact']['fields']['fe_position_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_position_c']['labelValue']='FE Position';
 
  
 
