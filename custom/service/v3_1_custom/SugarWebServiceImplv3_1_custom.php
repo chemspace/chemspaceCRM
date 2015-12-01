@@ -130,9 +130,20 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 				return false;
 			}
 		}
+		if (0 >= intval($data['user_id'])) {
+			$GLOBALS['log']->error('End: register_new_user - user_id not positive [error]');
+			return false;
+		}
 
 		// Do the writing ...
 		$bean = BeanFactory::newBean('Contacts');
+		$test = $bean->retrieve_by_string_fields(
+			array('fe_user_id_c' => intval($data['user_id']))
+		);
+		if (!(null === $test)) {
+			$GLOBALS['log']->error('End: register_new_user - user_id not unique [error]');
+			return false;
+		}
 		$bean->description = 'Contact created via API.';
 
 		$bean->fe_user_id_c = strval($data['user_id']);
