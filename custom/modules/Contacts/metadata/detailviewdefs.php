@@ -325,6 +325,32 @@ array (
             'label' => 'LBL_FE_REG_DATE',
           ),
         ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fe_position_c',
+            'label' => 'LBL_FE_POSITION',
+          ),
+          1 => 
+          array (
+            'name' => 'fe_change_date_c',
+            'label' => 'LBL_FE_CHANGE_DATE',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fe_phone_c',
+            'label' => 'LBL_FE_PHONE',
+          ),
+          1 => 
+          array (
+            'name' => 'fe_fax_c',
+            'label' => 'LBL_FE_FAX',
+          ),
+        ),
       ),
       'LBL_PANEL_ADVANCED' => 
       array (
