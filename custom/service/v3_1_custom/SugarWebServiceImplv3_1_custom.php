@@ -37,8 +37,64 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 				return false;
 			}
 		}
+		if (0 >= intval($data['user_id'])) {
+			$GLOBALS['log']->error('End: change_user_profile - user_id not positive [error]');
+			return false;
+		}
 
+		$contactsBean = BeanFactory::newBean('Contacts');
+		$bean = $contactsBean->retrieve_by_string_fields(
+			array('fe_user_id_c' => intval($data['user_id']))
+		);
+		if (null === $bean) {
+			$GLOBALS['log']->error('End: change_user_profile - user_id not found [error]');
+			return false;
+		}
 		// Do the writing ...
+		if (isset($data['email'])) {
+			$bean->fe_email_c = strval($data['email']);
+		}
+
+		if (isset($data['salutation'])) {
+			$bean->fe_salutation_c = strval($data['salutation']);
+		}
+		if (isset($data['firstname'])) {
+			$bean->fe_first_name_c = strval($data['firstname']);
+		}
+		if (isset($data['lastname'])) {
+			$bean->fe_last_name_c = strval($data['lastname']);
+		}
+
+		if (isset($data['country_id'])) {
+			$bean->fe_country_id_c = intval($data['country_id']);
+		}
+		if (isset($data['currency'])) {
+			$bean->fe_currency_c = strval($data['currency']);
+		}
+		if (isset($data['company_name'])) {
+			$bean->fe_company_name_c = strval($data['company_name']);
+		}
+
+		if (isset($data['position'])) {
+			$bean->fe_position_c = strval($data['position']);
+		}
+		if (isset($data['phone'])) {
+			$bean->fe_phone_c = strval($data['phone']);
+		}
+		if (isset($data['fax'])) {
+			$bean->fe_fax_c = strval($data['fax']);
+		}
+
+		if (isset($data['social_account'])) {
+			$bean->fe_social_account_c = serialize($data['social_account']);
+		}
+		if (isset($data['email_notification'])) {
+			$bean->fe_email_notification_c = boolval($data['email_notification']);
+		}
+
+		$bean->fe_change_date_c = strval($data['change_date']);
+
+		$bean->save();
 
 		$GLOBALS['log']->debug('End: change_user_profile [finish]');
 		return true;
