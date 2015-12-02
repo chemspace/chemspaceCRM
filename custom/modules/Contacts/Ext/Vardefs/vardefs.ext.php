@@ -314,6 +314,12 @@ $dictionary['Contact']['fields']['fe_country_id_c']['labelValue']='FE Country';
 
  
 
+ // created: 2015-12-02 13:40:34
+$dictionary['Contact']['fields']['fe_count_logins_all_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_count_logins_all_c']['labelValue']='FE Count All Logins';
+
+ 
+
  // created: 2015-11-30 16:29:54
 $dictionary['Contact']['fields']['fe_currency_c']['inline_edit']='1';
 $dictionary['Contact']['fields']['fe_currency_c']['labelValue']='FE Currency';
@@ -347,6 +353,12 @@ $dictionary['Contact']['fields']['fe_first_name_c']['labelValue']='FE First Name
  // created: 2015-11-30 13:29:36
 $dictionary['Contact']['fields']['fe_last_name_c']['inline_edit']='1';
 $dictionary['Contact']['fields']['fe_last_name_c']['labelValue']='FE Last Name';
+
+ 
+
+ // created: 2015-12-02 13:42:31
+$dictionary['Contact']['fields']['fe_last_visit_c']['inline_edit']='1';
+$dictionary['Contact']['fields']['fe_last_visit_c']['labelValue']='FE Last Visit Date';
 
  
 
