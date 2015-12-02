@@ -351,6 +351,19 @@ array (
             'label' => 'LBL_FE_FAX',
           ),
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fe_count_logins_all_c',
+            'label' => 'LBL_FE_COUNT_LOGINS_ALL',
+          ),
+          1 => 
+          array (
+            'name' => 'fe_last_visit_c',
+            'label' => 'LBL_FE_LAST_VISIT',
+          ),
+        ),
       ),
       'LBL_PANEL_ADVANCED' => 
       array (
