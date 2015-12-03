@@ -18,7 +18,7 @@ class registry_v3_1_custom extends registry_v3_1 {
 				'json'=>'xsd:string'
 			),
 			array(
-				'return'=>'xsd:boolean'
+				'return'=>'xsd:string'
 			)
 		);
 
@@ -29,7 +29,7 @@ class registry_v3_1_custom extends registry_v3_1 {
 				'json'=>'xsd:string'
 			),
 			array(
-				'return'=>'xsd:boolean'
+				'return'=>'xsd:string'
 			)
 		);
 
@@ -40,7 +40,7 @@ class registry_v3_1_custom extends registry_v3_1 {
 				'json'=>'xsd:string'
 			),
 			array(
-				'return'=>'xsd:boolean'
+				'return'=>'xsd:string'
 			)
 		);
 	}

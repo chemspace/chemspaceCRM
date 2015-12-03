@@ -13,33 +13,32 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 
 		//Here we check that $session represents a valid session
 		if (!self::$helperObject->checkSessionAndModuleAccess(
-			$session,
-			'invalid_session', '', '', '', new SoapError())
+			$session, 'invalid_session', '', '', '', new SoapError())
 		) {
-			$GLOBALS['log']->error('End: record_user_login - session is invalid [error]');
-			return false;
+			$GLOBALS['log']->error('End: record_user_login - session is invalid [stop]');
+			return 'STOP - ERROR, session is invalid.';
 		}
 
 		// Check the data
 		$data = json_decode($json, true);
 		if (empty($data)) {
-			$GLOBALS['log']->error('End: record_user_login - data is empty [error]');
-			return false;
+			$GLOBALS['log']->error('End: record_user_login - data is empty [skip]');
+			return 'SKIP - ERROR, data is empty.';
 		}
 		if (!is_array($data)) {
-			$GLOBALS['log']->error('End: record_user_login - data not array [error]');
-			return false;
+			$GLOBALS['log']->error('End: record_user_login - data not array [skip]');
+			return 'SKIP - ERROR, data not array.';
 		}
 		$keys = array('user_id', 'last_visit');
 		foreach ($keys as $key) {
 			if (!isset($data[$key])) {
-				$GLOBALS['log']->error('End: record_user_login - data[' . $key . '] not set [error]');
-				return false;
+				$GLOBALS['log']->error('End: record_user_login - datakey not set (error, key is "' . $key . '")');
+				return 'STOP - ERROR, datakey not set: "' . $key . '".';
 			}
 		}
 		if (0 >= intval($data['user_id'])) {
-			$GLOBALS['log']->error('End: record_user_login - user_id not positive [error]');
-			return false;
+			$GLOBALS['log']->error('End: record_user_login - user_id not positive (error, id is "' . ($data['user_id']) . '")');
+			return 'STOP - ERROR, user_id not positive: "' . ($data['user_id']) . '".';
 		}
 
 		$contactsBean = BeanFactory::newBean('Contacts');
@@ -47,8 +46,8 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			array('fe_user_id_c' => intval($data['user_id']))
 		);
 		if (null === $bean) {
-			$GLOBALS['log']->error('End: record_user_login - user_id not found [error]');
-			return false;
+			$GLOBALS['log']->error('End: record_user_login - user_id not found (error, id is "' . ($data['user_id']) . '")');
+			return 'SKIP - ERROR, user_id not found: "' . ($data['user_id']) . '".';
 		}
 		// Do the writing ...
 		$count_logins_all = intval($bean->fe_count_logins_all_c);
@@ -58,7 +57,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		$bean->save();
 
 		$GLOBALS['log']->debug('End: record_user_login [finish]');
-		return true;
+		return 'DONE - OK.';
 	}
 
 	function change_user_profile($session, $json)
@@ -67,33 +66,32 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 
 		//Here we check that $session represents a valid session
 		if (!self::$helperObject->checkSessionAndModuleAccess(
-			$session,
-			'invalid_session', '', '', '', new SoapError())
+			$session, 'invalid_session', '', '', '', new SoapError())
 		) {
-			$GLOBALS['log']->error('End: change_user_profile - session is invalid [error]');
-			return false;
+			$GLOBALS['log']->error('End: change_user_profile - session is invalid [stop]');
+			return 'STOP - ERROR, session is invalid.';
 		}
 
 		// Check the data
 		$data = json_decode($json, true);
 		if (empty($data)) {
-			$GLOBALS['log']->error('End: change_user_profile - data is empty [error]');
-			return false;
+			$GLOBALS['log']->error('End: change_user_profile - data is empty [skip]');
+			return 'SKIP - ERROR, data is empty.';
 		}
 		if (!is_array($data)) {
-			$GLOBALS['log']->error('End: change_user_profile - data not array [error]');
-			return false;
+			$GLOBALS['log']->error('End: change_user_profile - data not array [skip]');
+			return 'SKIP - ERROR, data not array.';
 		}
 		$keys = array('user_id', 'change_date');
 		foreach ($keys as $key) {
 			if (!isset($data[$key])) {
-				$GLOBALS['log']->error('End: change_user_profile - data[' . $key . '] not set [error]');
-				return false;
+				$GLOBALS['log']->error('End: change_user_profile - datakey not set (error, key is "' . $key . '")');
+				return 'STOP - ERROR, datakey not set: "' . $key . '".';
 			}
 		}
 		if (0 >= intval($data['user_id'])) {
-			$GLOBALS['log']->error('End: change_user_profile - user_id not positive [error]');
-			return false;
+			$GLOBALS['log']->error('End: change_user_profile - user_id not positive (error, id is "' . ($data['user_id']) . '")');
+			return 'STOP - ERROR, user_id not positive: "' . ($data['user_id']) . '".';
 		}
 
 		$contactsBean = BeanFactory::newBean('Contacts');
@@ -101,8 +99,8 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			array('fe_user_id_c' => intval($data['user_id']))
 		);
 		if (null === $bean) {
-			$GLOBALS['log']->error('End: change_user_profile - user_id not found [error]');
-			return false;
+			$GLOBALS['log']->error('End: change_user_profile - user_id not found (error, id is "' . ($data['user_id']) . '")');
+			return 'SKIP - ERROR, user_id not found: "' . ($data['user_id']) . '".';
 		}
 		// Do the writing ...
 		if (isset($data['email'])) {
@@ -151,7 +149,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		$bean->save();
 
 		$GLOBALS['log']->debug('End: change_user_profile [finish]');
-		return true;
+		return 'DONE - OK.';
 	}
 
 	function register_new_user($session, $json)
@@ -160,33 +158,32 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 
 		//Here we check that $session represents a valid session
 		if (!self::$helperObject->checkSessionAndModuleAccess(
-			$session,
-			'invalid_session', '', '', '', new SoapError())
+			$session, 'invalid_session', '', '', '', new SoapError())
 		) {
-			$GLOBALS['log']->error('End: register_new_user - session is invalid [error]');
-			return false;
+			$GLOBALS['log']->error('End: register_new_user - session is invalid [stop]');
+			return 'STOP - ERROR, session is invalid.';
 		}
 
 		// Check the data
 		$data = json_decode($json, true);
 		if (empty($data)) {
-			$GLOBALS['log']->error('End: register_new_user - data is empty [error]');
-			return false;
+			$GLOBALS['log']->error('End: register_new_user - data is empty [skip]');
+			return 'SKIP - ERROR, data is empty.';
 		}
 		if (!is_array($data)) {
-			$GLOBALS['log']->error('End: register_new_user - data not array [error]');
-			return false;
+			$GLOBALS['log']->error('End: register_new_user - data not array [skip]');
+			return 'SKIP - ERROR, data not array.';
 		}
 		$keys = array('user_id', 'email', 'salutation', 'firstname', 'lastname', 'country_id', 'currency', 'company_name', 'social_account', 'email_notification', 'reg_date');
 		foreach ($keys as $key) {
 			if (!isset($data[$key])) {
-				$GLOBALS['log']->error('End: register_new_user - data[' . $key . '] not set [error]');
-				return false;
+				$GLOBALS['log']->error('End: register_new_user - datakey not set (error, key is "' . $key . '")');
+				return 'STOP - ERROR, datakey not set: "' . $key . '".';
 			}
 		}
 		if (0 >= intval($data['user_id'])) {
-			$GLOBALS['log']->error('End: register_new_user - user_id not positive [error]');
-			return false;
+			$GLOBALS['log']->error('End: register_new_user - user_id not positive (error, id is "' . ($data['user_id']) . '")');
+			return 'STOP - ERROR, user_id not positive: "' . ($data['user_id']) . '".';
 		}
 
 		// Do the writing ...
@@ -195,8 +192,8 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			array('fe_user_id_c' => intval($data['user_id']))
 		);
 		if (!(null === $test)) {
-			$GLOBALS['log']->error('End: register_new_user - user_id not unique [error]');
-			return false;
+			$GLOBALS['log']->error('End: register_new_user - user_id not unique (error, id is "' . ($data['user_id']) . '")');
+			return 'SKIP - ERROR, user_id not unique: "' . ($data['user_id']) . '".';
 		}
 		$new_record = true;
 		// Recheck that we may have contact with such email
@@ -208,8 +205,8 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$GLOBALS['log']->debug('Check: register_new_user found id="' . print_r($id, TRUE) . '" [processing]');
 			$bean = BeanFactory::getBean('Contacts', $id);
 			if (0 < intval($bean->fe_user_id_c)) {
-				$GLOBALS['log']->error('End: register_new_user - user_id already exists [error]');
-				return false;
+				$GLOBALS['log']->error('End: register_new_user - user_id already exists (error, id is "' . ($bean->fe_user_id_c) . '")');
+				return 'SKIP - ERROR, user_id already exists: "' . ($bean->fe_user_id_c) . '".';
 			}
 			$new_record = false;
 		}
@@ -247,7 +244,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		$bean->save();
 
 		$GLOBALS['log']->debug('End: register_new_user [finish]');
-		return true;
+		return 'DONE - OK.';
 	}
 }
 
