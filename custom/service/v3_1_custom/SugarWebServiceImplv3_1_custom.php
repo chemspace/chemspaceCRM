@@ -200,15 +200,17 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		}
 		$new_record = true;
 		// Recheck that we may have contact with such email
-		$mail = $bean->retrieve_by_string_fields(
-			array('email1' => strval($data['email']))
+		$list = $bean->get_full_list('date_modified DESC',
+			"contacts.id IN (SELECT eabr.bean_id FROM email_addr_bean_rel eabr JOIN email_addresses ea ON (eabr.email_address_id = ea.id) WHERE eabr.bean_module = 'Contacts' AND ea.email_address_caps = '" . strtoupper($data['email']) . "' AND eabr.deleted=0 AND ea.deleted=0)"
 		);
-		if (!(null === $mail)) {
-			if (0 < intval($mail->fe_user_id_c)) {
+		if (is_array($list) && (0 < count($list))) {
+			$id = $list[0]->id;
+			$GLOBALS['log']->debug('Check: register_new_user found id="' . print_r($id, TRUE) . '" [processing]');
+			$bean = BeanFactory::getBean('Contacts', $id);
+			if (0 < intval($bean->fe_user_id_c)) {
 				$GLOBALS['log']->error('End: register_new_user - user_id already exists [error]');
 				return false;
 			}
-			$bean = $mail;
 			$new_record = false;
 		}
 		if ($new_record) {
