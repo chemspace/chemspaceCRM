@@ -198,28 +198,44 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$GLOBALS['log']->error('End: register_new_user - user_id not unique [error]');
 			return false;
 		}
-		$bean->description = 'Contact created via API.';
+		$new_record = true;
+		// Recheck that we may have contact with such email
+		$mail = $bean->retrieve_by_string_fields(
+			array('email1' => strval($data['email']))
+		);
+		if (!(null === $mail)) {
+			if (0 < intval($mail->fe_user_id_c)) {
+				$GLOBALS['log']->error('End: register_new_user - user_id already exists [error]');
+				return false;
+			}
+			$bean = $mail;
+			$new_record = false;
+		}
+		if ($new_record) {
+			$bean->description = 'Contact created via API.';
+		}
 
 		$bean->fe_user_id_c = strval($data['user_id']);
 		$bean->fe_email_c = strval($data['email']);
 
-		$bean->email1 = strval($data['email']);
+		if ($new_record) {
+			$bean->email1 = strval($data['email']);
 
-		$bean->salutation = strval($data['salutation']);
-		$bean->first_name = strval($data['firstname']);
-		$bean->last_name = strval($data['lastname']);
+			$bean->salutation = strval($data['salutation']);
+			$bean->first_name = strval($data['firstname']);
+			$bean->last_name = strval($data['lastname']);
+
+			$bean->country_c = intval($data['country_id']);
+			$bean->currency_c = strval($data['currency']);
+			$bean->company_name_c = strval($data['company_name']);
+		}
 
 		$bean->fe_salutation_c = strval($data['salutation']);
 		$bean->fe_first_name_c = strval($data['firstname']);
 		$bean->fe_last_name_c = strval($data['lastname']);
 
-		$bean->country_c = intval($data['country_id']);
 		$bean->fe_country_id_c = intval($data['country_id']);
-
-		$bean->currency_c = strval($data['currency']);
 		$bean->fe_currency_c = strval($data['currency']);
-
-		$bean->company_name_c = strval($data['company_name']);
 		$bean->fe_company_name_c = strval($data['company_name']);
 
 		$bean->fe_social_account_c = serialize($data['social_account']);
