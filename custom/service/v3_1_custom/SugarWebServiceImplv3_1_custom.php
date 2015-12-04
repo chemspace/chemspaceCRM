@@ -110,11 +110,11 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		if (isset($data['salutation'])) {
 			$bean->fe_salutation_c = strval($data['salutation']);
 		}
-		if (isset($data['firstname'])) {
-			$bean->fe_first_name_c = strval($data['firstname']);
+		if (isset($data['first_name'])) {
+			$bean->fe_first_name_c = strval($data['first_name']);
 		}
-		if (isset($data['lastname'])) {
-			$bean->fe_last_name_c = strval($data['lastname']);
+		if (isset($data['last_name'])) {
+			$bean->fe_last_name_c = strval($data['last_name']);
 		}
 
 		if (isset($data['country_id'])) {
@@ -174,7 +174,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$GLOBALS['log']->error('End: register_new_user - data not array [skip]');
 			return 'SKIP - ERROR, data not array.';
 		}
-		$keys = array('user_id', 'email', 'salutation', 'firstname', 'lastname', 'country_id', 'currency', 'company_name', 'social_account', 'email_notification', 'reg_date');
+		$keys = array('user_id', 'email', 'salutation', 'first_name', 'last_name', 'country_id', 'currency', 'company_name', 'social_account', 'email_notification', 'reg_date');
 		foreach ($keys as $key) {
 			if (!isset($data[$key])) {
 				$GLOBALS['log']->error('End: register_new_user - datakey not set (error, key is "' . $key . '")');
@@ -221,8 +221,8 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$bean->email1 = strval($data['email']);
 
 			$bean->salutation = strval($data['salutation']);
-			$bean->first_name = strval($data['firstname']);
-			$bean->last_name = strval($data['lastname']);
+			$bean->first_name = strval($data['first_name']);
+			$bean->last_name = strval($data['last_name']);
 
 			$bean->country_c = intval($data['country_id']);
 			$bean->currency_c = strval($data['currency']);
@@ -230,8 +230,8 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		}
 
 		$bean->fe_salutation_c = strval($data['salutation']);
-		$bean->fe_first_name_c = strval($data['firstname']);
-		$bean->fe_last_name_c = strval($data['lastname']);
+		$bean->fe_first_name_c = strval($data['first_name']);
+		$bean->fe_last_name_c = strval($data['last_name']);
 
 		$bean->fe_country_id_c = intval($data['country_id']);
 		$bean->fe_currency_c = strval($data['currency']);
