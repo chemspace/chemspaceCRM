@@ -3,9 +3,161 @@ if(!defined('sugarEntry'))define('sugarEntry', true);
 
 /**
  * This class is an implemenatation class for the rest v3_1_custom services
+ * 
+ * Methods are:
+ *     register_new_user, change_user_profile, record_user_login;
+ *     register_new_supplier, change_supplier_profile
  */
 require_once 'service/v3_1/SugarWebServiceImplv3_1.php';
 class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
+
+	function change_supplier_profile($session, $json)
+	{
+		$GLOBALS['log']->debug('Begin: change_supplier_profile [start]');
+
+		//Here we check that $session represents a valid session
+		if (!self::$helperObject->checkSessionAndModuleAccess(
+			$session, 'invalid_session', '', '', '', new SoapError())
+		) {
+			$GLOBALS['log']->error('End: change_supplier_profile - session is invalid [stop]');
+			return 'STOP - ERROR, session is invalid.';
+		}
+
+		// Check the data
+		$data = json_decode($json, true);
+		if (empty($data)) {
+			$GLOBALS['log']->error('End: change_supplier_profile - data is empty [skip]');
+			return 'SKIP - ERROR, data is empty.';
+		}
+		if (!is_array($data)) {
+			$GLOBALS['log']->error('End: change_supplier_profile - data not array [skip]');
+			return 'SKIP - ERROR, data not array.';
+		}
+		$keys = array('supplier_id', 'change_date');
+		foreach ($keys as $key) {
+			if (!isset($data[$key])) {
+				$GLOBALS['log']->error('End: change_supplier_profile - datakey not set (error, key is "' . $key . '")');
+				return 'STOP - ERROR, datakey not set: "' . $key . '".';
+			}
+		}
+		if (0 >= intval($data['supplier_id'])) {
+			$GLOBALS['log']->error('End: change_supplier_profile - supplier_id not positive (error, id is "' . ($data['supplier_id']) . '")');
+			return 'STOP - ERROR, supplier_id not positive: "' . ($data['supplier_id']) . '".';
+		}
+
+		$accountsBean = BeanFactory::newBean('Accounts');
+		$bean = $accountsBean->retrieve_by_string_fields(
+			array('supplier_id_c' => intval($data['supplier_id']))
+		);
+		if (null === $bean) {
+			$GLOBALS['log']->error('End: change_supplier_profile - supplier_id not found (error, id is "' . ($data['supplier_id']) . '")');
+			return 'SKIP - ERROR, supplier_id not found: "' . ($data['supplier_id']) . '".';
+		}
+		// Do the writing ...
+		if (isset($data['supplier_name'])) {
+			$bean->name = strval($data['supplier_name']);
+		}
+		if (isset($data['email'])) {
+			$bean->email1 = strval($data['email']);
+		}
+		if (isset($data['country_id'])) {
+			$bean->country_c = intval($data['country_id']);
+		}
+
+		/*
+		if (isset($data['city'])) {
+			$bean->city = strval($data['city']);
+		}
+		if (isset($data['address'])) {
+			$bean->address = strval($data['address']);
+		}
+		if (isset($data['zip'])) {
+			$bean->zip = strval($data['zip']);
+		}
+		*/
+
+		if (isset($data['phone'])) {
+			$bean->phone_office = strval($data['phone']);
+		}
+		if (isset($data['web'])) {
+			$bean->website = strval($data['web']);
+		}
+
+		//$bean->fe_change_date_c = strval($data['change_date']);
+
+		$bean->save();
+
+		$GLOBALS['log']->debug('End: change_supplier_profile [finish]');
+		return 'DONE - OK.';
+	}
+
+	function register_new_supplier($session, $json)
+	{
+		$GLOBALS['log']->debug('Begin: register_new_supplier [start]');
+
+		//Here we check that $session represents a valid session
+		if (!self::$helperObject->checkSessionAndModuleAccess(
+			$session, 'invalid_session', '', '', '', new SoapError())
+		) {
+			$GLOBALS['log']->error('End: register_new_supplier - session is invalid [stop]');
+			return 'STOP - ERROR, session is invalid.';
+		}
+
+		// Check the data
+		$data = json_decode($json, true);
+		if (empty($data)) {
+			$GLOBALS['log']->error('End: register_new_supplier - data is empty [skip]');
+			return 'SKIP - ERROR, data is empty.';
+		}
+		if (!is_array($data)) {
+			$GLOBALS['log']->error('End: register_new_supplier - data not array [skip]');
+			return 'SKIP - ERROR, data not array.';
+		}
+		$keys = array('supplier_id', 'supplier_name', 'email', 'country_id', 'city', 'address', 'zip', 'phone', 'web');
+		foreach ($keys as $key) {
+			if (!isset($data[$key])) {
+				$GLOBALS['log']->error('End: register_new_supplier - datakey not set (error, key is "' . $key . '")');
+				return 'STOP - ERROR, datakey not set: "' . $key . '".';
+			}
+		}
+		if (0 >= intval($data['supplier_id'])) {
+			$GLOBALS['log']->error('End: register_new_supplier - supplier_id not positive (error, id is "' . ($data['supplier_id']) . '")');
+			return 'STOP - ERROR, supplier_id not positive: "' . ($data['supplier_id']) . '".';
+		}
+
+		// Do the writing ...
+		$bean = BeanFactory::newBean('Accounts');
+		$test = $bean->retrieve_by_string_fields(
+			array('supplier_id_c' => intval($data['supplier_id']))
+		);
+		if (!(null === $test)) {
+			$GLOBALS['log']->error('End: register_new_supplier - supplier_id not unique (error, id is "' . ($data['supplier_id']) . '")');
+			return 'SKIP - ERROR, supplier_id not unique: "' . ($data['supplier_id']) . '".';
+		}
+
+		$bean->description = 'Company (supplier) created via API.';
+		$bean->account_type = 'Supplier';
+		$bean->company_type_multi_c = 'Supplier';
+		$bean->supplier_id_c = intval($data['supplier_id']);
+
+		$bean->name = strval($data['supplier_name']);
+		$bean->email1 = strval($data['email']);
+		$bean->country_c = intval($data['country_id']);
+
+		/*
+		$bean->city = strval($data['city']);
+		$bean->address = strval($data['address']);
+		$bean->zip = strval($data['zip']);
+		*/
+
+		$bean->phone_office = strval($data['phone']);
+		$bean->website = strval($data['web']);
+
+		$bean->save();
+
+		$GLOBALS['log']->debug('End: register_new_supplier [finish]');
+		return 'DONE - OK.';
+	}
 
 	function record_user_login($session, $json)
 	{
