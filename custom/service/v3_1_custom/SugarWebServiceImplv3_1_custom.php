@@ -33,7 +33,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$GLOBALS['log']->error('End: change_supplier_profile - data not array [skip]');
 			return 'SKIP - ERROR, data not array.';
 		}
-		$keys = array('supplier_id', 'change_date');
+		$keys = array('supplier_id', 'last_update');
 		foreach ($keys as $key) {
 			if (!isset($data[$key])) {
 				$GLOBALS['log']->error('End: change_supplier_profile - datakey not set (error, key is "' . $key . '")');
@@ -83,7 +83,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$bean->website = strval($data['web']);
 		}
 
-		//$bean->fe_change_date_c = strval($data['change_date']);
+		//$bean->fe_change_date_c = strval($data['last_update']);
 
 		$bean->save();
 
@@ -113,7 +113,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$GLOBALS['log']->error('End: register_new_supplier - data not array [skip]');
 			return 'SKIP - ERROR, data not array.';
 		}
-		$keys = array('supplier_id', 'supplier_name', 'email', 'country_id', 'city', 'address', 'zip', 'phone', 'web');
+		$keys = array('supplier_id', 'supplier_name', 'email', 'country_id', 'city', 'address', 'zip', 'phone', 'web', 'reg_date');
 		foreach ($keys as $key) {
 			if (!isset($data[$key])) {
 				$GLOBALS['log']->error('End: register_new_supplier - datakey not set (error, key is "' . $key . '")');
@@ -152,6 +152,8 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 
 		$bean->phone_office = strval($data['phone']);
 		$bean->website = strval($data['web']);
+
+		// $bean->fe_reg_date_c = strval($data['reg_date']);
 
 		$bean->save();
 
