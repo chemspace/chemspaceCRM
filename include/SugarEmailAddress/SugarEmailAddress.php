@@ -188,6 +188,8 @@ class SugarEmailAddress extends SugarBean {
             $current_links[$row2['email_address_id']]=$row2;
         }
 
+        $isInsertions = false;
+
         $isConversion = (isset($_REQUEST) && isset($_REQUEST['action']) && $_REQUEST['action'] == 'ConvertLead') ? true : false;
 
         if (!empty($this->addresses)) {
@@ -226,6 +228,7 @@ class SugarEmailAddress extends SugarBean {
                         }
                         $now = $this->db->now();
                         $upd_eabr = "INSERT INTO email_addr_bean_rel (id, email_address_id,bean_id, bean_module,primary_address,reply_to_address,date_created,date_modified,deleted) VALUES('".$this->db->quote($guid)."', '".$this->db->quote($emailId)."', '".$this->db->quote($id)."', '".$this->db->quote($module)."', ".intval($primary).", ".intval($address['reply_to_address']).", $now, $now, 0)";
+                        $isInsertions = true;
                     }
 
                     if (!empty($upd_eabr)) {
@@ -237,7 +240,7 @@ class SugarEmailAddress extends SugarBean {
 
         //delete link to dropped email address.
         // for lead conversion, do not delete email addresses
-        if (!empty($current_links) && !$isConversion) {
+        if (!empty($current_links) && !$isConversion && $isInsertions) {
 
             $delete="";
             foreach ($current_links as $eabr) {
