@@ -80,11 +80,13 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'sales_stage' => 
+      'enquire_state_c' => 
       array (
-        'name' => 'sales_stage',
+        'type' => 'varchar',
         'default' => true,
+        'label' => 'LBL_ENQUIRE_STATE',
         'width' => '10%',
+        'name' => 'enquire_state_c',
       ),
       'amount' => 
       array (
@@ -99,12 +101,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'date_entered',
-      ),
-      'date_closed' => 
-      array (
-        'name' => 'date_closed',
-        'default' => true,
-        'width' => '10%',
       ),
     ),
     'advanced_search' => 

@@ -5,15 +5,6 @@ array (
   array (
     'basic_search' => 
     array (
-      'opportunity_autoincrement_id_c' => 
-      array (
-        'link' => '1',
-        'type' => 'int',
-        'default' => true,
-        'label' => 'LBL_OPPORTUNITY_AUTOINCREMENT_ID',
-        'width' => '10%',
-        'name' => 'opportunity_autoincrement_id_c',
-      ),
       'name' => 
       array (
         'name' => 'name',
@@ -29,14 +20,14 @@ array (
         'width' => '10%',
         'name' => 'customer_company_name_c',
       ),
-      'enquire_country_id_c' => 
+      'cs_partner_c' => 
       array (
         'type' => 'enum',
         'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_ENQUIRE_COUNTRY_ID',
+        'label' => 'LBL_CS_PARTNER',
         'width' => '10%',
-        'name' => 'enquire_country_id_c',
+        'name' => 'cs_partner_c',
       ),
       'enquire_supplier_id_c' => 
       array (
@@ -47,62 +38,20 @@ array (
         'width' => '10%',
         'name' => 'enquire_supplier_id_c',
       ),
-      'cs_partner_c' => 
+      'opportunity_autoincrement_id_c' => 
       array (
-        'type' => 'enum',
+        'link' => '1',
+        'type' => 'int',
         'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_CS_PARTNER',
+        'label' => 'LBL_OPPORTUNITY_AUTOINCREMENT_ID',
         'width' => '10%',
-        'name' => 'cs_partner_c',
-      ),
-      'assigned_user_id' => 
-      array (
-        'name' => 'assigned_user_id',
-        'type' => 'enum',
-        'label' => 'LBL_ASSIGNED_TO',
-        'function' => 
-        array (
-          'name' => 'get_user_array',
-          'params' => 
-          array (
-            0 => false,
-          ),
-        ),
-        'default' => true,
-        'width' => '10%',
+        'name' => 'opportunity_autoincrement_id_c',
       ),
       'current_user_only' => 
       array (
         'name' => 'current_user_only',
         'label' => 'LBL_CURRENT_USER_FILTER',
         'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
-      'sales_stage' => 
-      array (
-        'name' => 'sales_stage',
-        'default' => true,
-        'width' => '10%',
-      ),
-      'amount' => 
-      array (
-        'name' => 'amount',
-        'default' => true,
-        'width' => '10%',
-      ),
-      'date_entered' => 
-      array (
-        'type' => 'datetime',
-        'label' => 'LBL_DATE_ENTERED',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'date_entered',
-      ),
-      'date_closed' => 
-      array (
-        'name' => 'date_closed',
         'default' => true,
         'width' => '10%',
       ),

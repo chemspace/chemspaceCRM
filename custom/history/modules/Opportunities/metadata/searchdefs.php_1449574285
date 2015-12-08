@@ -80,11 +80,13 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'sales_stage' => 
+      'enquire_state_c' => 
       array (
-        'name' => 'sales_stage',
+        'type' => 'varchar',
         'default' => true,
+        'label' => 'LBL_ENQUIRE_STATE',
         'width' => '10%',
+        'name' => 'enquire_state_c',
       ),
       'amount' => 
       array (
