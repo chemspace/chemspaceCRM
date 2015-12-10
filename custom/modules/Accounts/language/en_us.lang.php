@@ -1,5 +1,5 @@
 <?php
-// created: 2015-11-10 15:17:29
+// created: 2015-12-10 14:00:57
 $mod_strings = array (
   'LBL_CONTACTS' => 'Contacts',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
@@ -33,4 +33,7 @@ $mod_strings = array (
   'LBL_OPPORTUNITY' => 'Enquiry',
   'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Enquiries',
   'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
+  'LBL_FE_REG_DATE' => 'FE Registration Date',
+  'LBL_FE_CATALOG_UPDATE_DATE' => 'FE Catalogue Last Modification Date',
+  'LBL_FE_CHANGE_DATE' => 'FE Profile Last Modification Date',
 );

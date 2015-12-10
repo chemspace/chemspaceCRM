@@ -81,7 +81,10 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$bean->website = strval($data['web']);
 		}
 
-		//$bean->fe_change_date_c = strval($data['last_update']);
+		if (isset($data['catalog_update_date'])) {
+			$bean->fe_catalog_update_date_c = strval($data['catalog_update_date']);
+		}
+		$bean->fe_change_date_c = strval($data['last_update']);
 
 		$bean->save();
 
@@ -149,7 +152,10 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		$bean->phone_office = strval($data['phone']);
 		$bean->website = strval($data['web']);
 
-		// $bean->fe_reg_date_c = strval($data['reg_date']);
+		if (isset($data['catalog_update_date'])) {
+			$bean->fe_catalog_update_date_c = strval($data['catalog_update_date']);
+		}
+		$bean->fe_reg_date_c = strval($data['reg_date']);
 
 		$bean->save();
 

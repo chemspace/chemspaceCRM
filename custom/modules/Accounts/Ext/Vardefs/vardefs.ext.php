@@ -119,6 +119,24 @@ $dictionary['Account']['fields']['cs_contact_id_c']['labelValue']='Contact id';
 
  
 
+ // created: 2015-12-10 13:55:52
+$dictionary['Account']['fields']['fe_catalog_update_date_c']['inline_edit']='1';
+$dictionary['Account']['fields']['fe_catalog_update_date_c']['labelValue']='FE Catalogue Last Modification Date';
+
+ 
+
+ // created: 2015-12-10 14:00:57
+$dictionary['Account']['fields']['fe_change_date_c']['inline_edit']='1';
+$dictionary['Account']['fields']['fe_change_date_c']['labelValue']='FE Profile Last Modification Date';
+
+ 
+
+ // created: 2015-12-10 13:54:00
+$dictionary['Account']['fields']['fe_reg_date_c']['inline_edit']='1';
+$dictionary['Account']['fields']['fe_reg_date_c']['labelValue']='FE Registration Date';
+
+ 
+
  // created: 2015-09-01 18:37:49
 $dictionary['Account']['fields']['jjwg_maps_address_c']['inline_edit']=1;
 
