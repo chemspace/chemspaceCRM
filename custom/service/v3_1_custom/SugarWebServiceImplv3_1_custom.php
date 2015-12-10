@@ -64,17 +64,15 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$bean->country_c = intval($data['country_id']);
 		}
 
-		/*
 		if (isset($data['city'])) {
-			$bean->city = strval($data['city']);
+			$bean->billing_address_city = strval($data['city']);
 		}
 		if (isset($data['address'])) {
-			$bean->address = strval($data['address']);
+			$bean->billing_address_street = strval($data['address']);
 		}
 		if (isset($data['zip'])) {
-			$bean->zip = strval($data['zip']);
+			$bean->billing_address_postalcode = strval($data['zip']);
 		}
-		*/
 
 		if (isset($data['phone'])) {
 			$bean->phone_office = strval($data['phone']);
@@ -144,11 +142,9 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		$bean->email1 = strval($data['email']);
 		$bean->country_c = intval($data['country_id']);
 
-		/*
-		$bean->city = strval($data['city']);
-		$bean->address = strval($data['address']);
-		$bean->zip = strval($data['zip']);
-		*/
+		$bean->billing_address_city = strval($data['city']);
+		$bean->billing_address_street = strval($data['address']);
+		$bean->billing_address_postalcode = strval($data['zip']);
 
 		$bean->phone_office = strval($data['phone']);
 		$bean->website = strval($data['web']);
