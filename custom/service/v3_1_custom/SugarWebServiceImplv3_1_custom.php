@@ -445,6 +445,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 			$bean->country_c = intval($data['country_id']);
 			$bean->currency_c = strval($data['currency']);
 			$bean->company_name_c = strval($data['company_name']);
+			$bean->company_type_c = 'Customer';
 		}
 
 		$bean->fe_salutation_c = strval($data['salutation']);
