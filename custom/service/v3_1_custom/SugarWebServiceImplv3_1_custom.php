@@ -6,10 +6,72 @@ if(!defined('sugarEntry'))define('sugarEntry', true);
  * 
  * Methods are:
  *     register_new_user, change_user_profile, record_user_login;
- *     register_new_supplier, change_supplier_profile
+ *     register_new_supplier, change_supplier_profile;
+ *     create_new_enquire
  */
 require_once 'service/v3_1/SugarWebServiceImplv3_1.php';
 class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
+
+	function create_new_enquire($session, $json)
+	{
+		$GLOBALS['log']->debug('Begin: create_new_enquire [start]');
+
+		//Here we check that $session represents a valid session
+		if (!self::$helperObject->checkSessionAndModuleAccess(
+			$session, 'invalid_session', '', '', '', new SoapError())
+		) {
+			$GLOBALS['log']->error('End: create_new_enquire - session is invalid [stop]');
+			return 'STOP - ERROR, session is invalid.';
+		}
+
+		// Check the data
+		$data = json_decode($json, true);
+		if (empty($data)) {
+			$GLOBALS['log']->error('End: create_new_enquire - data is empty [skip]');
+			return 'SKIP - ERROR, data is empty.';
+		}
+		if (!is_array($data)) {
+			$GLOBALS['log']->error('End: create_new_enquire - data not array [skip]');
+			return 'SKIP - ERROR, data not array.';
+		}
+		$keys = array('enquire_id', 'email', 'first_name', 'last_name', 'company_name', 'country_id', 'enquire_date');
+		foreach ($keys as $key) {
+			if (!isset($data[$key])) {
+				$GLOBALS['log']->error('End: create_new_enquire - datakey not set (error, key is "' . $key . '")');
+				return 'STOP - ERROR, datakey not set: "' . $key . '".';
+			}
+		}
+		if (0 >= intval($data['enquire_id'])) {
+			$GLOBALS['log']->error('End: create_new_enquire - enquire_id not positive (error, id is "' . ($data['enquire_id']) . '")');
+			return 'STOP - ERROR, enquire_id not positive: "' . ($data['enquire_id']) . '".';
+		}
+
+		// Do the writing ...
+		$bean = BeanFactory::newBean('Opportunities');
+		$test = $bean->retrieve_by_string_fields(
+			array('enquire_id_c' => intval($data['enquire_id']))
+		);
+		if (!(null === $test)) {
+			$GLOBALS['log']->error('End: create_new_enquire - enquire_id not unique (error, id is "' . ($data['enquire_id']) . '")');
+			return 'SKIP - ERROR, enquire_id not unique: "' . ($data['enquire_id']) . '".';
+		}
+
+		$bean->description = 'Enquire created via API.';
+		$bean->enquire_id_c = intval($data['enquire_id']);
+
+		$bean->enquire_email_c = strval($data['email']);
+		$bean->enquire_first_name_c = strval($data['first_name']);
+		$bean->enquire_last_name_c = strval($data['last_name']);
+		/*
+		$bean->name = strval($data['supplier_name']);
+		$bean->country_c = intval($data['country_id']);
+		*/
+
+		$bean->save();
+
+		$GLOBALS['log']->debug('End: create_new_enquire [finish]');
+		return 'DONE - OK.';
+	}
 
 	function change_supplier_profile($session, $json)
 	{

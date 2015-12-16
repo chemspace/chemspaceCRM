@@ -12,6 +12,17 @@ class registry_v3_1_custom extends registry_v3_1 {
 		parent::registerFunction();
 
 		$this->serviceClass->registerFunction(
+			'create_new_enquire',
+			array(
+				'session'=>'xsd:string',
+				'json'=>'xsd:string'
+			),
+			array(
+				'return'=>'xsd:string'
+			)
+		);
+
+		$this->serviceClass->registerFunction(
 			'change_supplier_profile',
 			array(
 				'session'=>'xsd:string',
