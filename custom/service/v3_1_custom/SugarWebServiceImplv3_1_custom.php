@@ -47,6 +47,7 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		}
 
 		// Do the writing ...
+		/*
 		$bean = BeanFactory::newBean('Opportunities');
 		$test = $bean->retrieve_by_string_fields(
 			array('enquire_id_c' => intval($data['enquire_id']))
@@ -62,12 +63,12 @@ class SugarWebServiceImplv3_1_custom extends SugarWebServiceImplv3_1 {
 		$bean->enquire_email_c = strval($data['email']);
 		$bean->enquire_first_name_c = strval($data['first_name']);
 		$bean->enquire_last_name_c = strval($data['last_name']);
-		/*
-		$bean->name = strval($data['supplier_name']);
+
+		//$bean->name = strval($data['supplier_name']);
 		$bean->country_c = intval($data['country_id']);
-		*/
 
 		$bean->save();
+		*/
 
 		$GLOBALS['log']->debug('End: create_new_enquire [finish]');
 		return 'DONE - OK.';
